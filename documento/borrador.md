@@ -6,6 +6,8 @@ Borrador de investigación — versión 0.2
 Fecha de cierre de datos: 19 de octubre de 2026
 (v0.2 corrige el denominador de la calibración probabilística; ver §5.3a)
 
+Datos y código reproducibles: https://github.com/Josesepin3/limite-humano
+
 ---
 
 ## Resumen
@@ -225,12 +227,12 @@ Enfoque **cuantitativo**, alcance **descriptivo-correlacional**. No se persigue 
 
 ### 3.3 Fuentes de datos
 
-| Fuente | Aporte | Acceso |
+| Fuente | Aporte | Naturaleza |
 |---|---|---|
-| **API de speedrun.com** (v1) | Corpus de runs verificados con tiempo, fecha, jugador, emulación e ID reproducible | Endpoints públicos; `scripts/extraer_runs.py` |
-| **Wikipedia (inglés)**, artículo *Super Mario Bros. speedrunning* | Tabla curada de la progresión del récord mundial, con referencias | Texto wiki crudo; `scripts/extraer_wr_wikipedia.py` |
-| **Publicaciones de TAS** | Óptimo teórico, conteo de frames, autores | Repositorio público de TAS |
-| **Comentarios de los propios runs** | Contexto de la ejecución (vía `comment` de la API) | Misma API |
+| **API de speedrun.com** (v1) | Corpus de runs verificados con tiempo, fecha, jugador, emulación e ID reproducible | Registro público |
+| **Wikipedia (inglés)**, artículo *Super Mario Bros. speedrunning* | Tabla curada de la progresión del récord mundial, con referencias | Fuente secundaria documental |
+| **Publicaciones de TAS** | Óptimo teórico, conteo de frames, autores | Fuente técnica primaria |
+| **Comentarios de los propios runs** | Duración declarada del *grind* y contexto de la ejecución | Campo `comment` de la misma API |
 
 ### 3.4 Corpus
 
@@ -240,38 +242,55 @@ Se advierte un sesgo de selección explícito: la tabla de clasificación de spe
 
 ### 3.5 Procedimiento
 
-1. **Extracción** de runs verificados (JSON crudo + CSV aplanado).
+1. **Extracción** de runs verificados.
 2. **Extracción** de la progresión del récord mundial (46 hitos, 2004-2026).
 3. **Análisis descriptivo**: tendencia central, dispersión, percentiles, histograma.
 4. **Análisis temporal**: ganancia de tiempo por año y por periodo.
 5. **Cálculo de la brecha**: absoluta (segundos), en frames y relativa (%).
-6. **Modelado probabilístico**: P(run perfecto) = q^K.
-7. **Visualización** (pendiente).
+6. **Modelado probabilístico**: sistema de renovación calibrado con datos reales (§5).
+7. **Validación**: contraste de la forma cerrada con simulación Monte Carlo y análisis de sensibilidad.
 
-### 3.6 Reproducibilidad
+### 3.6 Disponibilidad de datos y código
 
-Todos los scripts están versionados en `scripts/` y son ejecutables de forma independiente:
+Este artículo no incluye archivos adjuntos. Los datos y el código que
+reproducen todos sus resultados están disponibles en:
 
-| Script | Función | Salida |
+> **https://github.com/Josesepin3/limite-humano**
+
+El repositorio contiene las respuestas originales de las fuentes, los datos
+limpios y los nueve programas que van de unas a otros. Un tercero puede
+rehacer la investigación completa ejecutándolos en orden, o verificar las
+cifras del documento directamente sobre los datos ya descargados, sin
+necesidad de volver a consultar ninguna fuente externa.
+
+Los programas no tienen más dependencia que Python 3 y `curl`, y se ejecutan
+en el orden siguiente:
+
+| Etapa | Programa | Qué produce |
 |---|---|---|
-| `extraer_runs.py` | Descarga el corpus completo desde la API | `datos/crudos/runs_any_pcts.jsonl`, `datos/procesados/runs_any_pcts_ntsc.csv` |
-| `extraer_wr_wikipedia.py` | Descarga y normaliza la progresión del récord | `datos/procesados/wr_progresion_any.csv` |
-| `extraer_seccion_84.py` | Descarga los 203 runs del 8-4 IL y resuelve los nombres de jugador | `datos/procesados/il_84.csv` |
-| `distribucion_T.py` | Infiere la distribución del grind `T` desde los comentarios | `datos/procesados/distribucion_T.json` |
-| `sistema_corregido.py` | Sistema final: forma cerrada + validación de mecánica | `datos/procesados/sistema_corregido.json` |
-| `analizar.py` | Estadística descriptiva y temporal | `datos/procesados/resumen_estadistico.json`, `serie_anual.csv` |
-| `simulacion_montecarlo.py` | **Sistema principal**: Monte Carlo calibrado | `datos/procesados/simulacion_mc.json` |
-| `sensibilidad.py` | Análisis de robustez e IC de Wilson | `datos/procesados/sensibilidad.json` |
-| `figuras.py` | Genera las figuras en SVG | `documento/figuras/*.svg` |
-| `modelo_probabilistico.py` | Modelo exploratorio inicial P = q^K (superado por el sistema) | `datos/procesados/modelo_probabilistico.json` |
+| Extracción | `extraer_runs.py` | El corpus de runs verificados |
+| | `extraer_wr_wikipedia.py` | La progresión del récord mundial |
+| | `extraer_seccion_84.py` | Los runs del 8-4 IL |
+| Análisis | `analizar.py` | Estadística descriptiva y series temporales |
+| Sistema | `distribucion_T.py` | La distribución del *grind* `T` |
+| | `sistema_corregido.py` | **El resultado central** (§5.5) |
+| | `sensibilidad.py` | Robustez e intervalo de confianza |
+| | `limite_biologico.py` | La prueba de estacionariedad (§5.6) |
+| | `simulacion_montecarlo.py` | La validación de la mecánica (§5.4) |
 
-La secuencia completa se documenta en `README.md`. El corpus se descargó el 19 de octubre de 2026 y las cifras de este documento corresponden a esa fecha de corte.
+Las cifras de este documento corresponden al corte del **19 de octubre de
+2026**. La API de speedrun.com es un registro vivo: volver a ejecutar la
+extracción hoy producirá un corpus algo mayor, y con él cifras ligeramente
+distintas. El repositorio conserva la copia exacta sobre la que se calculó
+todo lo que aquí se reporta, de modo que el documento y los datos siempre
+concuerden.
 
 ---
 
 ## 4. Resultados
 
-> Todos los valores de esta sección provienen de `datos/procesados/resumen_estadistico.json`.
+> Todos los valores de esta sección son reproducibles con el código y los datos
+> publicados (véase §3.6).
 
 ### 4.1 Estado del arte: el récord y el techo
 
@@ -399,9 +418,8 @@ Nótese el detalle: el récord ya empata el TAS en las siete secciones con *fram
 ## 5. El sistema probabilístico
 
 > Esta sección documenta el sistema de simulación en profundidad y en lenguaje
-> llano. Todos los números provienen de `scripts/simulacion_montecarlo.py` y
-> `scripts/sensibilidad.py`; los resultados crudos están en
-> `datos/procesados/simulacion_mc.json` y `sensibilidad.json`.
+> llano, sin dar por supuesto ningún conocimiento de estadística. Todos los
+> números son reproducibles con el código y los datos publicados (§3.6).
 
 ### 5.1 La idea, en una frase
 
@@ -444,7 +462,7 @@ tiene una fuente medible.
 #### a) P(8-4 perfecto): medido, no supuesto
 
 Existe un leaderboard dedicado a correr **solo el 8-4** (`smbce`, categoría
-*8-4 IL*). Extraje sus **203 runs verificados** (`scripts/extraer_seccion_84.py`).
+*8-4 IL*). Extraje sus **203 runs verificados**.
 
 El resultado:
 
@@ -459,7 +477,7 @@ El resultado:
 **Aquí estuvo el error más importante de esta investigación, y conviene
 documentarlo porque cambia el resultado.** La primera versión del sistema leyó
 «4 de 203» como *P(acertar en un intento)* = 1,97 %. Pero al resolver los
-nombres de los jugadores (`scripts/extraer_seccion_84.py`) apareció un dato
+nombres de los jugadores apareció un dato
 decisivo: **203 runs, 203 jugadores distintos, ninguno repetido**. El tablero
 no es un registro de intentos: es un tablero de **mejores marcas personales**,
 donde cada fila es el mejor run que un corredor logró publicar. Los cuatro
@@ -502,7 +520,7 @@ p = 1 − (1 − 4/203)^(1/T)
 ```
 
 Como `T` no está registrado en el tablero, se extrae de las duraciones
-declaradas (`scripts/distribucion_T.py`). La conversión es explícita: un intento
+declaradas. La conversión es explícita: un intento
 de 8-4 dura ~44,2 s más ~15 s de reinicio, es decir ~1 minuto; y **un mes de
 calendario no es un mes de juego**, porque un corredor duerme. Se adopta 3 horas
 de juego efectivo por día como supuesto conservador declarado:
@@ -895,6 +913,20 @@ Esto tiene una consecuencia metodológica: **proyectar la mejora futura linealme
 - Comparación con otras categorías (Warpless) y otros juegos para evaluar la
   generalidad del patrón.
 
+### 6.5 Disponibilidad de datos y código
+
+Este artículo no incluye archivos adjuntos. La totalidad de los datos
+utilizados, tanto en su forma original como procesada, y el código que produce
+cada resultado aquí reportado están disponibles de forma abierta en:
+
+> **https://github.com/Josesepin3/limite-humano**
+
+El repositorio es autosuficiente: contiene la copia exacta de los datos sobre la
+que se calcularon todas las cifras de este documento, de modo que su verificación
+no depende de que las fuentes externas sigan publicando la misma información.
+Una descripción detallada del contenido y del procedimiento de reproducción
+figura en §3.6.
+
 ---
 
 ## 7. Conclusiones preliminares
@@ -981,40 +1013,22 @@ de la fuente primaria (14 de agosto).
 
 ## Anexos
 
-### Anexo A. Estructura de datos
+### Anexo A. Los datos utilizados
 
-```
-tesis-limite-humano/
-├── datos/
-│   ├── crudos/
-│   │   ├── runs_any_pcts.jsonl          (6.916 runs crudos)
-│   │   ├── il_84.jsonl                  (203 runs del 8-4 IL)
-│   │   └── wikipedia_smb_speedrunning.wiki
-│   └── procesados/
-│       ├── runs_any_pcts_ntsc.csv       (6.752 runs NTSC)
-│       ├── runs_any_pcts_pal.csv        (164 runs PAL)
-│       ├── il_84.csv                    (8-4 IL con delta de frames)
-│       ├── wr_progresion_any.csv        (46 récords)
-│       ├── resumen_estadistico.json
-│       ├── serie_anual.csv
-│       ├── simulacion_mc.json           (sistema Monte Carlo v1)
-│       ├── sensibilidad.json            (robustez + IC Wilson)
-│       ├── distribucion_T.json          (grind por corredor, de comentarios)
-│       ├── limite_biologico.json        (estacionariedad)
-│       ├── sistema_corregido.json       (SISTEMA FINAL)
-│       └── modelo_probabilistico.json   (modelo exploratorio inicial)
-└── scripts/
-    ├── extraer_runs.py
-    ├── extraer_wr_wikipedia.py
-    ├── extraer_seccion_84.py
-    ├── analizar.py
-    ├── simulacion_montecarlo.py         (motor Monte Carlo)
-    ├── sensibilidad.py
-    ├── distribucion_T.py                (infiere la distribución de T)
-    ├── sistema_corregido.py             (SISTEMA FINAL)
-    ├── figuras.py
-    └── modelo_probabilistico.py
-```
+El estudio se apoya en tres conjuntos de datos públicos, todos conservados en el
+repositorio (§3.6) en su forma original y en su forma procesada.
+
+| Conjunto | Registros | Qué contiene |
+|---|---|---|
+| Corpus Any% | 6.916 runs | Todos los runs verificados de la categoría: tiempo, fecha, autor, versión (NTSC/PAL) e identificador |
+| Corpus del nivel 8-4 (IL) | 203 runs | Las marcas personales de un solo nivel: tiempo, autor, fecha y comentario declarado |
+| Progresión del récord mundial | 46 hitos | Cada récord desde enero de 2004, con fecha, tiempo y autor |
+
+Del corpus Any% se conservan también los subconjuntos por versión de consola
+(6.752 NTSC y 164 PAL), porque el análisis principal se restringe a NTSC. El
+repositorio incluye además los resultados intermedios del sistema
+probabilístico, de modo que un lector pueda verificar cada cifra de este
+documento sin volver a ejecutar el modelo completo.
 
 ### Anexo B. Constantes utilizadas
 
@@ -1085,8 +1099,12 @@ vocabularios distintos: el del videojuego y el del modelo estadístico.
 ---
 
 **Estado del borrador:** capítulos 1-7 redactados, con el sistema probabilístico
-completo, corregido y validado. Datos crudos, procesados, scripts reproducibles
-y seis figuras. El sistema final (`sistema_corregido.py`) sustituye la
-calibración inicial: el resultado se obtiene por forma cerrada y el Monte Carlo
-se usa para validar la mecánica. Pendientes: medir `T` con los VODs de sesión
-completa, análisis por sección con archivos de inputs, y portado a Typst.
+completo, corregido y validado, y seis figuras. El sistema final obtiene el
+resultado por forma cerrada y usa la simulación Monte Carlo solo para validar la
+mecánica del modelo. Datos y código reproducibles en el repositorio (§3.6).
+
+**Trabajo futuro.** Tres líneas pueden convertir los rangos de este documento en
+cifras firmes: medir `T` a partir de los vídeos completos de sesión de los
+corredores (que hoy solo se conoce por declaraciones), analizar los archivos de
+entrada frame a frame de los mejores runs, y extender el modelo a otras
+categorías y a otros juegos para comprobar si el patrón se repite.
