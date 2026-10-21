@@ -2,21 +2,14 @@
 
 **Estudio de caso:** la categoría Any% de *Super Mario Bros.* (NES, 1985)
 
-Este repositorio contiene **los datos y el código** que reproducen todos los
+Este repositorio contiene los **datos y el código** que reproducen todos los
 resultados del artículo «El límite humano: ¿Puede el hombre alcanzar la
 perfección de la máquina?». Se publica como anexo abierto: el manuscrito se
-distribuye **sin archivos adjuntos**, y este repositorio es el lugar donde viven
-los datos y el código que lo respaldan.
-
-**El manuscrito en sí no está en este repositorio**, ni sus figuras. Todo lo que
-aquí se publica es regenerable: las figuras las produce `scripts/figuras.py` a
-partir de los datos procesados. El manuscrito se desarrolla en un repositorio
-local, aparte de este.
+distribuye sin archivos adjuntos, y aquí viven los datos y el código que lo
+respaldan.
 
 - **Autor:** Jose Sebastian Pinto Rondon
 - **Institución:** Institución Universitaria Pascual Bravo
-- **Materia:** Lenguaje y Cultura
-- **Docente:** Jhony Alexander Restrepo Tobon
 - **Fecha de corte de los datos:** 19 de octubre de 2026
 
 ---
@@ -63,49 +56,17 @@ python3 scripts/simulacion_montecarlo.py  # validación Monte Carlo de la mecán
 
 # 4. Figuras
 python3 scripts/figuras.py                # figuras vectoriales (SVG)
-python3 scripts/figuras_png.py            # versión PNG para el documento
+python3 scripts/figuras_png.py            # versión PNG
 ```
 
-### Dónde está el manuscrito
-
-En un **repositorio local aparte**, que no se publica. El reparto es
-deliberado:
-
-| | Repositorio público (este) | Repositorio local |
-|---|---|---|
-| Datos crudos y procesados | sí | — |
-| Scripts de extracción y análisis | sí | — |
-| Manuscrito (Typst y PDF) | no | sí |
-| Figuras | no (se regeneran aquí) | sí (su resultado) |
-| Herramientas de verificación | sí | — |
-
-Los `scripts/` de verificación de este repositorio se aplican sobre el
-manuscrito local:
-
-```bash
-python3 scripts/lint_typst.py        <manuscrito>.typ   # sintaxis y compilación
-python3 scripts/verificar_apa.py      <manuscrito>.pdf   # maqueta APA 7
-python3 scripts/verificar_citas.py    <manuscrito>.typ   # citas y notas al pie
-python3 scripts/estilometria.py       <manuscrito>.typ   # perfil de estilo
-```
-
-`comparar_md_typ.py` contrasta el contenido del manuscrito contra el borrador en
-Markdown, usando `scripts/linea_base_diferencias.txt` como línea base: solo
-informa de las diferencias **nuevas**, para que una edición externa no pueda
-alterar cifras, citas ni estructura sin que se note.
-
-Las figuras se generan como SVG y se rasterizan a PNG con `figuras_png.py`
-(requiere `rsvg-convert` de `librsvg`, o ImageMagick). Se escriben en
-`documento/figuras/`, carpeta que **no se publica**: las imágenes son parte del
-manuscrito, no del anexo de datos.
+Si solo quieres **verificar las cifras sin volver a descargar**, omite el paso 1:
+los datos ya descargados están en `datos/`.
 
 `figuras.py` lee sus datos de los resultados ya procesados
 (`sistema_corregido.json`, `distribucion_T.json`, `resumen_estadistico.json`),
 nunca de valores escritos a mano, de modo que una figura no pueda contradecir
-al texto.
-
-Si solo quieres **verificar las cifras sin volver a descargar**, omite el paso 1:
-los datos ya descargados están en `datos/`.
+al texto. Las figuras se generan como SVG y se rasterizan a PNG con
+`figuras_png.py` (requiere `rsvg-convert` de `librsvg`, o ImageMagick).
 
 ### Del crudo al resultado
 
@@ -207,3 +168,6 @@ Ver [`LICENSE`](LICENSE) para el detalle.
   dos mitades cronológicas del *leaderboard* (2 perfectos en cada una, con
   error medio casi idéntico). Eso respalda la lectura de que la precisión en
   8-4 es estacionaria y no se gana con entrenamiento acumulado.
+- **La API es un registro vivo.** Volver a ejecutar la extracción produce un
+  corpus algo mayor, y con él cifras ligeramente distintas. Los datos de este
+  repositorio son la copia exacta sobre la que se calculó todo lo reportado.
