@@ -1,0 +1,37 @@
+encabezados|anexo a. los datos utilizados
+encabezados|anexo b. constantes utilizadas
+encabezados|anexo c. glosario
+encabezados|conclusiones preliminares
+encabezados|el límite humano: ¿puede el hombre alcanzar la perfección de la máquina?
+encabezados|p(8-4 perfecto): medido, no supuesto
+encabezados|p(cruzar un escalón por sección con frame rule): medido indirectamente
+encabezados|referencias
+encabezados|resumen
+celdas de tabla|1 × 10⁻²
+celdas de tabla|1 × 10⁻³
+celdas de tabla|1 × 10⁻⁴
+celdas de tabla|1,19 × 10⁻⁶
+celdas de tabla|1,23 × 10⁻⁶
+celdas de tabla|2,14 × 10⁻⁴
+celdas de tabla|2,21 × 10⁻⁴
+celdas de tabla|3,05 × 10⁻⁶
+celdas de tabla|3,16 × 10⁻⁶
+celdas de tabla|3,28 × 10⁻⁶
+celdas de tabla|9,050 × 10⁻⁵
+celdas de tabla|9,395 × 10⁻³
+celdas de tabla|9,470 × 10⁻⁴
+celdas de tabla|9,655 × 10⁻³
+celdas de tabla|9,655 × 10⁻⁴
+celdas de tabla|9,655 × 10⁻⁵
+celdas de tabla|el resultado central (§5.5)
+celdas de tabla|empatan el óptimo de la sección (44.227 s)
+celdas de tabla|forma cerrada p84 · (1 - pescalon)^7
+celdas de tabla|individual level: categoría en la que se corre un solo nivel en lugar del juego completo[^8].
+celdas de tabla|intenta equivalentes
+celdas de tabla|la prueba de estacionariedad (§5.6)
+celdas de tabla|la validación de la mecánica (§5.4)
+celdas de tabla|pescalon
+celdas de tabla|probabilidad de ejecutar 8-4 perfecto en un intento. estimada: del orden de 10⁻⁶.
+celdas de tabla|práctica repetitiva de intentos sucesivos con el fin de obtener una marca concreta[^9].
+celdas de tabla|residuo sub-framerule
+celdas de tabla|wikipedia
