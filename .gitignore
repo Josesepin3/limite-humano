@@ -12,5 +12,10 @@ Thumbs.db
 datos/procesados/runs_any_pcts_todos.csv
 datos/procesados/simulacion_mc_detalle.csv
 
+# El manuscrito y sus figuras NO se publican en este repositorio: el artículo
+# se distribuye sin archivos adjuntos y el repositorio queda como anexo de
+# datos y código. Todo lo que hay aquí se regenera con scripts/figuras.py.
+documento/
+
 # Archivos de trabajo temporales de la plantilla APA
 documento/_*.typ

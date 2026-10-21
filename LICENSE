@@ -6,11 +6,14 @@ Por claridad, la licencia se aplica de la siguiente forma:
 
 - El **código** (todo el contenido de `scripts/`) se distribuye bajo la
   licencia MIT que figura a continuación.
-- Los **datos** (todo el contenido de `datos/`) y el **documento**
-  (todo el contenido de `documento/`) se distribuyen bajo la licencia
+- Los **datos** (todo el contenido de `datos/`) se distribuyen bajo la licencia
   Creative Commons Atribución 4.0 Internacional (CC BY 4.0), cuyo texto
   completo está disponible en:
   https://creativecommons.org/licenses/by/4.0/legalcode.es
+
+El **manuscrito** y sus figuras no forman parte de este repositorio: el
+artículo se distribuye sin archivos adjuntos y este repositorio es únicamente
+el anexo de datos y código.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

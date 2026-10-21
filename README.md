@@ -2,19 +2,21 @@
 
 **Estudio de caso:** la categoría Any% de *Super Mario Bros.* (NES, 1985)
 
-Este repositorio contiene el documento de investigación, los datos y el código
-que reproducen todos sus resultados. Se publica como anexo abierto del artículo:
-el manuscrito no incluye archivos adjuntos, y este repositorio es el lugar donde
-viven los datos y el código que lo respaldan.
+Este repositorio contiene **los datos y el código** que reproducen todos los
+resultados del artículo «El límite humano: ¿Puede el hombre alcanzar la
+perfección de la máquina?». Se publica como anexo abierto: el manuscrito se
+distribuye **sin archivos adjuntos**, y este repositorio es el lugar donde viven
+los datos y el código que lo respaldan.
+
+**El manuscrito en sí no está en este repositorio**, ni sus figuras. Todo lo que
+aquí se publica es regenerable: las figuras las produce `scripts/figuras.py` a
+partir de los datos procesados.
 
 - **Autor:** Jose Sebastian Pinto Rondon
 - **Institución:** Institución Universitaria Pascual Bravo
 - **Materia:** Lenguaje y Cultura
 - **Docente:** Jhony Alexander Restrepo Tobon
 - **Fecha de corte de los datos:** 19 de octubre de 2026
-- **Manuscrito (APA 7):** [`documento/limite-humano.pdf`](documento/limite-humano.pdf)
-  — fuente en [`documento/limite-humano.typ`](documento/limite-humano.typ)
-- **Borrador de trabajo:** [`documento/borrador.md`](documento/borrador.md)
 
 ---
 
@@ -22,33 +24,9 @@ viven los datos y el código que lo respaldan.
 
 | Carpeta | Contenido |
 |---|---|
-| `documento/` | El manuscrito (Typst + PDF), el borrador en Markdown y las figuras (SVG y PNG) |
 | `datos/crudos/` | Las respuestas originales de las fuentes (sin transformar) |
 | `datos/procesados/` | Los datos limpios y los resultados del sistema |
 | `scripts/` | El código que va de los datos crudos a los resultados |
-
-### El manuscrito en APA 7
-
-El documento publicado se compila con [Typst](https://typst.app) usando la
-plantilla APA 7 de la casa (`documento/apa7.typ`, copia de
-`~/Plantillas/apa7.typ`):
-
-```bash
-cd documento
-typst compile limite-humano.typ limite-humano.pdf
-```
-
-Requiere Typst ≥ 0.15 y la familia Arial completa (regular, negrita, cursiva y
-negrita cursiva). `scripts/verificar_apa.py` comprueba la maquetación sobre el
-PDF generado, contra el contrato de la plantilla:
-
-```bash
-python3 scripts/verificar_apa.py documento/limite-humano.pdf
-```
-
-Verifica el papel Carta (612 × 792 pt), los márgenes de 1 in, la sangría de
-0,5 in, el doble espacio de 22 pt entre renglones, el borde irregular derecho
-(sin justificar) y la posición del número de página.
 
 ### Fuentes de datos
 
@@ -88,8 +66,9 @@ python3 scripts/figuras_png.py            # versión PNG para el documento
 ```
 
 Las figuras se generan como SVG y se rasterizan a PNG con `figuras_png.py`
-(requiere `rsvg-convert` de `librsvg`, o ImageMagick). El documento incrusta
-los PNG porque Markdown y Word los muestran sin depender de rutas externas.
+(requiere `rsvg-convert` de `librsvg`, o ImageMagick). Se escriben en
+`documento/figuras/`, carpeta que **no se publica**: las imágenes son parte del
+manuscrito, no del anexo de datos.
 
 `figuras.py` lee sus datos de los resultados ya procesados
 (`sistema_corregido.json`, `distribucion_T.json`, `resumen_estadistico.json`),
@@ -179,8 +158,8 @@ Super Mario Bros. (NES, 1985). https://github.com/Josesepin3/limite-humano
 ## Licencia
 
 - El **código** (`scripts/`) está bajo licencia MIT.
-- Los **datos** (`datos/`) y el **documento** (`documento/`) están bajo
-  licencia Creative Commons Atribución 4.0 (CC BY 4.0).
+- Los **datos** (`datos/`) están bajo licencia Creative Commons Atribución 4.0
+  (CC BY 4.0).
 
 Ver [`LICENSE`](LICENSE) para el detalle.
 
