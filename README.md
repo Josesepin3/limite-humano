@@ -7,7 +7,7 @@ que reproducen todos sus resultados. Se publica como anexo abierto del artículo
 el manuscrito no incluye archivos adjuntos, y este repositorio es el lugar donde
 viven los datos y el código que lo respaldan.
 
-- **Autor:** José Sepúlveda
+- **Autor:** Jose Sebastian Pinto Rondon
 - **Fecha de corte de los datos:** 19 de octubre de 2026
 - **Documento:** [`documento/borrador.md`](documento/borrador.md)
 
@@ -131,7 +131,7 @@ descansan en solo 4 éxitos perfectos y en 8 declaraciones de duración.
 ## Cómo citar
 
 ```
-Sepúlveda, J. (2026). El límite humano: ¿Puede el hombre alcanzar la
+Pinto Rondon, J. S. (2026). El límite humano: ¿Puede el hombre alcanzar la
 perfección de la máquina? Estudio de caso de la categoría Any% de
 Super Mario Bros. (NES, 1985). https://github.com/Josesepin3/limite-humano
 ```
