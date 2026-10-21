@@ -11,3 +11,6 @@ Thumbs.db
 # Salidas intermedias regenerables que no forman parte del conjunto publicado
 datos/procesados/runs_any_pcts_todos.csv
 datos/procesados/simulacion_mc_detalle.csv
+
+# Archivos de trabajo temporales de la plantilla APA
+documento/_*.typ
