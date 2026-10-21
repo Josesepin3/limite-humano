@@ -61,7 +61,7 @@
   "calibracion_regla": {
     "p_perder_escalon_por_seccion": 0.005,
     "p_conservador": 0.02,
-    "fuente": "Runs verificados con ms exacto (N=1 824) y los 10 mejores runs, que pierden 0 escalones de 21 frames.",
+    "fuente": "Runs verificados con ms exacto (N=2 867) y los 10 mejores runs, que pierden 0 escalones de 21 frames.",
     "p_0_escalones_implicito": 0.9655206468094842
   },
   "validacion_analitica": {

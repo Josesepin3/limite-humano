@@ -4,7 +4,7 @@
 
 Borrador de investigación — versión 0.2
 Fecha de cierre de datos: 19 de octubre de 2026
-(v0.2 corrige el denominador de la calibración probabilística; ver §5.3a)
+(v0.2 corrige el denominador de la calibración probabilística; ver §5.3, apartado a)
 
 Datos y código reproducibles: https://github.com/Josesepin3/limite-humano
 
@@ -133,7 +133,7 @@ Sus dos rasgos definen el problema por razones opuestas:
   mecanismo que, en los otros siete, absorbe el error humano (§2.3).
 
 La combinación es lo que convierte a `8-4` en el lugar donde vive toda la
-brecha residual. Como se verá en §5.3a, cuando se corre **solo este nivel** en
+brecha residual. Como se verá en §5.3, apartado a, cuando se corre **solo este nivel** en
 condiciones ideales, un humano tarda 44,227 segundos (2.658 frames): un único
 error de un solo frame arruina el intento completo, y no hay redondeo que lo
 disimule.
@@ -200,7 +200,7 @@ La literatura sobre tareas psicomotoras bajo restricción temporal sostiene que 
 [^5]: Un *frame* es, literalmente, un «cuadro»: la unidad mínima en que la consola actualiza el juego. El juego no «avanza» de forma continua, sino a saltos de un frame.
 [^6]: Se llama *frame rule* («regla de frames») porque ata la transición de nivel a una regla aritmética sobre los frames transcurridos.
 [^7]: La palabra **escalón** es una metáfora técnica que la comunidad de *speedrunning* usa para nombrar cada bloque de 21 frames. Se mantiene en todo el documento por ser el término estándar.
-[^8]: Un *leaderboard* de «IL» contiene runs de un solo nivel, no del juego completo. El leaderboard «8-4 IL» —que contiene únicamente intentos del nivel 8-4— es una de las fuentes de datos centrales de esta investigación (§5.3a).
+[^8]: Un *leaderboard* de «IL» contiene runs de un solo nivel, no del juego completo. El leaderboard «8-4 IL» —que contiene únicamente intentos del nivel 8-4— es la fuente de datos central de esta investigación (§5.3, apartado a).
 [^9]: «Grind» (literalmente, «moler») describe la práctica de repetir un intento mecánicamente, decenas o miles de veces, hasta que sale bien.
 [^10]: Un *tool-assisted speedrun* (TAS) es una partida construida con herramientas de emulación, no jugada por un humano en tiempo real. Sirve para fijar el techo alcanzable. Se detalla en §2.1.
 [^11]: **Any%** («cualquier porcentaje») es la categoría en la que se trata de terminar el juego lo más rápido posible, sin importar qué parte del contenido se haya completado. Se detalla en §2.0.
@@ -406,7 +406,7 @@ La palabra "inevitable" es el objeto de estudio de esta tesis.
 
 Aplicando el *frame rule* (§2.3) al análisis:
 
-- En **7 de los 10 niveles** del recorrido Any%, el error humano de hasta 20 frames es absorbido por el redondeo de la transición.
+- En **7 de los 8 niveles** del recorrido Any%, el error humano de hasta 20 frames es absorbido por el redondeo de la transición.
 - En **8-4**, el último nivel, no existe transición posterior. **Cada frame perdido se conserva íntegro.**
 
 Por tanto, la brecha de 4 frames no es un residuo distribuido por el recorrido: es un residuo **localizado** en la única sección estructuralmente sin amortiguador. Esta es la confirmación empírica de la hipótesis H2.
@@ -554,28 +554,43 @@ propaga en el análisis de sensibilidad.
 #### b) P(cruzar un escalón por sección con frame rule): medido indirectamente
 
 Aquí no hay un leaderboard de secciones individuales para todas las siete.
-Pero hay una medición indirecta sólida. Tomé los **1.824 runs verificados con
+Pero hay una medición indirecta sólida. Tomé los **2.867 runs verificados con
 milisegundo exacto** y conté cuántos escalones de 21 frames pierden respecto
-del óptimo humano:
+del óptimo humano, es decir, cuántas transiciones completas de 21 frames
+(`⌊residuo ÷ 21⌋`):
 
 | Escalones perdidos | Runs | Comentario |
 |---|---|---|
-| **0** | 10 | **Los 10 mejores runs de la historia** |
+| **0** | **10** | **Los 10 mejores runs de la historia** |
 | 1 | 14 | Élite inmediata |
-| 2 | 10 | Élite |
-| 3 | 19 | Élite |
-| 4-16 | >1.700 | Corredores no élite |
+| 2 | 11 | Élite |
+| 3 | 29 | Élite |
+| 4-16 | 2.069 | Corredores no élite |
+| >16 | 734 | Corredores no élite |
 
-**Hallazgo decisivo: los diez mejores runs de la historia no pierden ni un
-solo escalón.** Todo su residuo (4, 6, 9, 11… frames) es *residuo
-sub-framerule*, es decir, vive exclusivamente en 8-4 — la única sección donde
-el residuo se paga. Esto no es una coincidencia: es la confirmación estructural
-de la hipótesis H2, obtenida con datos.
+Dos lecturas de esta tabla, porque son dos cosas distintas:
 
-De aquí se fija la tasa de la élite en **0,5 % por sección** (que reproduce el
-96,5 % de runs con cero escalones), con una variante conservadora del **2 %**
-para la cota pesimista. El análisis de sensibilidad (§5.6) recorre todo el
-rango.
+- **El hallazgo estructural: los diez mejores runs de la historia no pierden ni
+  un solo escalón.** Todo su residuo (4, 6, 9, 11… frames) es *residuo
+  sub-framerule*, es decir, vive exclusivamente en 8-4 — la única sección donde
+  el residuo se paga. Esto no es una coincidencia: es la confirmación
+  estructural de la hipótesis H2, obtenida con datos. El hallazgo es de borde
+  exacto: el décimo run tiene 18 frames de residuo y el undécimo ya tiene 22,
+  de modo que paga un escalón. La frontera no es elegida: la fija la aritmética.
+- **La tasa de cruce, en cambio, no se lee directamente de aquí.** El corpus
+  completo incluye sobre todo corredores no élite: su run mediano está a unos
+  30 escalones del óptimo, de modo que el promedio global (~14 escalones) no
+  describe a la élite. Lo que describe a la élite es que **10 de los 177 runs
+  por debajo de 296,5 s (el 5,6 %) tienen cero escalones**, y que ninguno de
+  los diez mejores pierde uno.
+
+De aquí se fija la tasa de la élite en **0,5 % por sección**. No es una
+medición directa —no existe—, sino una **cota conservadora**: con esa tasa, el
+modelo espera que un 3,4 % de los runs de élite cruce algún escalón, cuando los
+datos no registran ninguno entre los diez mejores. Es decir, el modelo **asume
+más fallo del que se observa**, lo que hace la estimación pesimista, no
+optimista. La variante del **2 %** por sección marca la cota todavía más
+pesimista, y el análisis de sensibilidad (§5.6) recorre todo el rango.
 
 #### c) El óptimo y la aritmética de frames
 
@@ -633,7 +648,7 @@ Escenario central: T = mediana del régimen largo (6.075 intentos) y élite con
 | **P(8-4 perfecto por intento)** | **3,28 × 10⁻⁶** |
 | **P(run perfecto)** | **3,16 × 10⁻⁶** |
 | Intentos para 50 % de probabilidad | **~219.000** |
-| Intentos para 99 % de probabilidad | ~1.294.000 |
+| Intentos para 99 % de probabilidad | ~1.456.000 |
 | Error medio del intento | 13,7 frames |
 
 La comparación con la versión anterior muestra la magnitud de la corrección:
@@ -646,7 +661,7 @@ La comparación con la versión anterior muestra la magnitud de la corrección:
 | Grind más largo observado (T = 16.200) | 1,23 × 10⁻⁶ | 1,19 × 10⁻⁶ | ~584.000 |
 
 **Validación cruzada.** Aquí aparece una segunda corrección metodológica, y es
-tan importante como la primera. Con `p84 ≈ 3,7 × 10⁻⁶`, la probabilidad de run
+tan importante como la primera. Con `p84 ≈ 3,28 × 10⁻⁶`, la probabilidad de run
 perfecto es ≈ 3,2 × 10⁻⁶. Un Monte Carlo directo necesitaría **~32 millones de
 simulaciones** para observar 100 aciertos: el estimador por muestreo es
 **inutilizable a esa escala** (daría 0 o 1 aciertos por puro azar).
@@ -690,9 +705,10 @@ incertidumbre, y hay que tratarlas por separado porque no pesan igual:
    distribución de escalones de los runs verificados.
 
 La buena noticia es que `p_escalon` casi no importa. Como el run solo necesita
-**no cruzar ningún escalón en 7 secciones**, y la élite ya lo consigue con
-~99,5 % por sección, el factor `(1 − p_escalon)^7` vale casi siempre entre 0,97
-y 1,00. Cambiarlo mueve el resultado un 3 %. Lo que manda es `T`:
+**no cruzar ningún escalón en 7 secciones**, y a la élite se le atribuye un
+99,5 % por sección (§5.3, apartado b), el factor `(1 − p_escalon)^7` vale casi
+siempre entre 0,97 y 1,00. Cambiarlo mueve el resultado un 3 %. Lo que manda es
+`T`:
 
 **Intentos necesarios para el 50 %, según el grind del corredor:**
 

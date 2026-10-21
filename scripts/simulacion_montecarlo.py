@@ -113,21 +113,30 @@ def calibrar_secciones_con_frame_rule():
     escalón (>= 21 frames) en un run de élite.
 
     MEDICIÓN (no supuesto): se tomaron los runs verificados con milisegundo
-    exacto (N = 1 824) y se calculó cuántos escalones de 21 frames pierden
-    respecto del óptimo humano (17 685 f):
+    exacto (N = 2 867) y se calculó cuántos escalones de 21 frames pierden
+    respecto del óptimo humano (17 685 f), es decir, ⌊residuo ÷ 21⌋:
 
         - Los 10 mejores runs (a 4-18 frames del óptimo) pierden CERO escalones.
-        - La élite superior (residuo < 21 f) representa ~5,6 % de los runs < 296,5 s.
-        - El promedio global (10,9 escalones) refleja corredores no elite.
+          El undécimo ya tiene 22 frames de residuo y paga un escalón: la
+          frontera la fija la aritmética, no una elección.
+        - Los runs con cero escalones son 10 de los 177 por debajo de 296,5 s
+          (~5,6 % de esa élite).
+        - El promedio global (~14 escalones) refleja corredores no elite y no
+          describe a la élite.
 
     El récord vigente y los 10 mejores runs tienen todas las 7 secciones con
     frame rule PERFECTAS. La evidencia, por tanto, fija la tasa de cruce de
     escalón de la élite en un valor muy bajo. Se adopta una tasa por sección
-    que reproduce la frecuencia observada de runs sin ningún escalón perdido.
+    CONSERVADORA (asume más fallo del observado):
 
-    Con p = 0,005 por sección y 7 secciones:
-        P(0 escalones) = (1 - 0,005)^7 = 0,965  -> 96,5 %
-    Con p = 0,01:
+    Con p = 0,005 por sección y 7 secciones, el modelo espera que un 3,4 % de
+    los runs de élite cruce algún escalón, cuando los datos no registran
+    ninguno entre los diez mejores:
+
+        P(0 escalones) = (1 - 0,005)^7 = 0,9655  ->  el modelo espera 3,4 %
+                                                     de cruces en la élite
+
+    Con p = 0,01 la cota es aún más pesimista:
         P(0 escalones) = (1 - 0,01)^7 = 0,932
     Se adopta 0,005 como valor de élite y 0,02 como valor conservador,
     y el análisis de sensibilidad recorre todo el rango.
@@ -135,7 +144,7 @@ def calibrar_secciones_con_frame_rule():
     return {
         "p_perder_escalon_por_seccion": 0.005,   # élite: 0,5 % por sección
         "p_conservador": 0.02,                   # cota conservadora
-        "fuente": ("Runs verificados con ms exacto (N=1 824) y los 10 mejores "
+        "fuente": ("Runs verificados con ms exacto (N=2 867) y los 10 mejores "
                    "runs, que pierden 0 escalones de 21 frames."),
         "p_0_escalones_implicito": (1 - 0.005) ** 7,
     }
