@@ -183,60 +183,6 @@ def fig_histograma():
     open(os.path.join(FIG, "fig3_histograma.svg"), "w", encoding="utf-8").write(svg(W, H, "".join(c)))
 
 
-def fig_sensibilidad():
-    """Rejilla de intentos necesarios según p84 y p_escalon."""
-    with open(os.path.join(PROC, "sensibilidad.json"), encoding="utf-8") as f:
-        d = json.load(f)
-    rej = d["rejilla"]
-    p84s = sorted({r["p84"] for r in rej})
-    pescs = sorted({r["p_escalon"] for r in rej})
-
-    W, H = 880, 430
-    ml, mr, mt, mb = 110, 40, 90, 70
-    cw = (W - ml - mr) / len(pescs)
-    ch = (H - mt - mb) / len(p84s)
-
-    def color(n):
-        # verde (pocos intentos) -> rojo (muchos)
-        if n <= 20:
-            return "#2e9e5b"
-        if n <= 50:
-            return "#8bc34a"
-        if n <= 120:
-            return "#f2c037"
-        if n <= 300:
-            return "#e67e22"
-        return "#c0392b"
-
-    c = [texto(W / 2, 28, "Intentos necesarios para 50 % de probabilidad", 15, "#111", "middle", "600"),
-         texto(W / 2, 46, "Cada celda: nº de intentos según la calibración", 11, "#666", "middle")]
-
-    for j, pe in enumerate(pescs):
-        for i, p8 in enumerate(p84s):
-            fila = [r for r in rej if abs(r["p84"] - p8) < 1e-9 and abs(r["p_escalon"] - pe) < 1e-9]
-            if not fila:
-                continue
-            n = fila[0]["intentos_50pct"]
-            x = ml + j * cw
-            y = mt + i * ch
-            txt = "∞" if n == float("inf") else str(int(n))
-            c.append(f'<rect x="{x+2:.1f}" y="{y+2:.1f}" width="{cw-4:.1f}" height="{ch-4:.1f}" '
-                     f'fill="{color(n)}" opacity="0.88" rx="3"/>')
-            c.append(texto(x + cw / 2, y + ch / 2 + 5, txt, 13, "white", "middle", "700"))
-
-    for j, pe in enumerate(pescs):
-        c.append(texto(ml + (j + 0.5) * cw, H - mb + 20, f"{pe*100:.1f}%", 10.5, "#444", "middle", "600"))
-    for i, p8 in enumerate(p84s):
-        c.append(texto(ml - 10, mt + (i + 0.5) * ch + 4, f"{p8*100:.2f}%", 10.5, "#444", "end", "600"))
-
-    c.append(texto(ml - 10, mt - 14, "P(8-4 perfecto)", 11, "#111", "start", "700"))
-    c.append(texto(W - mr, H - mb + 42, "Tasa de cruce de escalón por sección", 11, "#111", "end", "700"))
-    c.append(texto(W / 2, H - 14,
-                   "Incluso en la celda más adversa (430) el óptimo es alcanzable en semanas, no décadas",
-                   10.5, "#c0392b", "middle", "600"))
-    open(os.path.join(FIG, "fig4_sensibilidad.svg"), "w", encoding="utf-8").write(svg(W, H, "".join(c)))
-
-
 def fig_montecarlo():
     """Distribución del error de los runs simulados."""
     with open(os.path.join(PROC, "simulacion_mc.json"), encoding="utf-8") as f:
@@ -338,7 +284,6 @@ def fig_probabilidad():
         return mt + gh - (p / pmax) * gh
 
     pmax = p_run(min(Ts)) * 1.08
-
     b.append(linea(ml, mt, ml, mt + gh, "#999"))
     b.append(linea(ml, mt + gh, ml + panel - 60, mt + gh, "#999"))
     for i in range(6):
@@ -355,14 +300,41 @@ def fig_probabilidad():
     b.append(texto(ml - 46, mt + gh / 2, "P(run perfecto)  (×10⁻⁵)", 10, "#555",
                    "middle", "600").replace("<text ", '<text transform="rotate(-90 34 %d)" ' % (mt + gh // 2)))
 
+    # La curva se dibuja solo dentro del rango de datos (de T_min a T_max) y se
+    # desvanece en ambos extremos:
+    #   - por la izquierda, con una máscara vertical que la desvanece al subir,
+    #     porque para T pequeños p_run crece exponencialmente y se saldría del
+    #     panel por arriba;
+    #   - por la derecha, para no cortarse de golpe contra el marco.
+    # Ningún punto de dato cae sobre la zona atenuada.
+    t_min, t_max = min(Ts), max(Ts)
+    b.append('<defs>'
+             '<linearGradient id="g_izq" x1="0" y1="0" x2="0" y2="1">'
+             '<stop offset="0%" stop-color="white" stop-opacity="0"/>'
+             '<stop offset="6%" stop-color="white" stop-opacity="1"/>'
+             '</linearGradient>'
+             '<linearGradient id="g_der" x1="0" y1="0" x2="1" y2="0">'
+             '<stop offset="0%" stop-color="white" stop-opacity="1"/>'
+             '<stop offset="94%" stop-color="white" stop-opacity="1"/>'
+             '<stop offset="100%" stop-color="white" stop-opacity="0"/>'
+             '</linearGradient>'
+             '<mask id="mascara_curva">'
+             f'<rect x="{ml}" y="{mt}" width="{panel - 60}" height="{gh}" '
+             'fill="url(#g_der)"/>'
+             f'<rect x="{ml}" y="{mt}" width="{panel - 60}" height="{gh}" '
+             'fill="url(#g_izq)"/>'
+             '</mask></defs>')
+
     pts = []
-    lg = x0
-    while lg <= x1 + 1e-9:
+    lg = math.log10(t_min)
+    lg_max = math.log10(t_max)
+    while lg <= lg_max + 1e-9:
         t = 10 ** lg
         pts.append((XL(t), YL(p_run(t))))
-        lg += 0.05
+        lg += 0.02
     b.append('<polyline points="' + " ".join(f"{a:.1f},{c:.1f}" for a, c in pts)
-             + '" fill="none" stroke="#1a73e8" stroke-width="2.4"/>')
+             + '" fill="none" stroke="#1a73e8" stroke-width="2.4" '
+             'mask="url(#mascara_curva)"/>')
 
     # Marcar los T observados: todos caen sobre la curva
     for t in Ts:
@@ -436,7 +408,6 @@ if __name__ == "__main__":
     fig_convergencia()
     fig_ritmo()
     fig_histograma()
-    fig_sensibilidad()
     fig_montecarlo()
     fig_probabilidad()
     print("Figuras generadas en", FIG)
