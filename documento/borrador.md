@@ -726,7 +726,7 @@ límite, la segunda mitad debería mostrar más aciertos. No los muestra. Ese es
 el techo biológico: no consiste en que el humano *no pueda*, sino en que **no
 puede a demanda**, y esa limitación no se entrena hasta desaparecer.
 
-![Probabilidad de alcanzar el óptimo](../documento/figuras/fig7_probabilidad_v2.png)
+![Probabilidad de alcanzar el óptimo](../documento/figuras/fig5_probabilidad_optimo.png)
 
 *Figura 5. Izquierda: dificultad por intento según el grind del corredor
 (`T`, escala logarítmica); los puntos rojos son los grinds reales declarados.
@@ -1099,7 +1099,7 @@ vocabularios distintos: el del videojuego y el del modelo estadístico.
 ---
 
 **Estado del borrador:** capítulos 1-7 redactados, con el sistema probabilístico
-completo, corregido y validado, y seis figuras. El sistema final obtiene el
+completo, corregido y validado, y cinco figuras. El sistema final obtiene el
 resultado por forma cerrada y usa la simulación Monte Carlo solo para validar la
 mecánica del modelo. Datos y código reproducibles en el repositorio (§3.6).
 

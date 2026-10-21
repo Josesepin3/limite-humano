@@ -6,6 +6,7 @@ Salida: documento/figuras/*.svg  (vectorial, sin dependencias externas)
 
 import csv
 import json
+import math
 import os
 
 BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -87,16 +88,19 @@ def fig_convergencia():
     anotaciones = [
         (X(2004.2), Y(314) - 12, "5:14 — primer registro (2004)", "start", "#1a73e8"),
         (X(2011.0), Y(299.69) + 20, "4:59.690 — bajo 5 min (2010)", "middle", "#1a73e8"),
-        (X(2019.5), Y(295.9) + 26, "4:55.913 (2018)", "middle", "#1a73e8"),
-        (X(2026.6), Y(294.332) - 14, "4:54.332 — a 4 frames (2026)", "end", "#1a73e8"),
+        (X(2019.5), Y(295.9) + 30, "4:55.913 (2018)", "middle", "#1a73e8"),
+        (X(2026.6), Y(294.332) + 22, "4:54.332 — a 4 frames (2026)", "end", "#1a73e8"),
     ]
     for x, y, s, an, col in anotaciones:
         c.append(texto(x, y, s, 10.5, col, an, "600"))
 
+    # Etiqueta del óptimo: a la izquierda, para no chocar con la anotación final
+    c.append(texto(ml + 6, Y(OPT) - 7, "Óptimo teórico 4:54.265", 10, "#c0392b", "start", "600"))
+
     # Flecha de brecha final
     c.append(f'<path d="M {X(2026.2):.1f} {Y(OPT):.1f} L {X(2026.2):.1f} {Y(294.332):.1f}" '
              f'stroke="#c0392b" stroke-width="1.4" marker-end="url(#fl)"/>')
-    c.append(texto(X(2022.0), Y(294.6) + 12, "brecha final: 4 frames (0,067 s)", 10.5, "#c0392b", "middle", "600"))
+    c.append(texto(X(2022.0), Y(297.5), "brecha final: 4 frames (0,067 s)", 10.5, "#c0392b", "middle", "600"))
 
     c.append(texto(W / 2, H - 12, "Año", 11, "#555", "middle"))
     c.append(f'<defs><marker id="fl" markerWidth="8" markerHeight="8" refX="4" refY="4" '
@@ -268,12 +272,173 @@ def fig_montecarlo():
     open(os.path.join(FIG, "fig5_montecarlo.svg"), "w", encoding="utf-8").write(svg(W, H, "".join(c)))
 
 
+# ---------------------------------------------------------------- Figura 7
+def fig_probabilidad():
+    """
+    Dos paneles:
+      izquierda: P(run perfecto) por intento frente al grind T
+      derecha:   P(al menos uno lo logra) frente a años, por nº de corredores
+
+    Todos los insumos se leen del sistema final (sistema_corregido.json), de
+    modo que la figura no pueda desincronizarse del documento.
+    """
+    with open(os.path.join(PROC, "sistema_corregido.json"), encoding="utf-8") as f:
+        sis = json.load(f)
+    with open(os.path.join(PROC, "distribucion_T.json"), encoding="utf-8") as f:
+        dT = json.load(f)
+
+    T_central = sis["escenario_central"]["T"]          # mediana del régimen largo
+    sup = sis["supuestos"]
+    if "T_mediana_regimen_largo" in dT:
+        T_med = dT["T_mediana_regimen_largo"]
+    else:
+        T_med = T_central
+    Ts = sorted(x["intentos"] for x in dT["duraciones_declaradas"])
+
+    P_PB = 4 / 203
+    P_ESC = sup["p_escalon_por_seccion"]
+    N_REGLA = sup["n_secciones_con_frame_rule"]
+    P_SC = (1 - P_ESC) ** N_REGLA
+
+    def p_run(t):
+        if t <= 0:
+            return 0.0
+        return (1 - (1 - P_PB) ** (1 / t)) * P_SC
+
+    def p_alguno(p, n):
+        if p <= 0:
+            return 0.0
+        if p >= 1:
+            return 1.0
+        return 1 - (1 - p) ** n
+
+    W, H = 980, 440
+    panel = 400
+    gx = 74
+    gy = 62
+    gh = 285
+
+    b = [texto(W / 2, 26, "¿Puede un humano alcanzar el óptimo de la máquina?",
+               16, "#111", "middle", "600"),
+         texto(W / 2, 45, "Izquierda: dificultad por intento según el grind. "
+                          "Derecha: probabilidad acumulada del evento.",
+               11, "#666", "middle")]
+
+    # ---- Panel izquierdo: p_run vs T (escala log en T) ----
+    # El eje llega hasta log10 = 4.5 para que el grind más largo (16.200) entre
+    # dentro del panel y su punto caiga sobre la curva.
+    x0, x1 = 0, 4.5
+    ml, mt = gx, gy
+
+    def XL(t):
+        return ml + (math.log10(t) - x0) / (x1 - x0) * (panel - 60)
+
+    def YL(p):
+        # p_run llega a ~1e-5: se usa escala lineal sobre el máximo de la curva
+        return mt + gh - (p / pmax) * gh
+
+    pmax = p_run(min(Ts)) * 1.08
+
+    b.append(linea(ml, mt, ml, mt + gh, "#999"))
+    b.append(linea(ml, mt + gh, ml + panel - 60, mt + gh, "#999"))
+    for i in range(6):
+        v = i / 5
+        b.append(linea(ml, mt + gh - v * gh, ml + panel - 60, mt + gh - v * gh, "#f0f0f0"))
+        b.append(texto(ml - 6, mt + gh - v * gh + 4, f"{v:.1f}", 9, "#777", "end"))
+    for e in range(5):
+        t = 10 ** e
+        b.append(linea(XL(t), mt, XL(t), mt + gh, "#f0f0f0"))
+        b.append(texto(XL(t), mt + gh + 15, f"{t:,}", 9, "#777", "middle"))
+    b.append(texto(ml + (panel - 60) / 2, mt + gh + 34,
+                   "T = intentos de grind por corredor (escala log)",
+                   10, "#555", "middle"))
+    b.append(texto(ml - 46, mt + gh / 2, "P(run perfecto)  (×10⁻⁵)", 10, "#555",
+                   "middle", "600").replace("<text ", '<text transform="rotate(-90 34 %d)" ' % (mt + gh // 2)))
+
+    pts = []
+    lg = x0
+    while lg <= x1 + 1e-9:
+        t = 10 ** lg
+        pts.append((XL(t), YL(p_run(t))))
+        lg += 0.05
+    b.append('<polyline points="' + " ".join(f"{a:.1f},{c:.1f}" for a, c in pts)
+             + '" fill="none" stroke="#1a73e8" stroke-width="2.4"/>')
+
+    # Marcar los T observados: todos caen sobre la curva
+    for t in Ts:
+        b.append(f'<circle cx="{XL(t):.1f}" cy="{YL(p_run(t)):.1f}" r="3.2" '
+                 f'fill="#c0392b" stroke="white" stroke-width="0.8"/>')
+    b.append(texto(ml + 10, mt + 14,
+                   "puntos rojos = grinds reales declarados", 9, "#c0392b", "start", "600"))
+
+    # ---- Panel derecho: P(alguno) vs años ----
+    ml2 = panel + gx + 66
+    pw = W - ml2 - 42
+    anios_max = 25
+
+    def XR(a):
+        return ml2 + a / anios_max * pw
+
+    def YR(p):
+        return mt + gh - p * gh
+
+    b.append(linea(ml2, mt, ml2, mt + gh, "#999"))
+    b.append(linea(ml2, mt + gh, ml2 + pw, mt + gh, "#999"))
+    for i in range(6):
+        v = i / 5
+        b.append(linea(ml2, mt + gh - v * gh, ml2 + pw, mt + gh - v * gh, "#f0f0f0"))
+        b.append(texto(ml2 - 6, mt + gh - v * gh + 4, f"{100*v:.0f}%", 9, "#777", "end"))
+    for a in range(0, anios_max + 1, 5):
+        b.append(linea(XR(a), mt, XR(a), mt + gh, "#f0f0f0"))
+        b.append(texto(XR(a), mt + gh + 15, str(a), 9, "#777", "middle"))
+    b.append(texto(ml2 + pw / 2, mt + gh + 34,
+                   "años de actividad continuada", 10, "#555", "middle"))
+    b.append(texto(ml2 - 46, mt + gh / 2, "P(al menos uno lo logra)", 10, "#555",
+                   "middle", "600").replace("<text ", '<text transform="rotate(-90 14 %d)" ' % (mt + gh // 2)))
+
+    p1 = p_run(T_med)
+    colores = {1: "#c0392b", 5: "#1a73e8", 20: "#2e9e5b"}
+    for corr in (1, 5, 20):
+        pp = []
+        for a in range(0, anios_max + 1):
+            n = corr * sup["intentos_por_dia_activo"] * sup["dias_activos_por_semana"] * 52 * a
+            pp.append((XR(a), YR(p_alguno(p1, n))))
+        b.append('<polyline points="'
+                 + " ".join(f"{u:.1f},{v:.1f}" for u, v in pp)
+                 + f'" fill="none" stroke="{colores[corr]}" stroke-width="2.4"/>')
+
+    # Etiquetas al final de cada curva, separadas para que no se pisen.
+    # La curva de 1 corredor termina en ~91%, la de 5 en ~100%, la de 20 en
+    # 100%: si se rotulan todas al mismo x, se superponen. Se escalonan en x.
+    etiquetas = {1: (25, -8, "end"), 5: (9, -9, "start"), 20: (2.2, 16, "start")}
+    for corr in (1, 5, 20):
+        a, dy, an = etiquetas[corr]
+        n = corr * sup["intentos_por_dia_activo"] * sup["dias_activos_por_semana"] * 52 * a
+        x = XR(a)
+        y = YR(p_alguno(p1, n))
+        b.append(texto(x + (6 if an == "start" else -6), y + dy,
+                       f"{corr} corredor" + ("es" if corr > 1 else ""),
+                       10, colores[corr], an, "700"))
+    b.append(texto(ml2, mt + gh + 52,
+                   f"T central = {T_med:,.0f} intentos · 200 intentos/día activo · "
+                   f"P(run perfecto) por intento = {p1:.2e}",
+                   9, "#777", "start"))
+
+    b.append(texto(W / 2, H - 12,
+                   "Con la actividad sostenida, el evento deja de ser improbable; "
+                   "lo que no cambia es la dificultad por intento.",
+                   10.5, "#c0392b", "middle", "600"))
+    open(os.path.join(FIG, "fig5_probabilidad_optimo.svg"), "w",
+         encoding="utf-8").write(svg(W, H, "".join(b)))
+
+
 if __name__ == "__main__":
     fig_convergencia()
     fig_ritmo()
     fig_histograma()
     fig_sensibilidad()
     fig_montecarlo()
+    fig_probabilidad()
     print("Figuras generadas en", FIG)
     for f in sorted(os.listdir(FIG)):
         if f.endswith(".svg"):

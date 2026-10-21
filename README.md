@@ -55,8 +55,18 @@ python3 scripts/limite_biologico.py       # prueba de estacionariedad (el techo)
 python3 scripts/simulacion_montecarlo.py  # validación Monte Carlo de la mecánica
 
 # 4. Figuras
-python3 scripts/figuras.py                # SVG
+python3 scripts/figuras.py                # figuras vectoriales (SVG)
+python3 scripts/figuras_png.py            # versión PNG para el documento
 ```
+
+Las figuras se generan como SVG y se rasterizan a PNG con `figuras_png.py`
+(requiere `rsvg-convert` de `librsvg`, o ImageMagick). El documento incrusta
+los PNG porque Markdown y Word los muestran sin depender de rutas externas.
+
+`figuras.py` lee sus datos de los resultados ya procesados
+(`sistema_corregido.json`, `distribucion_T.json`, `resumen_estadistico.json`),
+nunca de valores escritos a mano, de modo que una figura no pueda contradecir
+al texto.
 
 Si solo quieres **verificar las cifras sin volver a descargar**, omite el paso 1:
 los datos ya descargados están en `datos/`.
