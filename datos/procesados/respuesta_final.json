@@ -1,0 +1,131 @@
+{
+  "escenarios": [
+    {
+      "T": 100,
+      "anios": 1,
+      "corredores": 3,
+      "p_alguno": 1.0
+    },
+    {
+      "T": 100,
+      "anios": 5,
+      "corredores": 3,
+      "p_alguno": 1.0
+    },
+    {
+      "T": 100,
+      "anios": 10,
+      "corredores": 3,
+      "p_alguno": 1.0
+    },
+    {
+      "T": 100,
+      "anios": 25,
+      "corredores": 3,
+      "p_alguno": 1.0
+    },
+    {
+      "T": 1000,
+      "anios": 1,
+      "corredores": 3,
+      "p_alguno": 0.9975086786930674
+    },
+    {
+      "T": 1000,
+      "anios": 5,
+      "corredores": 3,
+      "p_alguno": 0.9999999999999041
+    },
+    {
+      "T": 1000,
+      "anios": 10,
+      "corredores": 3,
+      "p_alguno": 1.0
+    },
+    {
+      "T": 1000,
+      "anios": 25,
+      "corredores": 3,
+      "p_alguno": 1.0
+    },
+    {
+      "T": 3000,
+      "anios": 1,
+      "corredores": 3,
+      "p_alguno": 0.8644364139016089
+    },
+    {
+      "T": 3000,
+      "anios": 5,
+      "corredores": 3,
+      "p_alguno": 0.9999542158406862
+    },
+    {
+      "T": 3000,
+      "anios": 10,
+      "corredores": 3,
+      "p_alguno": 0.9999999979038108
+    },
+    {
+      "T": 3000,
+      "anios": 25,
+      "corredores": 3,
+      "p_alguno": 1.0
+    },
+    {
+      "T": 10000,
+      "anios": 1,
+      "corredores": 3,
+      "p_alguno": 0.4509108099771407
+    },
+    {
+      "T": 10000,
+      "anios": 5,
+      "corredores": 3,
+      "p_alguno": 0.9500869086060089
+    },
+    {
+      "T": 10000,
+      "anios": 10,
+      "corredores": 3,
+      "p_alguno": 0.9975086833074951
+    },
+    {
+      "T": 10000,
+      "anios": 25,
+      "corredores": 3,
+      "p_alguno": 0.999999690206469
+    },
+    {
+      "T": 30000,
+      "anios": 1,
+      "corredores": 3,
+      "p_alguno": 0.18113125333600844
+    },
+    {
+      "T": 30000,
+      "anios": 5,
+      "corredores": 3,
+      "p_alguno": 0.6318104317296864
+    },
+    {
+      "T": 30000,
+      "anios": 10,
+      "corredores": 3,
+      "p_alguno": 0.8644364418169201
+    },
+    {
+      "T": 30000,
+      "anios": 25,
+      "corredores": 3,
+      "p_alguno": 0.9932336041961539
+    }
+  ],
+  "p_pb": 0.019704433497536946,
+  "p_regla": 0.9655,
+  "supuestos": {
+    "corredores_activos": 3,
+    "intentos_por_sesion": 400,
+    "sesiones_por_semana": 5
+  }
+}

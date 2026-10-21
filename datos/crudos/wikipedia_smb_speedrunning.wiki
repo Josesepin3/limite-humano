@@ -1,0 +1,598 @@
+{{Short description|Act of beating the 1985 video game quickly}}
+{{italic title|string=Super Mario Bros.}}
+{{Infobox
+| templatestyles   = Infobox video game/styles.css
+| aboveclass       = fn
+| belowstyle       = border-top: 1px solid #aaa;
+| image            = [[File:BulletBillGlitch.png|frameless|274x274px]]
+| caption          = Speedrunner averge11 attempting the bullet bill glitch in a speedrun of the any% category
+| above            = ''Super Mario Bros.'' speedrunning
+| label2           = [[Video game]]
+| data2            = ''[[Super Mario Bros.]]''
+| label3           = Release
+| data3            = {{dts|1985|9|13}}
+| label4           = Earliest speedrun
+| data4            = 9:51 by Casion<ref name=Gach2022 /><br>{{dts|1999|4}}
+| label5           = [[Speedrunning|World record]]
+| data5            = {{Collapsable list
+   | title = {{nobold|'''Any%'''<br>[https://www.speedrun.com/smb1/runs/z142re9z 4:54.332] by Niftski<br>{{dts|2026|8|13}}}}
+   | '''Warpless'''<br>[https://www.speedrun.com/smb1/runs/yljpjgnm 18:49.972] by Niftski<ref name=Serin2025-08 /><br>{{dts|2025|8|7}}
+   | '''Any% All-Stars'''<br>[https://www.speedrun.com/smb1/runs/m3qgk7gy 4:55.780] by Niftski<br>{{dts|2023|5|28}}
+   | '''Warpless All-Stars'''<br>[https://www.speedrun.com/smb1/runs/y6q5qqqz 19:42.885] by Niftski<br>{{dts|2023|10|1}}
+   | '''Glitchless'''<br>[https://www.speedrun.com/smb1/runs/yd2x27qm 5:02.685] by Niftski<ref name=Bailey2024 /><br>{{dts|2024|1|27}}}}
+| label6           = [[Tool-assisted speedrun|Tool-assisted world record]]
+| data6            = {{Collapsable list
+   | title= {{nobold|'''Any%'''<br>[https://tasvideos.org/1715M 4:54.032] by HappyLee<ref name=Henges /><br>{{dts|2011|1|6}}}}
+   | '''RTA Rules'''<br>4:54.265 by Maru371<ref name=Degraffinried /><br>{{dts|2019|4|29}}}}
+| label7           = Notable community members
+| data7            = [[andrewg]], averge11, [[darbian]], HappyLee, KingOfJonnyBoy, [[Kosmic]], Kriller37, LeKukie, Miniland, [[Niftski]], Scott Kessler, sockfolder, somewes
+| label8           = [[High score|Leaderboard]]
+| data8            = [https://www.speedrun.com/smb1 SRC]
+| label9           = Total runners
+| data9            = 2,180 (since 2002)
+| below            = ''Last updated:'' August 15, 2026
+}}
+
+''[[Super Mario Bros.]]'', a 1985 [[platform game]] released for the [[Nintendo Entertainment System]], is a popular game in [[speedrunning]]. It has seen a consistently high level of attention since 2010, when American speedrunner [[Andrew Gardikis]], also known as andrewg, beat the game in under five minutes for the first time. It is one of the most optimized games in speedrunning. The current world record of 4:54.332, set by American speedrunner [[Niftski]] on {{nowrap|August 13, 2026,}} is four frames (67 milliseconds) off what is believed to be a theoretically perfect run of 4:54.265.
+
+Speedrunners use a number of advanced techniques and [[glitch]]es to improve their performance and achieve new [[personal record|personal best]]s. These techniques, including [[#Wrong warp|wrong warp]]s and the [[#Flagpole glitch|flagpole glitch]], have become more effective over time thanks to collaboration among a community of speedrunners and glitch hunters. The activity is not regulated by a formal organization but is instead moderated by a team of volunteers from the community. Top speedrunners often stream attempts to achieve personal bests live on [[Twitch (service)|Twitch]]. Notable former world record holders include andrewg, [[darbian]], and [[Kosmic]].
+
+== History ==
+
+=== Early competition ===
+The earliest recorded speedrun of ''Super Mario Bros.'' was performed by Japanese player {{nihongo|Casion|カシオン|kashion}} in April{{nbsp}}1999. Casion performed the run on an emulator for the website High Level Challenge, and achieved a time of 9:51.<ref name=Gach2022>{{cite news|first=Ethan|last=Gach|title=Witness Every Incredible Super Mario Bros. Speedrun Record Simultaneously|url=https://kotaku.com/super-mario-bros-speedrun-world-record-youtube-nes-tas-1849423665|work=[[Kotaku]]|date=August 17, 2022|access-date=April 17, 2026}}</ref> Early on, completion times were recorded by [[Twin Galaxies]] which prohibited the use of unintended game mechanics and glitches.<ref name="Orland2021">{{Cite web |last=Orland |first=Kyle |date=2021-04-09 |title=How a speedrunner broke Super Mario Bros.' biggest barrier |url=https://arstechnica.com/gaming/2021/04/new-super-mario-bros-record-breaks-speedrunnings-four-minute-mile/ |access-date=2026-04-10 |website=Ars Technica |language=en}}</ref> In 2004, American speedrunner Scott Kessler submitted a new world record of 5:14{{efn|name=kessler517}}{{efn|Modern runs use a different timing method compared to [[Twin Galaxies]]. Twin Galaxies' timing started after the runner pressed start on the title screen. Modern timing, first used by [[Speed Demos Archive]], starts when the in-game timer appears in World{{nbsp}}1-1 which occurs about three seconds later.}} to Twin Galaxies, beating the best known time by three seconds.<ref name=Burnes /> Over the next three years, Kessler faced competition from fellow speedrunners Trevor Seguin and [[Andrew Gardikis]], an American speedrunner also known as andrewg.<ref name=Baker2007 />
+
+In 2007, andrewg submitted his first run to [[Speed Demos Archive]] which did allow the use of glitches in runs. His first submitted time with glitches completed the game in 5:00.355.<ref name=SDA500>{{cite web|title=Super Mario Bros.|website=[[Speed Demos Archive]]|archive-url=https://web.archive.org/web/20080902225838/http://speeddemosarchive.com/Mario1.html|url=https://speeddemosarchive.com/Mario1.html|archive-date=September 2, 2008}}</ref> He used a wrong warp glitch in World{{nbsp}}4-2 and a wall jump in World{{nbsp}}8-4, which helped him to save over five seconds.<ref name=Licht /> On {{nowrap|December 24, 2010,}} andrewg became the first person to complete the game in under five minutes, with a time of 4:59.690.<ref name=SDA459>{{cite web|title=Super Mario Bros.|website=[[Speed Demos Archive]]|archive-url=https://web.archive.org/web/20111205114928/https://speeddemosarchive.com/Mario1.html|url=https://speeddemosarchive.com/Mario1.html|archive-date=December 5, 2011}}</ref><ref name=Baker2014>{{cite news|first=Billy|last=Baker|title=Quincy gamer on quest for Super Mario perfection|url=https://www.bostonglobe.com/metro/2014/03/02/quincy-gamer-quest-for-super-mario-perfection/lFGe6RONwJrWFqNMwfDjtJ/story.html|work=[[The Boston Globe]]|date=March 2, 2014|archive-url=https://web.archive.org/web/20191029051304/https://www.bostonglobe.com/metro/2014/03/02/quincy-gamer-quest-for-super-mario-perfection/lFGe6RONwJrWFqNMwfDjtJ/story.html|archive-date=October 29, 2019|url-status=live}}</ref> Over the course of the next three years, andrewg continued to improve his own time, bringing the record down to 4:58.092 in March 2014.<ref name=Irwin /> He had since implemented a strategy known as "fast 4-2", a harder version of the wrong warp glitch with a much lower success rate.<ref name=Snyder>{{cite book
+  | last      = Snyder
+  | first     = David
+  | title     = Speedrunning: Interviews with the Quickest Gamers
+  | publisher = [[McFarland & Company, Inc.]]
+  | isbn      = 9781476670805
+  | date      = 2017
+  | page      = 412
+  | chapter   = Brad, Darbian, Super Mario Bros. (NES)
+}}</ref>
+
+In June{{nbsp}}2014, Blubbler beat andrewg's time by 399{{nbsp}}[[millisecond]]s, achieving a time of 4:57.693.<ref name=Good2014 /> They were the first person to beat andrewg's time in seven years.<ref name=Roeder /> Blubbler achieved this time by being the first to implement the Bullet Bill glitch, but opted not to attempt "fast 4-2".<ref name=Snyder /> On {{nowrap|October 18, 2015,}} a relative newcomer to the speedrunning scene named Brad Myers, better known as [[darbian]], completed the game in 4:57.627, setting a new world record.<ref name=Locker /><ref name=Hernandez2015>{{cite news|first=Patricia|last=Hernandez|title=A New World Record For Beating Super Mario Bros. As Fast As Possible|url=https://kotaku.com/a-new-world-record-for-beating-super-mario-bros-as-fas-1737388727|work=[[Kotaku]]|date=October 19, 2015|access-date=April 24, 2026}}</ref> In January 2016, darbian managed to perform both the Bullet Bill glitch and "fast 4-2" in a single run,<ref name=Snyder /> improving his time down to 4:57.427.<ref name=Hernandez2016-04-01 /> Following the run, darbian set a goal for himself to get the "perfect" speedrun,  a run with the Bullet Bill glitch, "fast 4-2", and a well executed World{{nbsp}}8-4.<ref name=Snyder /> In April{{nbsp}}2016, darbian achieved this "perfect" time with a 4:57.260, claiming that he had "reached [his] potential in this category".<ref name=Moore /> 
+
+===Implementation of the flagpole glitch=== 
+
+In September{{nbsp}}2016, a new method of performing the flagpole glitch was published to [[YouTube]].<ref name=Roeder /> The glitch had previously been used by tool-assisted speedruns but was thought to be impossible to perform in real time.<ref name=Kemps /> Glitch hunter Chris Milling, better known as sockfolder, discovered a consistent, run-viable method of performing the trick, which began being implemented in runs by darbian and longtime speedrunner [[Kosmic]].<ref name=Roeder /><ref name=Kemps /> Kosmic had been performing at the top level since 2013 but had yet to achieve a world record.<ref name=AlexandraFeb /> In October{{nbsp}}2016, Kosmic managed to beat darbian's record with a time of 4:57.194,<ref name=Kemps /> using the new flagpole glitch in [[World 1-1]] and 4-1, but losing a framerule in 8-2 from a slow bullet bill glitch.<ref name=Snyder /> Two days later, darbian took the record back with a time of 4:56.878, breaking the 4:57 barrier by saving the framerule in 8-2 that Kosmic had lost.<ref name=Kemps /> One more flagpole glitch in 8-3 allowed darbian to drop the record to 4:56.528 on {{nowrap|October 20, 2017.}}<ref name=Gach2017 />
+
+[[File:Kosmic in 2019.png|thumb|American speedrunner [[Kosmic]] (pictured in 2019) was the first person to complete ''Super Mario Bros.''{{nbsp}}in 4{{nbsp}}minutes, 55{{nbsp}}seconds.]]
+
+Kosmic took the world record back in February{{nbsp}}2018.<ref name=Klepek /> In September{{nbsp}}2018, he broke the 4:56 barrier, achieving a time of 4:55.913 by implementing a wall clip in World{{nbsp}}1-2 to get to the warp zone faster.<ref name="AlexandraSep">{{Cite web |last=Alexandra |first=Heather |date=2018-09-25 |title=Speedrunner Achieves 'Impossible' Super Mario Bros. Record Time |url=https://kotaku.com/speedrunner-achieves-impossible-super-mario-bros-recor-1829308720 |access-date=2026-04-12 |website=Kotaku |language=en-US}}</ref> At the time, Kosmic faced competition from two other runners: somewes, who took the world record twice in 2018; and tavenwebb2002, who took the world record in 2019.<ref name="Good2018-06">{{Cite web |last=Good |first=Owen S. |date=2018-06-01 |title=Speedrunner breaks 5-minute barrier in Super Mario Bros. — using one hand |url=https://www.polygon.com/2018/6/1/17415078/super-mario-bros-speedrun-one-handed-record-kosmic-somewes/ |access-date=2026-04-13 |website=Polygon.com |language=en}}</ref><ref name=Alexandra2019 /> 
+
+=== Tying the theoretical limit ===
+In 2020, Niftski, a prominent speedrunner who had entered the scene the previous year,<ref name="Bennett">{{Cite news |last=Bennett |first=Jason |date=2021-05-16 |title=Niftski is a Different Kind of Keyboard Warrior |url=https://www.twingalaxies.com/feed_details.php/6141/niftski-is-a-different-kind-of-keyboard-warrior |archive-url=https://web.archive.org/web/20230221004544/https://www.twingalaxies.com/feed_details.php/6141/niftski-is-a-different-kind-of-keyboard-warrior |archive-date=2023-02-21 |access-date=2026-04-15 |work=[[Twin Galaxies]] |language=en}}</ref> started using a faster 8-2 strategy in his runs, which helped him reach his first world record of 4:55.430.<ref name="Donald" /> Niftski's world record was improved twice in early 2021 by Miniland, who got the time down to 4:55.230.<ref name="Henges" /> With that run, the difference between the world record and the theoretical perfect run of 4:54.265 became less than a second. A race to break the final 4:55 barrier was started between Niftski, LeKukie, Miniland, Thelxinoe, Tree_05, AldynSpeedruns, and jscarbo.<ref name="Bennett" /> On {{nowrap|April 7, 2021,}} Niftski broke the barrier by implementing a flagpole glitch and fast acceleration in World{{nbsp}}8-1, getting a time of 4:54.948. Kyle Orland of ''[[Ars Technica]]'' described this accomplishment as "speedrunning’s version of the [[four-minute mile]]".<ref name="Orland2021" />
+
+On {{nowrap|September 6, 2023,}} Niftski improved his time to 4:54.631<ref name="Bailey2023" /> with a new strategy for the wrong warp in World{{nbsp}}4-2: "Lightning 4-2". This strategy was first theorized by HappyLee in 2018, but was thought to be too difficult to perform outside of a tool-assisted speedrun.<ref name=Jiang>{{cite news|first=Sisi|last=Jiang|title=Only A Computer Could Do This Super Mario Bros. Trick — Until Now|url=https://kotaku.com/super-mario-bros-speedrun-frame-rule-4-2-world-record-1849396620|work=[[Kotaku]]|date=August 10, 2022|access-date=April 24, 2026}}</ref> "Lightning 4-2" allowed runners to match all of the [[#Frame rules|frame rules]] possible in a theoretically perfect speedrun for the first time.<ref name="Orland2023" /> Future runs would only be able to save time on the last level, World{{nbsp}}8-4.<ref name="Bailey2023" /> In August 2025, Niftski obtained a new world record of 18:49.972 in the warpless category, beating his previous record by more than five seconds.<ref name=Serin2025-08>{{cite news|first=Kaan|last=Serin|title="How do you even do this to a leaderboard of a popular game like Super Mario Bros?": Speedrunner beats the platformer's world record by 5 seconds, the biggest jump in over a decade|url=https://www.gamesradar.com/games/super-mario/how-do-you-even-do-this-to-a-leaderboard-of-a-popular-game-like-super-mario-bros-speedrunner-beats-the-platformers-world-record-by-5-seconds-the-biggest-jump-in-over-a-decade/|work=[[GamesRadar+]]|date=August 10, 2025|access-date=April 17, 2026}}</ref> This was the largest improvement in a single run of the category in over 10{{nbsp}}years.<ref name=Becher />
+
+{{External media|video1=[https://www.youtube.com/watch?v=jeyjmJkhLb0 Current world record run by Niftski]}}
+
+On {{nowrap|September 30, 2025,}} a bounty was announced by the [[woodworking]] company Wyrmwood: the ''Super Mario Bros.''{{nbsp}}speedrun world record holder as of {{nowrap|January 1, 2026,}} would receive $5,000 and a Mario-themed table.<ref name="BaileyOct2025" /> After two consecutive records by Niftski on October{{nbsp}}9<ref name="BaileyOct2025" /> and 23,<ref name="Serin" /> averge11 reclaimed the record on December{{nbsp}}18, winning the bounty and setting a time of 4:54.415, nine frames (150{{nbsp}}milliseconds) behind a theoretically perfect run.<ref name="Bell" /> In June{{nbsp}}2026, Brazilian speedrunner LeKukie saved three frames over averge11 with a time of 4:54.365.<ref>{{cite web | last = Colantonio | first = Giovanni | title = After 41 years, Super Mario Bros. players are 6 frames away from a literally perfect playthrough | date = August 10, 2026 | website = [[Polygon (magazine)|Polygon]] | url = https://www.polygon.com/super-mario-bros-speedrun-lekukie-world-record/ | access-date = August 14, 2026}}</ref> LeKukie, who had been playing since 2019, had been held back by inferior hardware, first running on a [[PlayStation 2]] via emulation and then on a Brazilian NES which runs slightly slower than the North American model. Various members of the ''Super Mario Bros.'' speedrunning community donated equipment to allow him to play at the top level.<ref name=Walker2026>{{cite web | last = Walker | first = John | title = ''Super Mario Bros.'' Speedrunners Are 0.1 Seconds Away From Perfection | website = [[Kotaku]] | date = August 11, 2026 | url = https://kotaku.com/super-mario-bros-speedrunners-lekukie-kosmic-perfect-run-2000723375 | access-date = August 14, 2026}}</ref> On August 13, Niftski reclaimed the record, pushing it to 4:54.332, four frames from a theoretically perfect run.<ref name=":0">{{Cite web |last=Colantonio |first=Giovanni |date=2026-08-14 |title=New Mario Bros. World Record Is Just 4 Frames Away From Perfection |url=https://www.polygon.com/super-mario-bros-niftski-speedrun-world-record/ |access-date=2026-08-14 |website=Polygon.com |language=en}}</ref>
+
+=== Input swapping dispute ===
+While swapping the input method had been allowed by the rules since October{{nbsp}}2025, a decision to ban the method was proposed in February of the following year and received the majority vote. Both averge11 and Niftski, who had been swapping between a computer keyboard and an [[Nintendo Entertainment System#Controllers|NES controller]] in runs, were not part of the moderation team but were brought in as consultants on the vote. On {{nowrap|March 30, 2026,}} Niftski released a video accusing averge11 of [[Electoral fraud|rigging the vote]] to sabotage his progress and claiming that the decision was done in [[bad faith]]. Niftski claimed that averge11 sent negative messages about him in private servers to motivate other members to conspire against him, while also pushing to close the vote early to avoid other members potentially voting against the rule change. Messages posted on averge11's private Discord server after the vote such as "no more Niftski" were also brought up. averge11 later responded on [[Twitter]], stating that they didn't "have an excuse for some of the behavior brought up in some of these documents, nor [did they] intend to excuse it."<ref name="ZollnerSabotage" /> After further community feedback, the decision was reversed in July 2026.<ref name=":0" />
+
+== Organization ==
+[[File:NES Super Mario.png|thumb|An original [[Nintendo Entertainment System]] with a ''Super Mario Bros.'' / ''[[Duck Hunt]]'' cartridge]]
+Currently, no formal organization or company officiates ''Super Mario Bros.''{{nbsp}}speedruns. Community decisions are managed by a team of volunteer moderators who verify runs submitted to Speedrun.com, vote on leaderboard rules, and moderate the community [[Discord]] server and Speedrun.com forums.<ref name=ZollnerSabotage>{{cite news|last=Zollner|first=Amelia|title=Super Mario Bros. Speedrunner Claims He's Being Sabotaged|url=https://kotaku.com/super-mario-bros-speedrunner-niftski-speedrun-tas-input-world-record-2000684012|date=April 1, 2026|access-date=April 12, 2026|work=[[Kotaku]]}}</ref>
+
+Speedruns can be performed on both official [[Nintendo]] consoles, such as the NES, or on a short list of approved [[Video game console emulator|emulators]].<ref name=Orland2023 /> Runners can choose to play on a variety of [[Game controller|controllers]] including [[Computer keyboard|computer keyboards]] and are allowed to switch controllers in the middle of a run.<ref name=Notis /> Controllers are also restricted to not register simultaneous left and right inputs, which cannot be performed with an unmodified NES controller and are prohibited by the rules.<ref name="Orland2021" /> [[Glitch]]es are allowed, but [[cheat code]]s or other hardware modications not possible on official Nintendo hardware are banned.{{citation needed|date=April 2026}} Timing begins once the player gains control of Mario and ends around the frame everything disappears after he touches the axe behind [[Bowser]] at the end of World{{nbsp}}8-4.<ref name=Hernandez2014>{{cite news|first=Patricia|last=Hernandez|title=Super Mario Bros. Beaten In Under Five Minutes, A New World Record|url=https://kotaku.com/super-mario-bros-beaten-in-under-five-minutes-a-new-w-1596649450|work=[[Kotaku]]|date=June 26, 2014|access-date=April 24, 2026}}</ref>
+
+== Performance ==
+
+Speedrunners acquire new [[personal record|personal best]] times by recording speedruns known as "attempts" or "runs". If a runner decides that a run is not going well enough, they often end their runs early or "reset" to fit more attempts into a session.<ref name=Hernandez2016-04-01 /> At the top level, it can often take thousands of attempts to acquire a new personal best.<ref name=Hernandez2021 /><ref name=Orland2021 /> Top runners often stream their attempts live on [[Twitch (service)|Twitch]].<ref name=Locker /><ref name=Hernandez2021 /> A common feature of these live streams is an on screen [[heart rate monitor]].<ref name=Kemps /><ref name=McWhertor /> During successful attempts, top runner heart rates can reach higher than 160{{nbsp}}[[Heart rate|beats per minute]].<ref name=Good2018-06 /><ref name=Hernandez2016-04-14 /> World record holder Niftski reached a heart rate of 188{{nbsp}}bpm at the end of one successful attempt.<ref name=Stanton />
+
+Outside of attempts, speedrunners practice individual tricks and levels with the help of outside tools, such as [[saved game#save states|save states]] and [[Flash cartridge|flashcarts]].<ref name="Klepek" /><ref name="Brown">{{cite news
+  | last         = Brown
+  | first        = Jennings 
+  | date         = Dec 21, 2016 
+  | title        = Super Mario Run Owes Its Record Success to the 'Speedrunner' Community
+  | url          = https://nymag.com/speed/2016/12/super-mario-run-owes-its-record-popularity-to-the-speedrunner-community.html
+  | work         = [[NYMag]]
+  | access-date  = 2025-01-12
+}}</ref>
+
+== Categories ==
+''Super Mario Bros.''{{nbsp}}speedrunners compete to achieve times in a number of different categories. Most categories still require the completion the game but may come with different rulesets or require additional game actions for completion.
+
+=== Any% ===
+The [[any%]] category is the shortest run that completes the game and also the most competitive.<ref name=BaileyOct2025 /> Glitches are allowed in this category.<ref name=Jacevic>{{cite thesis |last= Jacevic |first= Milan |date= 2022 |title= A Study in Practice |url= https://adk.elsevierpure.com/files/69058717/Dissertation_Online_Milan_Jacevic.pdf |type= PhD. |publisher= [[The Royal Danish Academy of Fine Arts, School of Design]] |access-date= 2026-04-16 |page=132}}</ref> Two different [[Warp (video games)|warp zones]] hidden by the developers are used in this category to skip much of the game.<ref name=McWhertor /> Speedrunners only need to play through 8 of the  32{{nbsp}}levels to reach the end.<ref name=Orland2023 /> Since 2007, the world record has been improved by less than six seconds. The current world record is 4:54.332 held by Niftski.<ref name=Bell />
+
+=== Warpless ===
+The warpless category bans the use of [[Warp (video games)|warp zones]] which allow the player to skip levels. Glitches including the walljump and flagpole glitch are still allowed. This category beats all 32{{nbsp}}levels in the base game.<ref name=Becher>{{cite news|first=Nicholar|last=Becher|title=Super Mario Bros. World Record Shattered by Niftski's Incredible Warpless Run|url=https://screenrant.com/super-mario-speedrun-world-record/|work=[[Screen Rant]]|date=August 11, 2025|access-date=April 15, 2026}}</ref> The current world record is 18:49.972 held by Niftski.<ref name=Serin2025-08 />
+
+=== Glitchless ===
+The glitchless category bans the use of glitches but is otherwise identical to any%. Glitches banned include wall jumps, wall clips, wrong warps, the flagpole glitch, and the bullet bill glitch. The current world record is 5:02.685 by Niftski.<ref name=Bailey2024 />
+
+=== All-Stars ===
+Speedruns are also performed on the ''[[Super Mario All-Stars]]'' version. This version has a number of relevant changes compared to the original, including [[Piranha Plant]]s having larger [[hitbox]]es and enemies [[despawn]]ing less often.<ref name=Good2018>{{cite news|first=Owen S.|last=Good|title=Top Super Mario Bros. speedrunner notches another world record|url=https://www.polygon.com/2018/4/8/17212260/super-mario-bros-speedrun-world-record-in-super-mario-all-stars/|work=[[Polygon (magazine)|Polygon]]|date=Apr 8, 2018|access-date=April 13, 2026}}</ref> The current world record for All-Stars any% is 4:55.780 by Niftski, the warpless record is 19:42.885 also by Niftski. 
+
+=== Category extensions ===
+On Speedrun.com, 40{{nbsp}}categories are recognized on the category extensions leaderboard. These categories are not a part of the base game's main leaderboards. One of these categories is "OneHand", whereby the game must be completed as fast as possible with only one hand.<ref name="Good2018-06" /> The world record for this category is 4:56.911, held by LeKukie.
+
+=== Tool-assisted ===
+''Super Mario Bros.''{{nbsp}}is also a popular target for tool-assisted speedrunners, who use tools such as [[Saved game#save states|save states]] and frame advance to perform tasks that would otherwise be impossible for a human.<ref name=Jacevic /> [[Tool-assisted speedrun]]s, abbreviated as TAS, are often used to identify the limits of human performance.<ref name=Gallagher>{{cite news|first=Danny|last=Gallagher|title=Gamer one-ups Super Mario Bros. speedrun record with amazing time|url=https://www.cnet.com/tech/gaming/gamer-one-ups-super-mario-bros-speedrun-record-with-amazing-time/|work=[[CNET]]|date=April 16, 2016|access-date=April 12, 2026}}</ref><ref name=Bailey2023 /> The current world record TAS was submitted on {{nowrap|January 6, 2011}} by HappyLee and beats the game in 4:54.032.{{efn|4:57.31 (TAS timing)}}{{efn|Tool-assisted runs are often timed using TAS timing, which begins as soon as the console is turned on and ends when the last button press is performed.}}<ref name=Henges /> The run exploits some techniques that require holding both left and right on the controller at the same time, something that is impossible to do on a normal NES controller.<ref name=Orland2021 /> Without the use of these techniques, which are banned in real time speedruns, the fastest TAS, created by Maru370, beats the game in 4:54.265. This run, completed in 2019, saved exactly one frame (about 16{{nbsp}}milliseconds) over the previous best tool-assisted run in that category.<ref name=Degraffinried>{{cite news|first=Natalie|last=Degraffinried|title=Speedrunner Smashes A Computer-Assisted Super Mario Bros. Record By A Single Frame|url=https://kotaku.com/speedrunner-smashes-a-computer-assisted-super-mario-bro-1834457319|work=[[Kotaku]]|date=May 1, 2019|access-date=April 17, 2026}}</ref> Tool-assisted speedruns have also been created for other categories. The fastest glitchless TAS completes the game in 5:02.485.{{efn|5:05.763 (TAS timing)}}<ref name="Bailey2024" />
+
+== Frame rules ==
+[[File:Frame rule bus.gif|thumb|256x256px|The frame rule bus analogy, showing Mario arriving and departing every 0.35{{nbsp}}seconds]]
+The unique way in which level completion is handled has a large effect on the set of possible times achievable in a speedrun. While ''Super Mario Bros.'' runs at 60.0988{{nbsp}}[[Frame rate|frames per second]], progression from one level to the next is tied to an internal counter that resets every 21{{nbsp}}frames, meaning the level completion time will always be a multiple of 21{{nbsp}}frames (0.35{{nbsp}}seconds).<ref>{{Cite web |last=Walker |first=Ian |date=2023-12-14 |title=Watch every sub-5-minute Super Mario Bros. speedrun at once |url=https://www.polygon.com/gaming/24001610/super-mario-bros-speedrun-nintendo-nes-tool-assisted-niftski/ |access-date=2025-09-16 |website=Polygon |language=en}}</ref> Each 21{{nbsp}}frame cycle is known as a frame rule. A popular analogy for frame rules compares them to a hypothetical bus that arrives at the end of the level every 21{{nbsp}}frames, with the player having to wait for the bus if the level is finished before its arrival.<ref name="Orland2021" /><ref name=Bailey2024>{{Cite web |last=Bailey |first=Dustin |date=2024-01-30 |title=A new Super Mario Bros speedrun world record is just 12 frames away from glitchless perfection and the runner says "I do not plan on just stopping here" |url=https://www.gamesradar.com/a-new-super-mario-bros-speedrun-world-record-is-just-12-frames-away-from-glitchless-perfection-and-the-runner-says-i-do-not-plan-on-just-stopping-here/ |access-date=2026-04-10 |website=GamesRadar+ |language=en}}</ref><ref name=Hernandez2016-04-01 /> 
+
+Because of the frame rule system, subtle differences in gameplay will typically not have any effect on the final completion time unless the level is completed very close to the end of a frame rule.<ref name=Hernandez2016-04-01 /> Frame rules help to set a minimum possible time for each level.<ref name=Bailey2023 /> They also help control the game's randomness. A [[pseudorandom number generator]] generates a value each frame that determines the behavior of enemies.<ref name=Snyder /> These values will always be the same if a speedrunner can match the frame rules of a previous run.<ref name=Snyder />
+
+An exception to the frame rule system are [[Lag (video games)|lag frames]], which delay the game by one frame (17 milliseconds) but otherwise leave gameplay unaffected. In at least one case, a runner has failed to achieve a new world record due to a single frame of lag.<ref>{{cite news |last1=Brian |title=Update: Tied, not broken - Player sets new Super Mario Bros. world record within a single frame |url=https://nintendoeverything.com/player-sets-new-super-mario-bros-world-record-within-a-single-frame/ |access-date=25 September 2026 |work=Nintendo Everything |date=2 October 2016 |language=en}}</ref><ref>{{cite news |last1=Gach |first1=Ethan |title=World Record For Super Mario Bros. Broken By A Single Frame [UPDATE] |url=https://kotaku.com/world-record-for-super-mario-bros-broken-by-a-single-f-1787319130 |access-date=25 September 2026 |work=Kotaku |date=2 October 2016}}</ref>
+
+The only level without frame rules is World{{nbsp}}8-4, where touching the axe stops the timer immediately and marks the end of the speedrun.<ref name=Bailey2025>{{Cite web |last=Bailey |first=Dustin |date=2025-01-10 |title=It took 490 days, but the Super Mario Bros speedrun world record is now 4 frames better – and just 18 frames away from literal perfection |url=https://www.gamesradar.com/games/super-mario/it-took-490-days-but-the-super-mario-bros-speedrun-world-record-is-now-4-frames-better-and-just-18-frames-away-from-literal-perfection/ |access-date=2025-09-16 |website=GamesRadar+ |language=en}}</ref><ref name=Bailey2023>{{Cite web |last=Bailey |first=Dustin |date=2023-09-07 |title=There's a new Super Mario Bros speedrun world record, and it's only 22 frames away from literal perfection |url=https://www.gamesradar.com/theres-a-new-super-mario-bros-speedrun-world-record-and-its-only-22-frames-away-from-literal-perfection/ |access-date=2025-09-16 |website=GamesRadar+ |language=en}}</ref> Subtle gameplay differences even by a frame affect the final time in this level.
+
+== Techniques ==
+
+=== Flagpole glitch ===
+To complete a non-castle level without using warp zones, the player has to touch a flagpole at the end of the level, which starts a [[cutscene]] of [[Mario]] lowering the flag and walking into the castle. By carefully controlling Mario's movement with [[sub-pixel]] precision, the player can clip Mario inside the block the flagpole is placed on. Touching the flagpole in this position skips the flag lowering animation, letting Mario move into the castle right away.<ref name=Orland2021 /> Each instance of the flagpole glitch generally saves one frame rule, or 0.35{{nbsp}}seconds.<ref name=Gach2017 /><ref name=Hernandez2021 /><ref name=Roeder /> The method of performing this technique used in real time runs was discovered by sockfolder.<ref name=Kemps /> In the discovery of this method, sockfolder wrote a [[computer program]] to do a [[brute force search]] through Mario's potential movement options.<ref name=Roeder /> This glitch played a large part in bringing any% speedruns below 4:57.<ref name=Kemps />
+
+=== Bullet Bill Glitch ===
+
+A more advanced version of the flagpole glitch can be performed in World{{nbsp}}8-2 by clipping into the flagpole block with a bounce off a [[Bullet Bill (Mario)|Bullet Bill]], which skips the animation of Mario walking to the castle.<ref name="Orland2021" /> To perform this glitch more consistently, speedrunners begin each run by waiting on the title screen for a certain amount of time, starting the run on a specific [[frame rule]]. This controls enemy behavior and causes the Bullet Bill to leave its cannon as fast as possible.<ref name=Gach2017 /> In 2016, the world record holder at the time, [[darbian]], could only successfully perform the trick about 10% of the time.<ref name=Hernandez2016-04-01 /> This glitch was first implemented in speedruns by Blubbler in 2014.<ref name=Good2014 /> A faster version was discovered by Kriller37 in 2020, which enabled Niftski to achieve his first world record.<ref name=Bennett /><ref name=Henges />
+
+=== Wrong warp ===
+The destination of warp pipes and vines found throughout the levels is determined by a single value stored in the console's [[Random-access memory|RAM]]. This value is updated as players progress in the level to allow vines and pipes to warp to the correct locations.<ref name=Snyder /> By carefully controlling Mario's position on screen or by backtracking once the warp destination has been updated, speedrunners can cause a warp pipe to take them to an unintended location. This is known as a wrong warp.<ref name=Orland2021 /> A significant use of this glitch is in [[#World 4-2|World 4-2]].<ref name=Licht /> It is also used in the "turnaround room" of World 8-4.<ref name=Degraffinried />
+
+=== Wall jump ===
+In ''Super Mario Bros.'', walls are made up of {{nowrap|16 × 16 pixel}} tiles. By jumping into a wall such that Mario's feet touch the boundary between one wall tile and the next, runners can stand inside the wall briefly. By jumping during this time, runners can get a second jump off the wall. This is used in World{{nbsp}}8-4 to reach a floating pipe.<ref name=Hernandez2016-04-01 /> The use of this glitch in runs was first pioneered by andrewg.<ref name=Roeder />
+
+=== Fast acceleration ===
+Runners can exploit the fact that Mario accelerates faster going backwards to reach his top speed quicker.<ref name=Hernandez2016-04-01 /> Jumping backwards from a standstill is known as "fast acceleration" and a number of precise inputs are required to execute it.<ref name=Orland2021 /> The technique is used in the fastest strategy in World{{nbsp}}8-1 to save one frame rule.<ref name=Orland2021 /> It can also be used in World{{nbsp}}8-4 to save a few frames.<ref name=Snyder />
+
+=== Arbitrary code execution ===
+By accessing the [[Minus World]] on the [[Famicom Disk System]] version of ''Super Mario Bros.'', a version of [[arbitrary code execution]] can be performed. This glitch allow players to reprogram the game using only the inputs provided by a [[Famicom]] controller. Arbitrary code execution (ACE) was discovered by a team of runners lead by Kosmic. It was first theorized after a similar glitch was discovered in ''[[Super Mario Bros.: The Lost Levels]]''. It currently does not save time in any speedrun and is too precise to be performed by humans, only being possible in a [[tool-assisted speedrun]].<ref name=ZollnerAce>{{cite web|website=[[Kotaku]]|title=The Original Super Mario Bros. Is Still Hiding Secrets 40 Years Later|url=https://kotaku.com/mario-bros-glitch-secrets-nes-speedrunning-2000684290|date=April 2, 2026|access-date=April 11, 2026|first=Amelia|last=Zollner}}</ref><ref>{{cite web|website=[[Polygon (website)|Polygon]]|title=Super Mario Bros. players uncover the biggest glitch in the game's 40-year history|url=https://www.polygon.com/super-mario-bros-ace-trick-discovered/|date=Apr 2, 2026|first=Giovanni|last=Colantonio|access-date=April 11, 2026}}</ref>
+
+== Strategies ==
+
+=== World 4-2 ===
+
+In World{{nbsp}}4-2, a wrong warp is used to save about five seconds.<ref name=Licht /><ref name=Snyder /> If Mario's position on screen is displaced by 20{{nbsp}}pixels, speedrunners can get to the warp zone by descending down a pipe instead of climbing a set of vines, skipping an slow climbing animation.<ref name=Roeder /> It was discovered by [[andrewg]] and first implemented in 2007.<ref name=Licht /> The wrong warp is performed by bumping into objects while travelling backwards, which causes Mario to move forward on the screen.<ref name=Snyder />  Originally, three bumps were used to get the necessary displacement.<ref name=Licht /> 
+
+A version of the wrong warp using two bumps, a trick known as "fast 4-2", was eventually implemented,<ref name=Roeder /> saving one frame rule.<ref name=Snyder /> This version was much more difficult to execute, with [[darbian]] in 2016 estimating he could successfully perform the trick about 3% of the time.<ref name=Roeder /> When flagpole glitch was discovered many runners abandoned "fast 4-2" in favor of more consistent strategies.<ref name=Gach2017 /><ref name=Gach2016>{{cite news|first=Ethan|last=Gach|title=Why The Super Mario Bros. World Record Has Been Broken So Many Times Recently|url=https://kotaku.com/new-glitch-reignites-the-super-mario-bros-speedrun-rac-1787596081|work=[[Kotaku]]|date=October 10, 2016|access-date=April 22, 2026}}</ref> Eventually, an alternative method of the trick was implemented that involved clipping into a wall.<ref name=Jiang /><ref name=Orland2021 />
+
+The current fastest method of performing the World{{nbsp}}4-2 wrong warp is a precise setup known as "Lightning 4-2", faster by one frame rule than all previous methods.<ref name=Orland2023 /> "Lightning 4-2" was first theorized by HappyLee in 2018 but was considered to be too difficult to execute in runs.<ref name=Jiang /><ref name=Orland2023 /> HappyLee's method involved jumping on a precise frame following a wall clip.<ref name=Jiang /> KingOfJonnyBoy discovered a different method of executing the trick, which replaced the wall clip with a bump into a coin block and a wall jump up to the pipe.<ref name=Orland2023 /> In 2021, Niftski attempted to use this method to execute the trick for the first time in a run.<ref name=Henges /> Two years later, this trick allowed Niftski to achieve a new Any% world record of 4:54.631, tying the best possible run up to the last level.<ref name=Orland2023 />
+
+== Legacy ==
+
+At a [[Nintendo World Store]] event celebrating the 25th{{nbsp}}anniversary of the release of ''Super Mario Bros'', [[Andrew Gardikis]] was invited to speedrun it live in front of its lead designer, [[Shigeru Miyamoto]].<ref name=Plafke>{{Cite news|first=James|last=Plafke|title=Mario Speedrunner Can't Quite Recreate His 5-Minute Record in Front of Mario Creator|url=https://www.themarysue.com/mario-speedrunner-fails/|date=November 8, 2010|work=[[The Mary Sue]]|access-date=April 17, 2026}}</ref> According to Miyamoto, ''Super Mario Bros.''{{nbsp}}speedruns inspired the [[Endless runner|auto-running]] mechanic used in the 2016 mobile game ''[[Super Mario Run]]''.<ref name=Bernstein>{{cite news|first=Joseph|last=Bernstein|title=Shigeru Miyamoto Explains Why Nintendo Finally Brought Mario To The iPhone|url=https://www.buzzfeednews.com/article/josephbernstein/shigeru-miyamoto-interview-super-mario-run-iphone-ipad-for-t#.tsrWPvQRd|date=December 7, 2016|work=[[Buzzfeed News]]|access-date=April 17, 2026}}</ref>
+
+At [[Summer Games Done Quick]] 2018, a charity speedrunning marathon benefiting [[Médecins Sans Frontières]] (MSF), Kosmic and three other runners participated in a race of the warpless category.<ref name=Good2018 /> Kosmic also pledged to run the "OneHand" category as a bonus donation incentive.<ref name=Good2018-06 /> $2.12{{nbsp}}million dollars were raised for MSF over the course of the event.<ref name=Fogel>{{cite news|first=Stefanie|last=Fogel|title=Summer Games Done Quick Raises Over $2.12 Million for Doctors Without Borders|url=https://variety.com/2018/gaming/news/summer-games-done-quick-2018-1202863207/|work=[[Variety (magazine)|Variety]]|date=July 2, 2018|access-date=April 17, 2026}}</ref> $20,668 of that donation was raised towards Kosmic's one-handed speedrun incentive.<ref>{{cite web|url=https://tracker.gamesdonequick.com/tracker/run/3072|website=[[Games Done Quick]]|title=Super Mario Bros. warpless — Summer Games Done Quick 2018|access-date=April 17, 2026}}</ref>
+
+== Any% world record progression ==
+
+{|class="wikitable"
+! class="col" | Date
+! class="col" | Time
+! class="col" | Runner
+!Notes
+! class="col" | {{abbr|Ref.|Reference}}
+|-
+|January 2004
+|5:14{{efn|name=kessler517|5:17 (Twin Galaxies timing)}}
+|Scott Kessler
+|
+|<ref name=Burnes>{{cite news|first=Andrew|last=Burnes|title=Super Mario Brothers Beaten In 5 Mins 17 Secs|url=https://www.ign.com/articles/2004/02/26/super-mario-brothers-beaten-in-5-mins-17-secs|work=[[IGN]]|date=Jun 19, 2012|access-date=April 14, 2026}}</ref>
+|-
+|February 2004
+|5:11{{efn|name=kessler514|5:14 (Twin Galaxies timing)}}
+|Scott Kessler
+|
+|<ref>{{cite web|title=Super Mario Bros Now Down to 5:14|url=http://www.twingalaxies.com/index.aspx?c=12&id=692|archive-url=https://web.archive.org/web/20100107122643/http://www.twingalaxies.com/index.aspx?c=12&id=692|archive-date=January 7, 2010|website=[[Twin Galaxies]]|date=April 30, 2004}}</ref>
+|-
+|April 2004
+|5:10{{efn|name=kessler513|5:13 (Twin Galaxies timing)}}
+|Scott Kessler
+|
+|<ref>{{cite web|first=Kelly R.|last=Flewin|title=Super Mario Bros. Verified at 5:13 Fastest Time|url=http://www.twingalaxies.com/index.aspx?c=12&id=706|archive-url=https://web.archive.org/web/20100107122342/http://www.twingalaxies.com/index.aspx?c=12&id=706|archive-date=January 7, 2010|website=[[Twin Galaxies]]|date=May 7, 2004}}</ref>
+|-
+|October 2004
+|5:07{{efn|name=seguin510|5:10 (Twin Galaxies timing)}}
+|Trevor Seguin
+|
+|<ref>{{cite web|first=Kelly|last=Flewin|title=Newcomer to the SMB Minimalist Speedrun Arena sets a NEW WR OF 5m10s!!!
+|url=http://www.twingalaxies.com/index.aspx?c=46&id=908|archive-url=https://web.archive.org/web/20050213215236/http://www.twingalaxies.com/index.aspx?c=46&id=908|archive-date=February 13, 2005|website=[[Twin Galaxies]]|date=September 29, 2004}}</ref>
+|-
+|November 2004
+|5:06{{efn|name=seguin509|5:09 (Twin Galaxies timing)}}
+|Trevor Seguin
+|
+|<ref>{{cite web|first=Kelly|last=Flewin|title=Trevor Seguin rings in Christmas with an astounding NEW Minimalist Run WR time of 5m9s Super Mario Bros.
+|archive-url=https://web.archive.org/web/20050903064159/http://www.twingalaxies.com/index.aspx?c=46&id=931|url=http://www.twingalaxies.com/index.aspx?c=46&id=931|archive-date=September 3, 2005|website=[[Twin Galaxies]]|date=December 25, 2004}}</ref>
+|-
+|May 2005
+|5:05.846{{efn|name=andrewg508|5:09 (Twin Galaxies timing). Considered to be tied world record at the time.}}
+|[[Andrew Gardikis|andrewg]]
+|
+|<ref name=Baker2007>{{cite news|first=Billy|last=Baker|title=All thumbs: A Quincy youth shoots for a perfect run in record time in Super Mario video game|url=https://www.boston.com/news/local/articles/2007/03/25/all_thumbs/|work=[[The Boston Globe]]|date=March 21, 2007|archive-url=https://web.archive.org/web/20140724070407/https://www.boston.com/news/local/articles/2007/03/25/all_thumbs/|archive-date=July 24, 2014}}</ref>
+|-
+|October 2006
+|5:05.397{{efn|name=kessler508|5:08 (Twin Galaxies timing)}}
+|Scott Kessler
+|
+|<ref name=Baker2007 /><ref name=Kessler508>{{cite web|first=Kelly|last=Flewin|title=Scott Kessler Attains "Holy Grail" as he takes the Legendary Nes Title, Super Mario Bros. 1 down to 5m08s!
+|archive-url=https://web.archive.org/web/20080803065928/http://www.twingalaxies.com/index.aspx?c=46&id=1399|url=http://www.twingalaxies.com/index.aspx?c=46&id=1399|website=[[Twin Galaxies]]|date=October 16, 2006|archive-date=August 3, 2008}}</ref>
+|-
+|April 10, 2007
+|5:00.355
+|andrewg
+|First run on [[Speed Demos Archive|SDA]]. Wrong warps and wall jump implemented.
+|<ref name=Licht>{{cite web|first=Christoph|last=Licht|title=Speedrun: Super Mario Bros. Interview|url=https://www.gamersglobal.de/interview/speedrun-super-mario-bros|website=Gamers Global|date=July 27, 2009|access-date=April 21, 2026|language=de}}</ref><ref name="Kohler">{{cite magazine
+  | first = Chris
+  | last  = Kohler
+  | title = Super Mario Bros.: The Five-Minute Speed Run
+  | url   = https://www.wired.com/2007/04/super-mario-bro/
+  | magazine  = [[Wired (magazine)|Wired]]
+  | date  = April 23, 2007
+  | access-date = April 17, 2026
+}}</ref>
+|-
+|December 24, 2010
+|4:59.690
+|andrewg
+|First run under 5 minutes.
+|<ref name=SDA459 />
+|-
+|December 15, 2011
+|4:58.874
+|andrewg
+|
+|<ref name=SDA458>{{cite web|title=Super Mario Bros.|website=[[Speed Demos Archive]]|archive-url=https://web.archive.org/web/20121122015240/http://speeddemosarchive.com/Mario1.html|url=https://speeddemosarchive.com/Mario1.html|archive-date=November 22, 2012}}</ref>
+|-
+|January 15, 2013
+|4:58.791
+|andrewg
+|
+|<ref name=Higgins>{{cite web|first=Chris|last=Higgins|title=Super Mario Bros. in 5 Minutes|url=https://www.mentalfloss.com/article/33659/super-mario-bros-5-minutes|work=[[Mental Floss]]|date=January 23, 2013|access-date=April 17, 2026}}</ref>
+|-
+|January 19, 2013
+|4:58.575
+|andrewg
+|
+|
+|-
+|March 21, 2013
+|4:58.525
+|andrewg
+|
+|
+|-
+|May 19, 2013
+|4:58.359
+|andrewg
+|
+|
+|-
+|July 1, 2013
+|4:58.159
+|andrewg
+|"fast 4-2" implemented.
+|
+|-
+|October 7, 2013
+|4:58.142
+|andrewg
+|
+|
+|-
+|March 25, 2014
+|4:58.092
+|andrewg
+|
+|<ref name=Irwin>{{cite news
+  | last         = Irwin
+  | first        = Jon 
+  | date         = 2015-08-31
+  | title        = Why we love Mario
+  | url          = https://killscreen.com/previously/articles/why-we-love-mario/
+  | archive-url  = https://web.archive.org/web/20200815011923/https://killscreen.com/previously/articles/why-we-love-mario/
+  | archive-date = 2020-08-15
+  | work         = [[Kill Screen]]
+  | access-date  = 2025-01-12
+}}</ref>
+|-
+|June 25, 2014
+|4:57.693
+|Blubbler
+|Bullet bill glitch implemented.
+|<ref name=Good2014>{{cite news
+  | last         = Good
+  | first        = Owen S.  
+  | date         = Jun 28, 2014
+  | title        = There's a new world record for fastest completion of Super Mario Bros.
+  | url          = https://www.polygon.com/2014/6/28/5852892/super-mario-bros-speedrun-world-record
+  | work         = [[Polygon (website)|Polygon]]
+  | access-date  = 2025-01-22
+}}</ref><ref name=Hernandez2014 />
+|-
+|October 18, 2015
+|4:57.627
+|[[darbian]]
+|
+|<ref name="Locker">{{cite magazine
+  | last         = Locker
+  | first        = Melissa 
+  | date         = October 21, 2015
+  | title        = Gaming Hero Beats Super Mario Bros in Less Than 5 Minutes
+  | url          = https://time.com/4081112/super-mario-bros-world-record/
+  | magazine         = [[Time (magazine)|Time]]
+  | access-date  = 2025-01-22
+}}</ref><ref name=McWhertor>{{cite news
+  | last         = McWhertor
+  | first        = Michael 
+  | date         = Oct 21, 2015
+  | title        = This is the world's fastest Super Mario Bros. speedrun
+  | url          = https://www.polygon.com/2015/10/21/9584302/super-mario-bros-speedrun-world-record
+  | work         = [[Polygon (website)|Polygon]]
+  | access-date  = 2026-04-12
+}}</ref>
+|-
+|January 14, 2016
+|4:57.427
+|darbian
+|First record to implement both "fast 4-2" and the bullet bill glitch.<ref name=Snyder />
+|<ref name=Hernandez2016-04-01>{{cite news|first=Patricia|last=Hernandez|title=Why It's Taking Years To Shave Seconds Off The World Record For Super Mario Bros.|url=https://kotaku.com/why-its-taking-years-to-shave-seconds-off-the-world-rec-1768197256|work=[[Kotaku]]|date=April 1, 2016|access-date=April 14, 2026}}</ref>
+|-
+|April 14, 2016
+|4:57.260
+|darbian
+|
+|<ref name="Moore">{{cite news
+  | last         = Moore
+  | first        = Sam 
+  | date         = 15 April 2016
+  | title        = Watch This Guy Complete Super Mario In Under Five Minutes
+  | url          = https://www.nme.com/blogs/nme-blogs/guy-completes-super-mario-bros-in-under-five-mins-9372
+  | work         = [[NME]]
+  | access-date  = 2025-01-22
+}}</ref><ref name=Hernandez2016-04-14>{{cite news
+  | last        = Hernandez
+  | first       = Patricia
+  | title       = Super Mario Bros. World Record Beaten With Near-Perfect Run
+  | url         = https://kotaku.com/a-new-world-record-for-beating-super-mario-bros-as-fas-1737388727
+  | date        = April 14, 2016
+  | work        = [[Kotaku]]
+  | access-date = April 24, 2026
+}}</ref>
+|-
+|August 11, 2016
+|4:57.244
+|darbian
+|
+|
+|-
+|October 4, 2016
+|4:57.194
+|[[Kosmic]]
+|Flagpole glitch in World 1-1 and 4-1 implemented.
+|<ref name=Totilo>{{cite news|first=Stephen|last=Totilo|title=Speedrunner Claims New Super Mario Bros. World Record By .05 Seconds|url=https://kotaku.com/speedrunner-claims-new-super-mario-bros-world-record-b-1787394918|work=[[Kotaku]]|date=October 4, 2016|access-date=April 24, 2026}}</ref>
+|-
+|October 6, 2016
+|4:56.878
+|darbian
+|
+|<ref name="Roeder">{{cite news
+  | last         = Roeder
+  | first        = Oliver 
+  | date         = Oct 19, 2016
+  | title        =  People Are Making Super Mario Go Faster Than Ever 
+  | url          = https://fivethirtyeight.com/features/people-are-making-super-mario-go-faster-than-ever/
+  | archive-url  = https://web.archive.org/web/20161020183654/http://fivethirtyeight.com/features/people-are-making-super-mario-go-faster-than-ever/
+  | url-status   = dead
+  | archive-date = October 20, 2016
+  | work         = [[FiveThirtyEight]]
+  | access-date  = 2025-01-22
+}}</ref><ref name=Kemps>{{cite news
+  | last         = Kemps
+  | first        = Heidi 
+  | date         = October 6, 2016
+  | title        = Super Mario Bros. Speedrun Record Shattered By a Matter of Milliseconds
+  | url          = https://www.vice.com/en/article/super-mario-speedrun-record-shattered-by-milliseconds/
+  | work         = [[Vice Media|Vice]]
+  | access-date  = 2025-01-22
+}}</ref>
+|-
+|October 20, 2017
+|4:56.528
+|darbian
+|Flagpole glitch in World 8-3 implemented.
+|<ref name=Gach2017>{{cite news|first=Ethan|last=Gach|title=A New World Record Means Super Mario Bros. Speedrunners Are Running Out Of Options|url=https://kotaku.com/a-new-world-record-means-super-mario-bros-speedrunners-1819756065|work=[[Kotaku]]|date=October 22, 2017|access-date=April 14, 2026}}</ref>
+|-
+|February 16, 2018
+|4:56.462
+|Kosmic
+|Wall clip in world 4-2 implemented.
+|<ref name=AlexandraFeb>{{cite news|first=Heather|last=Alexandra|title=Super Mario Bros. Speedruns Are One Step Closer To Best Possible Time|url=https://kotaku.com/super-mario-bros-speedruns-are-one-step-closer-to-best-1823077489|work=[[Kotaku]]|date=February 16, 2018|access-date=April 12, 2026}}</ref><ref name="Klepek">{{cite news|first=Patrick|last=Klepek|title=The 33-Year Quest for the Perfect Run of 'Super Mario Bros.' Is Almost Over|url=https://www.vice.com/en/article/the-33-year-quest-for-the-perfect-run-of-super-mario-bros-is-almost-over/|work=[[Vice Media|Vice]]|date=February 20, 2018|access-date=April 17, 2026}}</ref>
+|-
+|May 25, 2018
+|4:56.245
+|somewes
+|
+|<ref name=Good2018-06 />
+|-
+|September 25, 2018
+|4:55.913
+|Kosmic
+|Pipe clip in world 1-2 implemented and first run under 4:56.
+|<ref name=AlexandraSep />
+|-
+|October 22, 2018
+|4:55.796
+|somewes
+|
+|<ref name=Alexandra2019 />
+|-
+|August 2, 2019
+|4:55.746
+|tavenwebb2002
+|
+|<ref name=Alexandra2019>{{cite news|first= Heather |last= Alexandra |title= It's Been A Spectacular Few Days For Mario Speedrunning |url= https://kotaku.com/its-been-a-spectacular-few-days-for-mario-speedrunning-1836979545 |work=[[Kotaku]] |date= August 5, 2019 |access-date=April 20, 2026}}</ref>
+|-
+|January 17, 2020
+|4:55.646
+|Kosmic
+|
+|<ref name=Donald />
+|-
+|November 13, 2020
+|4:55.430
+|[[Niftski]]
+|Faster bullet bill glitch implemented.
+|<ref name=Donald>{{cite news
+  | last         = Donald
+  | first        = Malcolm
+  | date         = Nov 14, 2020
+  | title        = Speedrunner Niftski Sets New Super Mario Bros World Record
+  | url          = https://www.thegamer.com/speedrunner-niftski-sets-super-mario-bros-world-record/
+  | work         = TheGamer
+  | access-date  = 2023-09-27
+}}</ref>
+|-
+|January 2, 2021
+|4:55.314
+|Miniland
+|
+|
+|-
+|February 4, 2021
+|4:55.230
+|Miniland
+|
+|<ref name=Bennett />
+|-
+|April 7, 2021
+|4:54.948
+|Niftski
+|Flagpole glitch in World 8-1 implemented and first run under 4:55.
+|<ref name=Hernandez2021>{{cite news
+  | last         = Hernandez
+  | first        = Patricia 
+  | date         = Apr 7, 2021
+  | title        = 'Perfect' Super Mario Bros. speedrun beat after two years
+  | url          = https://www.polygon.com/22372715/super-mario-bros-speedrun-record-4-54-55-niftski
+  | work         = [[Polygon (website)|Polygon]]
+  | access-date  = 2023-09-27
+}}</ref><ref name=Henges>{{cite news
+  | last         = Henges
+  | first        = Elizabeth 
+  | date         = 15 Apr 2021
+  | title        =  The Super Mario Bros. speedrunning community just broke the 4 minute and 55-second mark - why does that matter? 
+  | url          = https://www.eurogamer.net/the-super-mario-bros-speedrunning-community-just-broke-the-4-minute-and-55-second-mark-why-does-that-matter
+  | work         = [[Eurogamer]]
+  | access-date  = 2023-09-27
+}}</ref>
+|-
+|November 5, 2021
+|4:54.914
+|Miniland
+|
+|<ref name=Notis />
+|-
+|December 2, 2021
+|4:54.881
+|Niftski
+|
+|<ref name=Notis />
+|-
+|August 7, 2022
+|4:54.798
+|Niftski
+|
+|<ref name=Notis>{{cite news
+  | last         = Notis
+  | first        = Ari 
+  | date         = August 8, 2022
+  | title        = Super Mario Bros. World Record Now Just A Half-Second Short Of A Perfect Run
+  | url          = https://kotaku.com/super-mario-bros-speedrunner-world-record-niftski-1849386352
+  | work         = [[Kotaku]]
+  | access-date  = 2023-09-27
+}}</ref>
+|-
+|September 6, 2023
+|4:54.631
+|Niftski
+|"Lightning 4-2" implemented and first run to match the [[tool assisted speedrun|TAS]] up to 8-4.
+|<ref name=Orland2023>{{cite news
+  | last         = Orland
+  | first        = Kyle
+  | date         = September 8, 2023
+  | title        = Record-breaking Super Mario Bros. speedrun approaches robotic perfection
+  | url          = https://arstechnica.com/gaming/2023/09/record-breaking-super-mario-bros-speedrun-approaches-robotic-perfection/
+  | work         = [[Ars Technica]]
+  | access-date  = 2023-09-27
+}}</ref><ref name=Phillips>{{cite news|first=Kara|last=Phillips|date=September 8, 2023|title=A new Super Mario Bros. speedrun record has been set|url=https://www.techradar.com/gaming/a-new-super-mario-bros-speedrun-record-has-been-set|work=[[Techradar]]|access-date=April 12, 2026}}</ref>
+|-
+|January 9, 2025
+|4:54.565
+|Niftski
+|
+|<ref name=Bailey2025 /><ref name=Stanton>{{cite news
+  | last         = Stanton
+  | first        = Rich 
+  | date         = January 17, 2025
+  | title        = Super Mario Bros. speedrunner sets a new world record on a PC using keyboard controls and boldly proclaims they're 'now 0.3 seconds off of absolute perfection'
+  | url          = https://www.pcgamer.com/games/super-mario-bros-speedrunner-sets-a-new-world-record-on-a-pc-using-keyboard-controls-and-boldly-proclaims-theyre-now-0-3-seconds-off-of-absolute-perfection/
+  | work         = [[PC Gamer]]
+  | access-date  = 2025-02-23
+}}</ref>
+|-
+|August 28, 2025
+|4:54.515
+|averge11
+|
+|<ref name="BaileySep2025">{{cite news|first=Dustin|last=Bailey|work=GamersRadar+|title=For the first time in 4 years, there's a new Super Mario Bros speedrun world record holder: "We are now only 15 frames away from a perfect speedrun"|url=https://www.gamesradar.com/games/super-mario/for-the-first-time-in-4-years-theres-a-new-super-mario-bros-speedrun-world-record-holder-we-are-now-only-15-frames-away-from-a-perfect-speedrun/|date=September 3, 2025|access-date=April 12, 2026}}</ref>
+|-
+|October 9, 2025
+|4:54.482
+|Niftski
+|
+|<ref name="BaileyOct2025">{{cite web|last=Bailey|first=Dustin|date=October 9, 2025|url=https://www.gamesradar.com/games/super-mario/super-mario-bros-speedrun-legend-returns-to-the-most-competitive-category-after-usd5-000-bounty-and-sets-2-world-records-in-a-day-if-this-isnt-proof-that-im-him-i-dont-know-what-is/|title=''Super Mario Bros'' speedrun legend returns to the most competitive category after $5,000 bounty and sets 2 world records in a day: "If this isn't proof that I'm him, I don't know what is"|website=[[GamesRadar+]]|access-date=October 23, 2025}}</ref>
+|-
+|October 23, 2025
+|4:54.448
+|Niftski
+|
+|<ref name=Serin>{{cite news|first=Kaan|last=Serin|title=Super Mario Bros speedrunner is now just 11 frames away from the absolute perfect playthrough of the 40-year-old classic, after beating the world record for the third time this year|url=https://www.gamesradar.com/games/super-mario/super-mario-bros-speedrunner-is-now-just-11-frames-away-from-the-absolute-perfect-playthrough-of-the-40-year-old-classic-after-beating-the-world-record-for-the-third-time-this-year/|work=[[GamesRadar+]]|date=October 23, 2025|access-date=April 15, 2026}}</ref>
+|-
+|December 18, 2025
+|4:54.415
+|averge11
+|
+|<ref name="Bell">{{cite news|first=Alice|last=Bell|title=Celebrate Mario Day with these Super Mario record breakers including an iconic speedrun|url=https://www.guinnessworldrecords.com/news/2026/3/celebrate-mario-day-with-these-super-mario-record-breakers-including-an-iconic-speedrun|work=[[Guinness World Records]]|date=March 10, 2026|access-date=April 13, 2026}}</ref>
+|-
+|June 2, 2026
+|4:54.365
+|LeKukie
+|
+|<ref name=Walker2026 />
+|-
+|August 13, 2026
+|4:54.332
+|Niftski
+|4 frames (0.067 seconds) off the theorized best possible time of 4:54.265.
+|<ref name=":0" />
+|}
+
+== Notes ==
+{{notelist}}
+
+== References ==
+{{reflist}}
+
+== External links ==
+*[https://www.speedrun.com/smb1/guides/jdxw8 SMB1 world record progression]
+*[https://www.speedrun.com/smb1 Official community leaderboards]
+*[https://www.youtube.com/watch?v=c8mZMi1FyU0 Current any% world record]
+*[https://tasvideos.org/1715M Super Mario Bros. "warps" TAS by HappyLee]
+
+{{Speedrunning}}
+{{Mario franchise}}
+{{Super Mario}}
+
+[[Category:Super Mario Bros.|Speedrunning]]
+[[Category:Speedrunning by game]]
+[[Category:Nintendo fandom]]

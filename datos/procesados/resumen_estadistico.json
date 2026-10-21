@@ -1,0 +1,2415 @@
+{
+  "constantes": {
+    "fps_ntsc": 60.0988138974405,
+    "frame_rule_frames": 21,
+    "seg_por_frame": 0.016639263492063495,
+    "seg_por_frame_rule": 0.3494245333333334,
+    "optimo_teorico_s": 294.265,
+    "optimo_teorico_fmt": "4:54.265",
+    "inicio_historico_s": 314,
+    "inicio_historico_fmt": "5:14.000"
+  },
+  "corpus": {
+    "n_runs": 6752,
+    "mejor_s": 294.332,
+    "mejor_fmt": "4:54.332",
+    "media_s": 326.4537470379147,
+    "mediana_s": 305.0,
+    "desv_est_s": 268.74795791806497,
+    "coef_variacion_pct": 82.32344102543026,
+    "n_nucleo_hasta_600s": 6721,
+    "media_nucleo_s": 320.40376432078557,
+    "desv_est_nucleo_s": 36.88800825602227,
+    "coef_variacion_nucleo_pct": 11.512975927177404,
+    "iqr_s": 26.50999999999999,
+    "mad_s": 7.0,
+    "max_s": 21631.0,
+    "cuantiles_s": {
+      "p10": 297.826,
+      "p25": 299.49,
+      "p50": 305.0,
+      "p75": 326.0,
+      "p90": 363.0,
+      "p99": 505.0
+    },
+    "rango_s": 21336.668,
+    "n_bajo_295s": 28,
+    "umbrales_acumulados": {
+      "<300s": 2058,
+      "<299s": 1410,
+      "<298s": 808,
+      "<297s": 352,
+      "<296s": 114,
+      "<295s": 28,
+      "<294s": 0
+    },
+    "histograma_decimas": [
+      {
+        "bin_s": 294.3,
+        "n": 2
+      },
+      {
+        "bin_s": 294.4,
+        "n": 5
+      },
+      {
+        "bin_s": 294.5,
+        "n": 3
+      },
+      {
+        "bin_s": 294.6,
+        "n": 2
+      },
+      {
+        "bin_s": 294.7,
+        "n": 2
+      },
+      {
+        "bin_s": 294.8,
+        "n": 5
+      },
+      {
+        "bin_s": 294.9,
+        "n": 9
+      },
+      {
+        "bin_s": 295.0,
+        "n": 2
+      },
+      {
+        "bin_s": 295.1,
+        "n": 2
+      },
+      {
+        "bin_s": 295.2,
+        "n": 3
+      },
+      {
+        "bin_s": 295.3,
+        "n": 12
+      },
+      {
+        "bin_s": 295.4,
+        "n": 11
+      },
+      {
+        "bin_s": 295.5,
+        "n": 2
+      },
+      {
+        "bin_s": 295.6,
+        "n": 12
+      },
+      {
+        "bin_s": 295.7,
+        "n": 18
+      },
+      {
+        "bin_s": 295.8,
+        "n": 16
+      },
+      {
+        "bin_s": 295.9,
+        "n": 8
+      },
+      {
+        "bin_s": 296.0,
+        "n": 3
+      },
+      {
+        "bin_s": 296.1,
+        "n": 16
+      },
+      {
+        "bin_s": 296.2,
+        "n": 18
+      },
+      {
+        "bin_s": 296.3,
+        "n": 3
+      },
+      {
+        "bin_s": 296.4,
+        "n": 23
+      },
+      {
+        "bin_s": 296.5,
+        "n": 37
+      },
+      {
+        "bin_s": 296.6,
+        "n": 15
+      },
+      {
+        "bin_s": 296.7,
+        "n": 9
+      },
+      {
+        "bin_s": 296.8,
+        "n": 53
+      },
+      {
+        "bin_s": 296.9,
+        "n": 61
+      },
+      {
+        "bin_s": 297.0,
+        "n": 15
+      },
+      {
+        "bin_s": 297.1,
+        "n": 16
+      },
+      {
+        "bin_s": 297.2,
+        "n": 49
+      },
+      {
+        "bin_s": 297.3,
+        "n": 32
+      },
+      {
+        "bin_s": 297.4,
+        "n": 23
+      },
+      {
+        "bin_s": 297.5,
+        "n": 40
+      },
+      {
+        "bin_s": 297.6,
+        "n": 71
+      },
+      {
+        "bin_s": 297.7,
+        "n": 66
+      },
+      {
+        "bin_s": 297.8,
+        "n": 63
+      },
+      {
+        "bin_s": 297.9,
+        "n": 81
+      },
+      {
+        "bin_s": 298.0,
+        "n": 50
+      },
+      {
+        "bin_s": 298.1,
+        "n": 48
+      },
+      {
+        "bin_s": 298.2,
+        "n": 34
+      },
+      {
+        "bin_s": 298.3,
+        "n": 44
+      },
+      {
+        "bin_s": 298.4,
+        "n": 42
+      },
+      {
+        "bin_s": 298.5,
+        "n": 41
+      },
+      {
+        "bin_s": 298.6,
+        "n": 68
+      },
+      {
+        "bin_s": 298.7,
+        "n": 103
+      },
+      {
+        "bin_s": 298.8,
+        "n": 92
+      },
+      {
+        "bin_s": 298.9,
+        "n": 80
+      },
+      {
+        "bin_s": 299.0,
+        "n": 59
+      },
+      {
+        "bin_s": 299.1,
+        "n": 60
+      },
+      {
+        "bin_s": 299.2,
+        "n": 54
+      },
+      {
+        "bin_s": 299.3,
+        "n": 61
+      },
+      {
+        "bin_s": 299.4,
+        "n": 59
+      },
+      {
+        "bin_s": 299.5,
+        "n": 70
+      },
+      {
+        "bin_s": 299.6,
+        "n": 53
+      },
+      {
+        "bin_s": 299.7,
+        "n": 31
+      },
+      {
+        "bin_s": 299.8,
+        "n": 91
+      },
+      {
+        "bin_s": 299.9,
+        "n": 110
+      },
+      {
+        "bin_s": 300.0,
+        "n": 46
+      },
+      {
+        "bin_s": 300.1,
+        "n": 30
+      },
+      {
+        "bin_s": 300.2,
+        "n": 29
+      },
+      {
+        "bin_s": 300.3,
+        "n": 36
+      },
+      {
+        "bin_s": 300.4,
+        "n": 34
+      },
+      {
+        "bin_s": 300.5,
+        "n": 30
+      },
+      {
+        "bin_s": 300.6,
+        "n": 23
+      },
+      {
+        "bin_s": 300.7,
+        "n": 25
+      },
+      {
+        "bin_s": 300.8,
+        "n": 23
+      },
+      {
+        "bin_s": 300.9,
+        "n": 21
+      },
+      {
+        "bin_s": 301.0,
+        "n": 30
+      },
+      {
+        "bin_s": 301.1,
+        "n": 21
+      },
+      {
+        "bin_s": 301.2,
+        "n": 18
+      },
+      {
+        "bin_s": 301.3,
+        "n": 28
+      },
+      {
+        "bin_s": 301.4,
+        "n": 36
+      },
+      {
+        "bin_s": 301.5,
+        "n": 33
+      },
+      {
+        "bin_s": 301.6,
+        "n": 28
+      },
+      {
+        "bin_s": 301.7,
+        "n": 27
+      },
+      {
+        "bin_s": 301.8,
+        "n": 24
+      },
+      {
+        "bin_s": 301.9,
+        "n": 20
+      },
+      {
+        "bin_s": 302.0,
+        "n": 24
+      },
+      {
+        "bin_s": 302.1,
+        "n": 22
+      },
+      {
+        "bin_s": 302.2,
+        "n": 23
+      },
+      {
+        "bin_s": 302.3,
+        "n": 28
+      },
+      {
+        "bin_s": 302.4,
+        "n": 29
+      },
+      {
+        "bin_s": 302.5,
+        "n": 26
+      },
+      {
+        "bin_s": 302.6,
+        "n": 29
+      },
+      {
+        "bin_s": 302.7,
+        "n": 14
+      },
+      {
+        "bin_s": 302.8,
+        "n": 18
+      },
+      {
+        "bin_s": 302.9,
+        "n": 16
+      },
+      {
+        "bin_s": 303.0,
+        "n": 188
+      },
+      {
+        "bin_s": 303.1,
+        "n": 1
+      },
+      {
+        "bin_s": 303.3,
+        "n": 2
+      },
+      {
+        "bin_s": 303.6,
+        "n": 1
+      },
+      {
+        "bin_s": 304.0,
+        "n": 191
+      },
+      {
+        "bin_s": 305.0,
+        "n": 159
+      },
+      {
+        "bin_s": 305.3,
+        "n": 1
+      },
+      {
+        "bin_s": 305.8,
+        "n": 1
+      },
+      {
+        "bin_s": 306.0,
+        "n": 142
+      },
+      {
+        "bin_s": 307.0,
+        "n": 127
+      },
+      {
+        "bin_s": 307.9,
+        "n": 1
+      },
+      {
+        "bin_s": 308.0,
+        "n": 128
+      },
+      {
+        "bin_s": 309.0,
+        "n": 141
+      },
+      {
+        "bin_s": 309.6,
+        "n": 1
+      },
+      {
+        "bin_s": 310.0,
+        "n": 96
+      },
+      {
+        "bin_s": 311.0,
+        "n": 96
+      },
+      {
+        "bin_s": 312.0,
+        "n": 95
+      },
+      {
+        "bin_s": 313.0,
+        "n": 96
+      },
+      {
+        "bin_s": 314.0,
+        "n": 79
+      },
+      {
+        "bin_s": 315.0,
+        "n": 86
+      },
+      {
+        "bin_s": 316.0,
+        "n": 68
+      },
+      {
+        "bin_s": 317.0,
+        "n": 53
+      },
+      {
+        "bin_s": 318.0,
+        "n": 72
+      },
+      {
+        "bin_s": 319.0,
+        "n": 56
+      },
+      {
+        "bin_s": 320.0,
+        "n": 58
+      },
+      {
+        "bin_s": 320.6,
+        "n": 1
+      },
+      {
+        "bin_s": 321.0,
+        "n": 63
+      },
+      {
+        "bin_s": 322.0,
+        "n": 43
+      },
+      {
+        "bin_s": 323.0,
+        "n": 47
+      },
+      {
+        "bin_s": 324.0,
+        "n": 46
+      },
+      {
+        "bin_s": 325.0,
+        "n": 60
+      },
+      {
+        "bin_s": 326.0,
+        "n": 57
+      },
+      {
+        "bin_s": 326.4,
+        "n": 1
+      },
+      {
+        "bin_s": 326.7,
+        "n": 1
+      },
+      {
+        "bin_s": 327.0,
+        "n": 55
+      },
+      {
+        "bin_s": 327.8,
+        "n": 1
+      },
+      {
+        "bin_s": 328.0,
+        "n": 45
+      },
+      {
+        "bin_s": 328.5,
+        "n": 1
+      },
+      {
+        "bin_s": 329.0,
+        "n": 33
+      },
+      {
+        "bin_s": 330.0,
+        "n": 32
+      },
+      {
+        "bin_s": 331.0,
+        "n": 43
+      },
+      {
+        "bin_s": 332.0,
+        "n": 34
+      },
+      {
+        "bin_s": 332.4,
+        "n": 1
+      },
+      {
+        "bin_s": 333.0,
+        "n": 31
+      },
+      {
+        "bin_s": 334.0,
+        "n": 39
+      },
+      {
+        "bin_s": 335.0,
+        "n": 31
+      },
+      {
+        "bin_s": 336.0,
+        "n": 32
+      },
+      {
+        "bin_s": 337.0,
+        "n": 30
+      },
+      {
+        "bin_s": 338.0,
+        "n": 29
+      },
+      {
+        "bin_s": 339.0,
+        "n": 40
+      },
+      {
+        "bin_s": 340.0,
+        "n": 26
+      },
+      {
+        "bin_s": 341.0,
+        "n": 35
+      },
+      {
+        "bin_s": 342.0,
+        "n": 21
+      },
+      {
+        "bin_s": 343.0,
+        "n": 21
+      },
+      {
+        "bin_s": 344.0,
+        "n": 25
+      },
+      {
+        "bin_s": 345.0,
+        "n": 22
+      },
+      {
+        "bin_s": 346.0,
+        "n": 19
+      },
+      {
+        "bin_s": 347.0,
+        "n": 22
+      },
+      {
+        "bin_s": 348.0,
+        "n": 26
+      },
+      {
+        "bin_s": 349.0,
+        "n": 19
+      },
+      {
+        "bin_s": 350.0,
+        "n": 17
+      },
+      {
+        "bin_s": 351.0,
+        "n": 26
+      },
+      {
+        "bin_s": 352.0,
+        "n": 26
+      },
+      {
+        "bin_s": 353.0,
+        "n": 20
+      },
+      {
+        "bin_s": 353.6,
+        "n": 1
+      },
+      {
+        "bin_s": 354.0,
+        "n": 32
+      },
+      {
+        "bin_s": 355.0,
+        "n": 21
+      },
+      {
+        "bin_s": 356.0,
+        "n": 10
+      },
+      {
+        "bin_s": 357.0,
+        "n": 14
+      },
+      {
+        "bin_s": 357.8,
+        "n": 1
+      },
+      {
+        "bin_s": 358.0,
+        "n": 16
+      },
+      {
+        "bin_s": 359.0,
+        "n": 23
+      },
+      {
+        "bin_s": 360.0,
+        "n": 13
+      },
+      {
+        "bin_s": 361.0,
+        "n": 14
+      },
+      {
+        "bin_s": 362.0,
+        "n": 14
+      },
+      {
+        "bin_s": 363.0,
+        "n": 11
+      },
+      {
+        "bin_s": 364.0,
+        "n": 10
+      },
+      {
+        "bin_s": 365.0,
+        "n": 11
+      },
+      {
+        "bin_s": 366.0,
+        "n": 13
+      },
+      {
+        "bin_s": 367.0,
+        "n": 10
+      },
+      {
+        "bin_s": 368.0,
+        "n": 5
+      },
+      {
+        "bin_s": 369.0,
+        "n": 13
+      },
+      {
+        "bin_s": 370.0,
+        "n": 7
+      },
+      {
+        "bin_s": 371.0,
+        "n": 14
+      },
+      {
+        "bin_s": 372.0,
+        "n": 10
+      },
+      {
+        "bin_s": 373.0,
+        "n": 11
+      },
+      {
+        "bin_s": 374.0,
+        "n": 16
+      },
+      {
+        "bin_s": 375.0,
+        "n": 7
+      },
+      {
+        "bin_s": 376.0,
+        "n": 7
+      },
+      {
+        "bin_s": 377.0,
+        "n": 11
+      },
+      {
+        "bin_s": 378.0,
+        "n": 13
+      },
+      {
+        "bin_s": 378.9,
+        "n": 1
+      },
+      {
+        "bin_s": 379.0,
+        "n": 12
+      },
+      {
+        "bin_s": 380.0,
+        "n": 4
+      },
+      {
+        "bin_s": 381.0,
+        "n": 13
+      },
+      {
+        "bin_s": 382.0,
+        "n": 10
+      },
+      {
+        "bin_s": 383.0,
+        "n": 8
+      },
+      {
+        "bin_s": 384.0,
+        "n": 5
+      },
+      {
+        "bin_s": 385.0,
+        "n": 7
+      },
+      {
+        "bin_s": 386.0,
+        "n": 7
+      },
+      {
+        "bin_s": 387.0,
+        "n": 9
+      },
+      {
+        "bin_s": 388.0,
+        "n": 7
+      },
+      {
+        "bin_s": 389.0,
+        "n": 6
+      },
+      {
+        "bin_s": 390.0,
+        "n": 4
+      },
+      {
+        "bin_s": 391.0,
+        "n": 6
+      },
+      {
+        "bin_s": 392.0,
+        "n": 7
+      },
+      {
+        "bin_s": 393.0,
+        "n": 10
+      },
+      {
+        "bin_s": 394.0,
+        "n": 4
+      },
+      {
+        "bin_s": 395.0,
+        "n": 9
+      },
+      {
+        "bin_s": 396.0,
+        "n": 5
+      },
+      {
+        "bin_s": 397.0,
+        "n": 3
+      },
+      {
+        "bin_s": 397.9,
+        "n": 1
+      },
+      {
+        "bin_s": 398.0,
+        "n": 7
+      },
+      {
+        "bin_s": 399.0,
+        "n": 6
+      },
+      {
+        "bin_s": 400.0,
+        "n": 7
+      },
+      {
+        "bin_s": 401.0,
+        "n": 9
+      },
+      {
+        "bin_s": 402.0,
+        "n": 6
+      },
+      {
+        "bin_s": 403.0,
+        "n": 7
+      },
+      {
+        "bin_s": 404.0,
+        "n": 3
+      },
+      {
+        "bin_s": 405.0,
+        "n": 7
+      },
+      {
+        "bin_s": 406.0,
+        "n": 5
+      },
+      {
+        "bin_s": 407.0,
+        "n": 4
+      },
+      {
+        "bin_s": 408.0,
+        "n": 6
+      },
+      {
+        "bin_s": 409.0,
+        "n": 6
+      },
+      {
+        "bin_s": 410.0,
+        "n": 3
+      },
+      {
+        "bin_s": 411.0,
+        "n": 9
+      },
+      {
+        "bin_s": 412.0,
+        "n": 8
+      },
+      {
+        "bin_s": 413.0,
+        "n": 9
+      },
+      {
+        "bin_s": 414.0,
+        "n": 5
+      },
+      {
+        "bin_s": 415.0,
+        "n": 6
+      },
+      {
+        "bin_s": 416.0,
+        "n": 2
+      },
+      {
+        "bin_s": 417.0,
+        "n": 5
+      },
+      {
+        "bin_s": 418.0,
+        "n": 4
+      },
+      {
+        "bin_s": 419.0,
+        "n": 3
+      },
+      {
+        "bin_s": 420.0,
+        "n": 7
+      },
+      {
+        "bin_s": 421.0,
+        "n": 7
+      },
+      {
+        "bin_s": 422.0,
+        "n": 5
+      },
+      {
+        "bin_s": 423.0,
+        "n": 7
+      },
+      {
+        "bin_s": 424.0,
+        "n": 7
+      },
+      {
+        "bin_s": 425.0,
+        "n": 4
+      },
+      {
+        "bin_s": 426.0,
+        "n": 3
+      },
+      {
+        "bin_s": 427.0,
+        "n": 4
+      },
+      {
+        "bin_s": 427.8,
+        "n": 1
+      },
+      {
+        "bin_s": 428.0,
+        "n": 1
+      },
+      {
+        "bin_s": 429.0,
+        "n": 4
+      },
+      {
+        "bin_s": 430.0,
+        "n": 3
+      },
+      {
+        "bin_s": 431.0,
+        "n": 5
+      },
+      {
+        "bin_s": 432.0,
+        "n": 5
+      },
+      {
+        "bin_s": 433.0,
+        "n": 2
+      },
+      {
+        "bin_s": 434.0,
+        "n": 3
+      },
+      {
+        "bin_s": 435.0,
+        "n": 3
+      },
+      {
+        "bin_s": 436.0,
+        "n": 3
+      },
+      {
+        "bin_s": 437.0,
+        "n": 4
+      },
+      {
+        "bin_s": 438.0,
+        "n": 2
+      },
+      {
+        "bin_s": 439.0,
+        "n": 3
+      },
+      {
+        "bin_s": 440.0,
+        "n": 4
+      },
+      {
+        "bin_s": 441.0,
+        "n": 2
+      },
+      {
+        "bin_s": 442.0,
+        "n": 5
+      },
+      {
+        "bin_s": 443.0,
+        "n": 1
+      },
+      {
+        "bin_s": 445.0,
+        "n": 3
+      },
+      {
+        "bin_s": 446.0,
+        "n": 1
+      },
+      {
+        "bin_s": 447.0,
+        "n": 1
+      },
+      {
+        "bin_s": 449.0,
+        "n": 3
+      },
+      {
+        "bin_s": 450.0,
+        "n": 1
+      },
+      {
+        "bin_s": 451.0,
+        "n": 1
+      },
+      {
+        "bin_s": 452.0,
+        "n": 2
+      },
+      {
+        "bin_s": 453.0,
+        "n": 1
+      },
+      {
+        "bin_s": 454.0,
+        "n": 3
+      },
+      {
+        "bin_s": 455.0,
+        "n": 2
+      },
+      {
+        "bin_s": 456.0,
+        "n": 3
+      },
+      {
+        "bin_s": 457.0,
+        "n": 1
+      },
+      {
+        "bin_s": 458.0,
+        "n": 1
+      },
+      {
+        "bin_s": 459.0,
+        "n": 2
+      },
+      {
+        "bin_s": 460.0,
+        "n": 2
+      },
+      {
+        "bin_s": 461.0,
+        "n": 1
+      },
+      {
+        "bin_s": 462.0,
+        "n": 2
+      },
+      {
+        "bin_s": 463.0,
+        "n": 2
+      },
+      {
+        "bin_s": 464.0,
+        "n": 1
+      },
+      {
+        "bin_s": 466.0,
+        "n": 2
+      },
+      {
+        "bin_s": 467.0,
+        "n": 3
+      },
+      {
+        "bin_s": 468.0,
+        "n": 2
+      },
+      {
+        "bin_s": 469.0,
+        "n": 1
+      },
+      {
+        "bin_s": 470.0,
+        "n": 2
+      },
+      {
+        "bin_s": 471.0,
+        "n": 1
+      },
+      {
+        "bin_s": 472.0,
+        "n": 1
+      },
+      {
+        "bin_s": 473.0,
+        "n": 5
+      },
+      {
+        "bin_s": 474.0,
+        "n": 3
+      },
+      {
+        "bin_s": 475.0,
+        "n": 1
+      },
+      {
+        "bin_s": 476.0,
+        "n": 1
+      },
+      {
+        "bin_s": 477.0,
+        "n": 1
+      },
+      {
+        "bin_s": 478.0,
+        "n": 1
+      },
+      {
+        "bin_s": 479.0,
+        "n": 1
+      },
+      {
+        "bin_s": 480.0,
+        "n": 3
+      },
+      {
+        "bin_s": 481.0,
+        "n": 2
+      },
+      {
+        "bin_s": 482.0,
+        "n": 1
+      },
+      {
+        "bin_s": 483.0,
+        "n": 2
+      },
+      {
+        "bin_s": 487.0,
+        "n": 3
+      },
+      {
+        "bin_s": 488.0,
+        "n": 2
+      },
+      {
+        "bin_s": 489.0,
+        "n": 1
+      },
+      {
+        "bin_s": 490.0,
+        "n": 1
+      },
+      {
+        "bin_s": 491.0,
+        "n": 1
+      },
+      {
+        "bin_s": 493.0,
+        "n": 1
+      },
+      {
+        "bin_s": 494.0,
+        "n": 1
+      },
+      {
+        "bin_s": 496.0,
+        "n": 2
+      },
+      {
+        "bin_s": 497.0,
+        "n": 1
+      },
+      {
+        "bin_s": 499.0,
+        "n": 1
+      },
+      {
+        "bin_s": 500.0,
+        "n": 3
+      },
+      {
+        "bin_s": 503.0,
+        "n": 1
+      },
+      {
+        "bin_s": 504.0,
+        "n": 2
+      },
+      {
+        "bin_s": 505.0,
+        "n": 1
+      },
+      {
+        "bin_s": 506.0,
+        "n": 1
+      },
+      {
+        "bin_s": 507.0,
+        "n": 1
+      },
+      {
+        "bin_s": 509.0,
+        "n": 1
+      },
+      {
+        "bin_s": 510.0,
+        "n": 1
+      },
+      {
+        "bin_s": 511.0,
+        "n": 1
+      },
+      {
+        "bin_s": 512.0,
+        "n": 1
+      },
+      {
+        "bin_s": 514.0,
+        "n": 2
+      },
+      {
+        "bin_s": 518.0,
+        "n": 2
+      },
+      {
+        "bin_s": 521.0,
+        "n": 1
+      },
+      {
+        "bin_s": 522.0,
+        "n": 1
+      },
+      {
+        "bin_s": 523.0,
+        "n": 1
+      },
+      {
+        "bin_s": 526.0,
+        "n": 1
+      },
+      {
+        "bin_s": 531.0,
+        "n": 1
+      },
+      {
+        "bin_s": 532.0,
+        "n": 2
+      },
+      {
+        "bin_s": 535.0,
+        "n": 1
+      },
+      {
+        "bin_s": 537.0,
+        "n": 1
+      },
+      {
+        "bin_s": 541.0,
+        "n": 1
+      },
+      {
+        "bin_s": 551.0,
+        "n": 1
+      },
+      {
+        "bin_s": 554.0,
+        "n": 1
+      },
+      {
+        "bin_s": 555.0,
+        "n": 2
+      },
+      {
+        "bin_s": 561.0,
+        "n": 1
+      },
+      {
+        "bin_s": 562.0,
+        "n": 1
+      },
+      {
+        "bin_s": 565.0,
+        "n": 1
+      },
+      {
+        "bin_s": 568.0,
+        "n": 1
+      },
+      {
+        "bin_s": 572.0,
+        "n": 1
+      },
+      {
+        "bin_s": 574.0,
+        "n": 2
+      },
+      {
+        "bin_s": 576.0,
+        "n": 1
+      },
+      {
+        "bin_s": 579.0,
+        "n": 1
+      },
+      {
+        "bin_s": 582.0,
+        "n": 1
+      },
+      {
+        "bin_s": 588.0,
+        "n": 1
+      },
+      {
+        "bin_s": 592.0,
+        "n": 1
+      },
+      {
+        "bin_s": 595.0,
+        "n": 1
+      },
+      {
+        "bin_s": 602.0,
+        "n": 2
+      },
+      {
+        "bin_s": 604.0,
+        "n": 1
+      },
+      {
+        "bin_s": 611.0,
+        "n": 1
+      },
+      {
+        "bin_s": 625.0,
+        "n": 1
+      },
+      {
+        "bin_s": 628.0,
+        "n": 1
+      },
+      {
+        "bin_s": 631.0,
+        "n": 1
+      },
+      {
+        "bin_s": 634.0,
+        "n": 1
+      },
+      {
+        "bin_s": 635.0,
+        "n": 1
+      },
+      {
+        "bin_s": 637.0,
+        "n": 1
+      },
+      {
+        "bin_s": 651.0,
+        "n": 1
+      },
+      {
+        "bin_s": 658.0,
+        "n": 1
+      },
+      {
+        "bin_s": 665.0,
+        "n": 1
+      },
+      {
+        "bin_s": 676.0,
+        "n": 1
+      },
+      {
+        "bin_s": 684.0,
+        "n": 1
+      },
+      {
+        "bin_s": 687.0,
+        "n": 1
+      },
+      {
+        "bin_s": 707.0,
+        "n": 1
+      },
+      {
+        "bin_s": 711.0,
+        "n": 1
+      },
+      {
+        "bin_s": 747.0,
+        "n": 1
+      },
+      {
+        "bin_s": 852.0,
+        "n": 1
+      },
+      {
+        "bin_s": 903.0,
+        "n": 1
+      },
+      {
+        "bin_s": 934.0,
+        "n": 1
+      },
+      {
+        "bin_s": 1100.0,
+        "n": 1
+      },
+      {
+        "bin_s": 1239.0,
+        "n": 1
+      },
+      {
+        "bin_s": 1249.0,
+        "n": 1
+      },
+      {
+        "bin_s": 1256.0,
+        "n": 1
+      },
+      {
+        "bin_s": 1571.0,
+        "n": 1
+      },
+      {
+        "bin_s": 1932.0,
+        "n": 1
+      },
+      {
+        "bin_s": 2068.0,
+        "n": 1
+      },
+      {
+        "bin_s": 3652.0,
+        "n": 1
+      },
+      {
+        "bin_s": 21631.0,
+        "n": 1
+      }
+    ],
+    "top_jugadores": [
+      [
+        "eddiecatgaming",
+        45
+      ],
+      [
+        "Spiker",
+        32
+      ],
+      [
+        "BradenLOL",
+        31
+      ],
+      [
+        "KingOfJonnyBoy",
+        29
+      ],
+      [
+        "Littlezombie",
+        29
+      ],
+      [
+        "SigNastyTV",
+        28
+      ],
+      [
+        "DaDonch44",
+        27
+      ],
+      [
+        "GTAce",
+        26
+      ],
+      [
+        "yelia64",
+        25
+      ],
+      [
+        "fasteronavespa",
+        25
+      ],
+      [
+        "Nebula_Composer",
+        24
+      ],
+      [
+        "Billy_bongsalot",
+        24
+      ],
+      [
+        "JeremyMKW",
+        23
+      ],
+      [
+        "RoyLT",
+        23
+      ],
+      [
+        "Miniland",
+        23
+      ]
+    ],
+    "top15_runs": [
+      {
+        "tiempo_s": 294.332,
+        "tiempo": "4:54.332",
+        "frames_vs_optimo": 4.0,
+        "jugador": "Niftski",
+        "fecha": "2026-08-14",
+        "emulado": "0",
+        "id": "z142re9z"
+      },
+      {
+        "tiempo_s": 294.365,
+        "tiempo": "4:54.365",
+        "frames_vs_optimo": 6.0,
+        "jugador": "LeKukie",
+        "fecha": "2026-06-03",
+        "emulado": "0",
+        "id": "medd9o9y"
+      },
+      {
+        "tiempo_s": 294.415,
+        "tiempo": "4:54.415",
+        "frames_vs_optimo": 9.0,
+        "jugador": "averge11",
+        "fecha": "2025-12-18",
+        "emulado": "0",
+        "id": "y40o5j2z"
+      },
+      {
+        "tiempo_s": 294.448,
+        "tiempo": "4:54.448",
+        "frames_vs_optimo": 11.0,
+        "jugador": "Niftski",
+        "fecha": "2025-10-23",
+        "emulado": "1",
+        "id": "yw582k0y"
+      },
+      {
+        "tiempo_s": 294.448,
+        "tiempo": "4:54.448",
+        "frames_vs_optimo": 11.0,
+        "jugador": "averge11",
+        "fecha": "2025-11-02",
+        "emulado": "0",
+        "id": "mkr734lz"
+      },
+      {
+        "tiempo_s": 294.482,
+        "tiempo": "4:54.482",
+        "frames_vs_optimo": 13.0,
+        "jugador": "Niftski",
+        "fecha": "2025-10-09",
+        "emulado": "1",
+        "id": "mr580xgy"
+      },
+      {
+        "tiempo_s": 294.498,
+        "tiempo": "4:54.498",
+        "frames_vs_optimo": 14.0,
+        "jugador": "KingOfJonnyBoy",
+        "fecha": "2026-09-25",
+        "emulado": "1",
+        "id": "ydxlndqz"
+      },
+      {
+        "tiempo_s": 294.515,
+        "tiempo": "4:54.515",
+        "frames_vs_optimo": 15.0,
+        "jugador": "averge11",
+        "fecha": "2025-08-28",
+        "emulado": "0",
+        "id": "z5w4ogez"
+      },
+      {
+        "tiempo_s": 294.515,
+        "tiempo": "4:54.515",
+        "frames_vs_optimo": 15.0,
+        "jugador": "Niftski",
+        "fecha": "2025-10-09",
+        "emulado": "1",
+        "id": "yw5pwn3y"
+      },
+      {
+        "tiempo_s": 294.565,
+        "tiempo": "4:54.565",
+        "frames_vs_optimo": 18.0,
+        "jugador": "Niftski",
+        "fecha": "2025-01-10",
+        "emulado": "1",
+        "id": "y4j2p42y"
+      },
+      {
+        "tiempo_s": 294.631,
+        "tiempo": "4:54.631",
+        "frames_vs_optimo": 22.0,
+        "jugador": "Niftski",
+        "fecha": "2023-09-06",
+        "emulado": "1",
+        "id": "y2k9vkwy"
+      },
+      {
+        "tiempo_s": 294.665,
+        "tiempo": "4:54.665",
+        "frames_vs_optimo": 24.0,
+        "jugador": "KingOfJonnyBoy",
+        "fecha": "2026-03-28",
+        "emulado": "1",
+        "id": "z02r8qom"
+      },
+      {
+        "tiempo_s": 294.748,
+        "tiempo": "4:54.748",
+        "frames_vs_optimo": 29.0,
+        "jugador": "averge11",
+        "fecha": "2025-04-24",
+        "emulado": "1",
+        "id": "z00w2xez"
+      },
+      {
+        "tiempo_s": 294.798,
+        "tiempo": "4:54.798",
+        "frames_vs_optimo": 32.0,
+        "jugador": "Niftski",
+        "fecha": "2022-08-07",
+        "emulado": "1",
+        "id": "z0l3vd9z"
+      },
+      {
+        "tiempo_s": 294.814,
+        "tiempo": "4:54.814",
+        "frames_vs_optimo": 33.0,
+        "jugador": "Niftski",
+        "fecha": "2024-05-02",
+        "emulado": "0",
+        "id": "mrvl70gz"
+      }
+    ],
+    "serie_anual": [
+      {
+        "anio": 2002,
+        "n": 2,
+        "mejor": 324.0,
+        "mediana": 324.5,
+        "media": 324.5
+      },
+      {
+        "anio": 2003,
+        "n": 1,
+        "mejor": 317.0,
+        "mediana": 317.0,
+        "media": 317.0
+      },
+      {
+        "anio": 2004,
+        "n": 5,
+        "mejor": 306.0,
+        "mediana": 310.0,
+        "media": 309.6
+      },
+      {
+        "anio": 2005,
+        "n": 1,
+        "mejor": 305.846,
+        "mediana": 305.846,
+        "media": 305.846
+      },
+      {
+        "anio": 2006,
+        "n": 3,
+        "mejor": 305.397,
+        "mediana": 309.0,
+        "media": 324.13233333333335
+      },
+      {
+        "anio": 2007,
+        "n": 1,
+        "mejor": 300.355,
+        "mediana": 300.355,
+        "media": 300.355
+      },
+      {
+        "anio": 2009,
+        "n": 1,
+        "mejor": 301.204,
+        "mediana": 301.204,
+        "media": 301.204
+      },
+      {
+        "anio": 2010,
+        "n": 2,
+        "mejor": 299.69,
+        "mediana": 300.02250000000004,
+        "media": 300.02250000000004
+      },
+      {
+        "anio": 2011,
+        "n": 2,
+        "mejor": 298.874,
+        "mediana": 300.904,
+        "media": 300.904
+      },
+      {
+        "anio": 2013,
+        "n": 15,
+        "mejor": 298.142,
+        "mediana": 299.573,
+        "media": 310.84953333333334
+      },
+      {
+        "anio": 2014,
+        "n": 34,
+        "mejor": 297.693,
+        "mediana": 315.5,
+        "media": 327.73817647058826
+      },
+      {
+        "anio": 2015,
+        "n": 62,
+        "mejor": 297.627,
+        "mediana": 320.8,
+        "media": 335.2230806451613
+      },
+      {
+        "anio": 2016,
+        "n": 312,
+        "mejor": 296.878,
+        "mediana": 321.0,
+        "media": 342.30496794871794
+      },
+      {
+        "anio": 2017,
+        "n": 704,
+        "mejor": 296.528,
+        "mediana": 310.0,
+        "media": 359.31892045454543
+      },
+      {
+        "anio": 2018,
+        "n": 685,
+        "mejor": 295.796,
+        "mediana": 307.0,
+        "media": 323.3175080291971
+      },
+      {
+        "anio": 2019,
+        "n": 465,
+        "mejor": 295.746,
+        "mediana": 308.0,
+        "media": 323.28912258064514
+      },
+      {
+        "anio": 2020,
+        "n": 852,
+        "mejor": 295.43,
+        "mediana": 306.0,
+        "media": 322.23895892018777
+      },
+      {
+        "anio": 2021,
+        "n": 975,
+        "mejor": 294.881,
+        "mediana": 304.0,
+        "media": 321.8543846153846
+      },
+      {
+        "anio": 2022,
+        "n": 532,
+        "mejor": 294.798,
+        "mediana": 302.64300000000003,
+        "media": 322.33815413533836
+      },
+      {
+        "anio": 2023,
+        "n": 534,
+        "mejor": 294.631,
+        "mediana": 303.0,
+        "media": 321.913765917603
+      },
+      {
+        "anio": 2024,
+        "n": 492,
+        "mejor": 294.814,
+        "mediana": 305.0,
+        "media": 326.19483536585363
+      },
+      {
+        "anio": 2025,
+        "n": 637,
+        "mejor": 294.415,
+        "mediana": 300.954,
+        "media": 311.12398430141286
+      },
+      {
+        "anio": 2026,
+        "n": 435,
+        "mejor": 294.332,
+        "mediana": 301.121,
+        "media": 321.96198620689654
+      }
+    ],
+    "anio_min": 2002,
+    "anio_max": 2026
+  },
+  "record_mundial": {
+    "n_registros": 46,
+    "primer": {
+      "fecha": "January 2004",
+      "tiempo_s": 314.0,
+      "tiempo": "5:14.000",
+      "runner": "Scott Kessler",
+      "ganancia_s": null,
+      "ganancia_frames": null,
+      "gap_optimo_s": 19.735000000000014,
+      "gap_optimo_frames": 1186.1,
+      "notas": ""
+    },
+    "ultimo": {
+      "fecha": "August 13, 2026",
+      "tiempo_s": 294.332,
+      "tiempo": "4:54.332",
+      "runner": "Niftski",
+      "ganancia_s": 0.03300000000001546,
+      "ganancia_frames": 2.0,
+      "gap_optimo_s": 0.06700000000000728,
+      "gap_optimo_frames": 4.0,
+      "notas": "4 frames (0.067 seconds) off the theorized best possible time of 4:54.265."
+    },
+    "hitos": [
+      {
+        "fecha": "January 2004",
+        "tiempo_s": 314.0,
+        "tiempo": "5:14.000",
+        "runner": "Scott Kessler",
+        "ganancia_s": null,
+        "ganancia_frames": null,
+        "gap_optimo_s": 19.735000000000014,
+        "gap_optimo_frames": 1186.1,
+        "notas": ""
+      },
+      {
+        "fecha": "February 2004",
+        "tiempo_s": 311.0,
+        "tiempo": "5:11.000",
+        "runner": "Scott Kessler",
+        "ganancia_s": 3.0,
+        "ganancia_frames": 180.3,
+        "gap_optimo_s": 16.735000000000014,
+        "gap_optimo_frames": 1005.8,
+        "notas": ""
+      },
+      {
+        "fecha": "April 2004",
+        "tiempo_s": 310.0,
+        "tiempo": "5:10.000",
+        "runner": "Scott Kessler",
+        "ganancia_s": 1.0,
+        "ganancia_frames": 60.1,
+        "gap_optimo_s": 15.735000000000014,
+        "gap_optimo_frames": 945.7,
+        "notas": ""
+      },
+      {
+        "fecha": "October 2004",
+        "tiempo_s": 307.0,
+        "tiempo": "5:07.000",
+        "runner": "Trevor Seguin",
+        "ganancia_s": 3.0,
+        "ganancia_frames": 180.3,
+        "gap_optimo_s": 12.735000000000014,
+        "gap_optimo_frames": 765.4,
+        "notas": ""
+      },
+      {
+        "fecha": "November 2004",
+        "tiempo_s": 306.0,
+        "tiempo": "5:06.000",
+        "runner": "Trevor Seguin",
+        "ganancia_s": 1.0,
+        "ganancia_frames": 60.1,
+        "gap_optimo_s": 11.735000000000014,
+        "gap_optimo_frames": 705.3,
+        "notas": ""
+      },
+      {
+        "fecha": "May 2005",
+        "tiempo_s": 305.846,
+        "tiempo": "5:05.846",
+        "runner": "andrewg",
+        "ganancia_s": 0.15399999999999636,
+        "ganancia_frames": 9.3,
+        "gap_optimo_s": 11.581000000000017,
+        "gap_optimo_frames": 696.0,
+        "notas": ""
+      },
+      {
+        "fecha": "October 2006",
+        "tiempo_s": 305.397,
+        "tiempo": "5:05.397",
+        "runner": "Scott Kessler",
+        "ganancia_s": 0.4490000000000123,
+        "ganancia_frames": 27.0,
+        "gap_optimo_s": 11.132000000000005,
+        "gap_optimo_frames": 669.0,
+        "notas": ""
+      },
+      {
+        "fecha": "April 10, 2007",
+        "tiempo_s": 300.355,
+        "tiempo": "5:00.355",
+        "runner": "andrewg",
+        "ganancia_s": 5.041999999999973,
+        "ganancia_frames": 303.0,
+        "gap_optimo_s": 6.090000000000032,
+        "gap_optimo_frames": 366.0,
+        "notas": "First run on SDA. Wrong warps and wall jump implemented."
+      },
+      {
+        "fecha": "December 24, 2010",
+        "tiempo_s": 299.69,
+        "tiempo": "4:59.690",
+        "runner": "andrewg",
+        "ganancia_s": 0.6650000000000205,
+        "ganancia_frames": 40.0,
+        "gap_optimo_s": 5.425000000000011,
+        "gap_optimo_frames": 326.0,
+        "notas": "First run under 5 minutes."
+      },
+      {
+        "fecha": "December 15, 2011",
+        "tiempo_s": 298.874,
+        "tiempo": "4:58.874",
+        "runner": "andrewg",
+        "ganancia_s": 0.8159999999999741,
+        "ganancia_frames": 49.0,
+        "gap_optimo_s": 4.609000000000037,
+        "gap_optimo_frames": 277.0,
+        "notas": ""
+      },
+      {
+        "fecha": "January 15, 2013",
+        "tiempo_s": 298.791,
+        "tiempo": "4:58.791",
+        "runner": "andrewg",
+        "ganancia_s": 0.08300000000002683,
+        "ganancia_frames": 5.0,
+        "gap_optimo_s": 4.5260000000000105,
+        "gap_optimo_frames": 272.0,
+        "notas": ""
+      },
+      {
+        "fecha": "January 19, 2013",
+        "tiempo_s": 298.575,
+        "tiempo": "4:58.575",
+        "runner": "andrewg",
+        "ganancia_s": 0.21600000000000819,
+        "ganancia_frames": 13.0,
+        "gap_optimo_s": 4.310000000000002,
+        "gap_optimo_frames": 259.0,
+        "notas": ""
+      },
+      {
+        "fecha": "March 21, 2013",
+        "tiempo_s": 298.525,
+        "tiempo": "4:58.525",
+        "runner": "andrewg",
+        "ganancia_s": 0.05000000000001137,
+        "ganancia_frames": 3.0,
+        "gap_optimo_s": 4.259999999999991,
+        "gap_optimo_frames": 256.0,
+        "notas": ""
+      },
+      {
+        "fecha": "May 19, 2013",
+        "tiempo_s": 298.359,
+        "tiempo": "4:58.359",
+        "runner": "andrewg",
+        "ganancia_s": 0.16599999999999682,
+        "ganancia_frames": 10.0,
+        "gap_optimo_s": 4.093999999999994,
+        "gap_optimo_frames": 246.0,
+        "notas": ""
+      },
+      {
+        "fecha": "July 1, 2013",
+        "tiempo_s": 298.159,
+        "tiempo": "4:58.159",
+        "runner": "andrewg",
+        "ganancia_s": 0.19999999999998863,
+        "ganancia_frames": 12.0,
+        "gap_optimo_s": 3.8940000000000055,
+        "gap_optimo_frames": 234.0,
+        "notas": "\"fast 4-2\" implemented."
+      },
+      {
+        "fecha": "October 7, 2013",
+        "tiempo_s": 298.142,
+        "tiempo": "4:58.142",
+        "runner": "andrewg",
+        "ganancia_s": 0.016999999999995907,
+        "ganancia_frames": 1.0,
+        "gap_optimo_s": 3.8770000000000095,
+        "gap_optimo_frames": 233.0,
+        "notas": ""
+      },
+      {
+        "fecha": "March 25, 2014",
+        "tiempo_s": 298.092,
+        "tiempo": "4:58.092",
+        "runner": "andrewg",
+        "ganancia_s": 0.05000000000001137,
+        "ganancia_frames": 3.0,
+        "gap_optimo_s": 3.826999999999998,
+        "gap_optimo_frames": 230.0,
+        "notas": ""
+      },
+      {
+        "fecha": "June 25, 2014",
+        "tiempo_s": 297.693,
+        "tiempo": "4:57.693",
+        "runner": "Blubbler",
+        "ganancia_s": 0.3990000000000009,
+        "ganancia_frames": 24.0,
+        "gap_optimo_s": 3.4279999999999973,
+        "gap_optimo_frames": 206.0,
+        "notas": "Bullet bill glitch implemented."
+      },
+      {
+        "fecha": "October 18, 2015",
+        "tiempo_s": 297.627,
+        "tiempo": "4:57.627",
+        "runner": "darbian",
+        "ganancia_s": 0.06599999999997408,
+        "ganancia_frames": 4.0,
+        "gap_optimo_s": 3.362000000000023,
+        "gap_optimo_frames": 202.1,
+        "notas": ""
+      },
+      {
+        "fecha": "January 14, 2016",
+        "tiempo_s": 297.427,
+        "tiempo": "4:57.427",
+        "runner": "darbian",
+        "ganancia_s": 0.19999999999998863,
+        "ganancia_frames": 12.0,
+        "gap_optimo_s": 3.1620000000000346,
+        "gap_optimo_frames": 190.0,
+        "notas": "First record to implement both \"fast 4-2\" and the bullet bill glitch."
+      },
+      {
+        "fecha": "April 14, 2016",
+        "tiempo_s": 297.26,
+        "tiempo": "4:57.260",
+        "runner": "darbian",
+        "ganancia_s": 0.16700000000003,
+        "ganancia_frames": 10.0,
+        "gap_optimo_s": 2.9950000000000045,
+        "gap_optimo_frames": 180.0,
+        "notas": ""
+      },
+      {
+        "fecha": "August 11, 2016",
+        "tiempo_s": 297.244,
+        "tiempo": "4:57.244",
+        "runner": "darbian",
+        "ganancia_s": 0.01599999999996271,
+        "ganancia_frames": 1.0,
+        "gap_optimo_s": 2.979000000000042,
+        "gap_optimo_frames": 179.0,
+        "notas": ""
+      },
+      {
+        "fecha": "October 4, 2016",
+        "tiempo_s": 297.194,
+        "tiempo": "4:57.194",
+        "runner": "Kosmic",
+        "ganancia_s": 0.05000000000001137,
+        "ganancia_frames": 3.0,
+        "gap_optimo_s": 2.9290000000000305,
+        "gap_optimo_frames": 176.0,
+        "notas": "Flagpole glitch in World 1-1 and 4-1 implemented."
+      },
+      {
+        "fecha": "October 6, 2016",
+        "tiempo_s": 296.878,
+        "tiempo": "4:56.878",
+        "runner": "darbian",
+        "ganancia_s": 0.3160000000000309,
+        "ganancia_frames": 19.0,
+        "gap_optimo_s": 2.6129999999999995,
+        "gap_optimo_frames": 157.0,
+        "notas": ""
+      },
+      {
+        "fecha": "October 20, 2017",
+        "tiempo_s": 296.528,
+        "tiempo": "4:56.528",
+        "runner": "darbian",
+        "ganancia_s": 0.3499999999999659,
+        "ganancia_frames": 21.0,
+        "gap_optimo_s": 2.2630000000000337,
+        "gap_optimo_frames": 136.0,
+        "notas": "Flagpole glitch in World 8-3 implemented."
+      },
+      {
+        "fecha": "February 16, 2018",
+        "tiempo_s": 296.462,
+        "tiempo": "4:56.462",
+        "runner": "Kosmic",
+        "ganancia_s": 0.06600000000003092,
+        "ganancia_frames": 4.0,
+        "gap_optimo_s": 2.1970000000000027,
+        "gap_optimo_frames": 132.0,
+        "notas": "Wall clip in world 4-2 implemented."
+      },
+      {
+        "fecha": "May 25, 2018",
+        "tiempo_s": 296.245,
+        "tiempo": "4:56.245",
+        "runner": "somewes",
+        "ganancia_s": 0.21699999999998454,
+        "ganancia_frames": 13.0,
+        "gap_optimo_s": 1.9800000000000182,
+        "gap_optimo_frames": 119.0,
+        "notas": ""
+      },
+      {
+        "fecha": "September 25, 2018",
+        "tiempo_s": 295.913,
+        "tiempo": "4:55.913",
+        "runner": "Kosmic",
+        "ganancia_s": 0.33199999999999363,
+        "ganancia_frames": 20.0,
+        "gap_optimo_s": 1.6480000000000246,
+        "gap_optimo_frames": 99.0,
+        "notas": "Pipe clip in world 1-2 implemented and first run under 4:56."
+      },
+      {
+        "fecha": "October 22, 2018",
+        "tiempo_s": 295.796,
+        "tiempo": "4:55.796",
+        "runner": "somewes",
+        "ganancia_s": 0.11700000000001864,
+        "ganancia_frames": 7.0,
+        "gap_optimo_s": 1.531000000000006,
+        "gap_optimo_frames": 92.0,
+        "notas": ""
+      },
+      {
+        "fecha": "August 2, 2019",
+        "tiempo_s": 295.746,
+        "tiempo": "4:55.746",
+        "runner": "tavenwebb2002",
+        "ganancia_s": 0.05000000000001137,
+        "ganancia_frames": 3.0,
+        "gap_optimo_s": 1.4809999999999945,
+        "gap_optimo_frames": 89.0,
+        "notas": ""
+      },
+      {
+        "fecha": "January 17, 2020",
+        "tiempo_s": 295.646,
+        "tiempo": "4:55.646",
+        "runner": "Kosmic",
+        "ganancia_s": 0.0999999999999659,
+        "ganancia_frames": 6.0,
+        "gap_optimo_s": 1.3810000000000286,
+        "gap_optimo_frames": 83.0,
+        "notas": ""
+      },
+      {
+        "fecha": "November 13, 2020",
+        "tiempo_s": 295.43,
+        "tiempo": "4:55.430",
+        "runner": "Niftski",
+        "ganancia_s": 0.21600000000000819,
+        "ganancia_frames": 13.0,
+        "gap_optimo_s": 1.1650000000000205,
+        "gap_optimo_frames": 70.0,
+        "notas": "Faster bullet bill glitch implemented."
+      },
+      {
+        "fecha": "January 2, 2021",
+        "tiempo_s": 295.314,
+        "tiempo": "4:55.314",
+        "runner": "Miniland",
+        "ganancia_s": 0.11599999999998545,
+        "ganancia_frames": 7.0,
+        "gap_optimo_s": 1.049000000000035,
+        "gap_optimo_frames": 63.0,
+        "notas": ""
+      },
+      {
+        "fecha": "February 4, 2021",
+        "tiempo_s": 295.23,
+        "tiempo": "4:55.230",
+        "runner": "Miniland",
+        "ganancia_s": 0.08400000000000318,
+        "ganancia_frames": 5.0,
+        "gap_optimo_s": 0.9650000000000318,
+        "gap_optimo_frames": 58.0,
+        "notas": ""
+      },
+      {
+        "fecha": "April 7, 2021",
+        "tiempo_s": 294.948,
+        "tiempo": "4:54.948",
+        "runner": "Niftski",
+        "ganancia_s": 0.2820000000000391,
+        "ganancia_frames": 16.9,
+        "gap_optimo_s": 0.6829999999999927,
+        "gap_optimo_frames": 41.0,
+        "notas": "Flagpole glitch in World 8-1 implemented and first run under 4:55."
+      },
+      {
+        "fecha": "November 5, 2021",
+        "tiempo_s": 294.914,
+        "tiempo": "4:54.914",
+        "runner": "Miniland",
+        "ganancia_s": 0.033999999999991815,
+        "ganancia_frames": 2.0,
+        "gap_optimo_s": 0.6490000000000009,
+        "gap_optimo_frames": 39.0,
+        "notas": ""
+      },
+      {
+        "fecha": "December 2, 2021",
+        "tiempo_s": 294.881,
+        "tiempo": "4:54.881",
+        "runner": "Niftski",
+        "ganancia_s": 0.03300000000001546,
+        "ganancia_frames": 2.0,
+        "gap_optimo_s": 0.6159999999999854,
+        "gap_optimo_frames": 37.0,
+        "notas": ""
+      },
+      {
+        "fecha": "August 7, 2022",
+        "tiempo_s": 294.798,
+        "tiempo": "4:54.798",
+        "runner": "Niftski",
+        "ganancia_s": 0.08299999999996999,
+        "ganancia_frames": 5.0,
+        "gap_optimo_s": 0.5330000000000155,
+        "gap_optimo_frames": 32.0,
+        "notas": ""
+      },
+      {
+        "fecha": "September 6, 2023",
+        "tiempo_s": 294.631,
+        "tiempo": "4:54.631",
+        "runner": "Niftski",
+        "ganancia_s": 0.16700000000003,
+        "ganancia_frames": 10.0,
+        "gap_optimo_s": 0.36599999999998545,
+        "gap_optimo_frames": 22.0,
+        "notas": "\"Lightning 4-2\" implemented and first run to match the TAS up to 8-4."
+      },
+      {
+        "fecha": "January 9, 2025",
+        "tiempo_s": 294.565,
+        "tiempo": "4:54.565",
+        "runner": "Niftski",
+        "ganancia_s": 0.06599999999997408,
+        "ganancia_frames": 4.0,
+        "gap_optimo_s": 0.30000000000001137,
+        "gap_optimo_frames": 18.0,
+        "notas": ""
+      },
+      {
+        "fecha": "August 28, 2025",
+        "tiempo_s": 294.515,
+        "tiempo": "4:54.515",
+        "runner": "averge11",
+        "ganancia_s": 0.05000000000001137,
+        "ganancia_frames": 3.0,
+        "gap_optimo_s": 0.25,
+        "gap_optimo_frames": 15.0,
+        "notas": ""
+      },
+      {
+        "fecha": "October 9, 2025",
+        "tiempo_s": 294.482,
+        "tiempo": "4:54.482",
+        "runner": "Niftski",
+        "ganancia_s": 0.03299999999995862,
+        "ganancia_frames": 2.0,
+        "gap_optimo_s": 0.21700000000004138,
+        "gap_optimo_frames": 13.0,
+        "notas": ""
+      },
+      {
+        "fecha": "October 23, 2025",
+        "tiempo_s": 294.448,
+        "tiempo": "4:54.448",
+        "runner": "Niftski",
+        "ganancia_s": 0.03400000000004866,
+        "ganancia_frames": 2.0,
+        "gap_optimo_s": 0.18299999999999272,
+        "gap_optimo_frames": 11.0,
+        "notas": ""
+      },
+      {
+        "fecha": "December 18, 2025",
+        "tiempo_s": 294.415,
+        "tiempo": "4:54.415",
+        "runner": "averge11",
+        "ganancia_s": 0.03299999999995862,
+        "ganancia_frames": 2.0,
+        "gap_optimo_s": 0.1500000000000341,
+        "gap_optimo_frames": 9.0,
+        "notas": ""
+      },
+      {
+        "fecha": "June 2, 2026",
+        "tiempo_s": 294.365,
+        "tiempo": "4:54.365",
+        "runner": "LeKukie",
+        "ganancia_s": 0.05000000000001137,
+        "ganancia_frames": 3.0,
+        "gap_optimo_s": 0.10000000000002274,
+        "gap_optimo_frames": 6.0,
+        "notas": ""
+      },
+      {
+        "fecha": "August 13, 2026",
+        "tiempo_s": 294.332,
+        "tiempo": "4:54.332",
+        "runner": "Niftski",
+        "ganancia_s": 0.03300000000001546,
+        "ganancia_frames": 2.0,
+        "gap_optimo_s": 0.06700000000000728,
+        "gap_optimo_frames": 4.0,
+        "notas": "4 frames (0.067 seconds) off the theorized best possible time of 4:54.265."
+      }
+    ],
+    "periodos": [
+      {
+        "periodo": "2004-2010",
+        "n_records": 9,
+        "ganancia_total_s": 14.310000000000002,
+        "ganancia_por_anio_s": 2.3850000000000002,
+        "frames_por_anio": 143.33567114539562
+      },
+      {
+        "periodo": "2011-2016",
+        "n_records": 15,
+        "ganancia_total_s": 1.9960000000000377,
+        "ganancia_por_anio_s": 0.39920000000000755,
+        "frames_por_anio": 23.991446507858704
+      },
+      {
+        "periodo": "2017-2020",
+        "n_records": 8,
+        "ganancia_total_s": 1.0980000000000132,
+        "ganancia_por_anio_s": 0.3660000000000044,
+        "frames_por_anio": 21.996165886463487
+      },
+      {
+        "periodo": "2021-2026",
+        "n_records": 14,
+        "ganancia_total_s": 0.9820000000000277,
+        "ganancia_por_anio_s": 0.19640000000000554,
+        "frames_por_anio": 11.803407049457649
+      }
+    ],
+    "gap_inicial_frames": 1186.1,
+    "gap_final_frames": 4.0,
+    "cierre_pct": 99.66050164682034
+  }
+}

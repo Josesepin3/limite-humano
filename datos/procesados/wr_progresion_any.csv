@@ -1,0 +1,47 @@
+orden,fecha_texto,anio,mes,tiempo,segundos,runner,notas
+1,January 2004,2004,1,5:14,314.0,Scott Kessler,
+2,February 2004,2004,2,5:11,311.0,Scott Kessler,
+3,April 2004,2004,4,5:10,310.0,Scott Kessler,
+4,October 2004,2004,10,5:07,307.0,Trevor Seguin,
+5,November 2004,2004,11,5:06,306.0,Trevor Seguin,
+6,May 2005,2005,5,5:05.846,305.846,andrewg,
+7,October 2006,2006,10,5:05.397,305.397,Scott Kessler,
+8,"April 10, 2007",2007,4,5:00.355,300.355,andrewg,First run on SDA. Wrong warps and wall jump implemented.
+9,"December 24, 2010",2010,12,4:59.690,299.69,andrewg,First run under 5 minutes.
+10,"December 15, 2011",2011,12,4:58.874,298.874,andrewg,
+11,"January 15, 2013",2013,1,4:58.791,298.791,andrewg,
+12,"January 19, 2013",2013,1,4:58.575,298.575,andrewg,
+13,"March 21, 2013",2013,3,4:58.525,298.525,andrewg,
+14,"May 19, 2013",2013,5,4:58.359,298.359,andrewg,
+15,"July 1, 2013",2013,7,4:58.159,298.159,andrewg,"""fast 4-2"" implemented."
+16,"October 7, 2013",2013,10,4:58.142,298.142,andrewg,
+17,"March 25, 2014",2014,3,4:58.092,298.092,andrewg,
+18,"June 25, 2014",2014,6,4:57.693,297.693,Blubbler,Bullet bill glitch implemented.
+19,"October 18, 2015",2015,10,4:57.627,297.627,darbian,
+20,"January 14, 2016",2016,1,4:57.427,297.427,darbian,"First record to implement both ""fast 4-2"" and the bullet bill glitch."
+21,"April 14, 2016",2016,4,4:57.260,297.26,darbian,
+22,"August 11, 2016",2016,8,4:57.244,297.244,darbian,
+23,"October 4, 2016",2016,10,4:57.194,297.194,Kosmic,Flagpole glitch in World 1-1 and 4-1 implemented.
+24,"October 6, 2016",2016,10,4:56.878,296.878,darbian,
+25,"October 20, 2017",2017,10,4:56.528,296.528,darbian,Flagpole glitch in World 8-3 implemented.
+26,"February 16, 2018",2018,2,4:56.462,296.462,Kosmic,Wall clip in world 4-2 implemented.
+27,"May 25, 2018",2018,5,4:56.245,296.245,somewes,
+28,"September 25, 2018",2018,9,4:55.913,295.913,Kosmic,Pipe clip in world 1-2 implemented and first run under 4:56.
+29,"October 22, 2018",2018,10,4:55.796,295.796,somewes,
+30,"August 2, 2019",2019,8,4:55.746,295.746,tavenwebb2002,
+31,"January 17, 2020",2020,1,4:55.646,295.646,Kosmic,
+32,"November 13, 2020",2020,11,4:55.430,295.43,Niftski,Faster bullet bill glitch implemented.
+33,"January 2, 2021",2021,1,4:55.314,295.314,Miniland,
+34,"February 4, 2021",2021,2,4:55.230,295.23,Miniland,
+35,"April 7, 2021",2021,4,4:54.948,294.948,Niftski,Flagpole glitch in World 8-1 implemented and first run under 4:55.
+36,"November 5, 2021",2021,11,4:54.914,294.914,Miniland,
+37,"December 2, 2021",2021,12,4:54.881,294.881,Niftski,
+38,"August 7, 2022",2022,8,4:54.798,294.798,Niftski,
+39,"September 6, 2023",2023,9,4:54.631,294.631,Niftski,"""Lightning 4-2"" implemented and first run to match the TAS up to 8-4."
+40,"January 9, 2025",2025,1,4:54.565,294.565,Niftski,
+41,"August 28, 2025",2025,8,4:54.515,294.515,averge11,
+42,"October 9, 2025",2025,10,4:54.482,294.482,Niftski,
+43,"October 23, 2025",2025,10,4:54.448,294.448,Niftski,
+44,"December 18, 2025",2025,12,4:54.415,294.415,averge11,
+45,"June 2, 2026",2026,6,4:54.365,294.365,LeKukie,
+46,"August 13, 2026",2026,8,4:54.332,294.332,Niftski,4 frames (0.067 seconds) off the theorized best possible time of 4:54.265.

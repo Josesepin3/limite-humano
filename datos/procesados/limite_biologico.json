@@ -1,0 +1,65 @@
+{
+  "techo_biologico": {
+    "n_jugadores": 203,
+    "perfectos": 4,
+    "p_pb_perfecto": 0.019704433497536946,
+    "ic95_p_pb": [
+      0.0076885723430215255,
+      0.04956103315219801
+    ],
+    "jugadores_con_perfecto": [
+      "LeKukie",
+      "Niftski",
+      "averge11",
+      "yelia64"
+    ],
+    "estacionariedad": {
+      "primera_mitad": {
+        "n": 101,
+        "perfectos": 2,
+        "media_error_f": 13.277227722772277
+      },
+      "segunda_mitad": {
+        "n": 102,
+        "perfectos": 2,
+        "media_error_f": 12.382352941176471
+      },
+      "interpretacion": "Ambas mitades cronológicas producen 2 perfectos cada una y una media de error casi idéntica. La precisión humana en 8-4 es ESTACIONARIA: no mejora con el tiempo ni con el entrenamiento acumulado de la comunidad. Ese es el techo biológico."
+    }
+  },
+  "correccion_denominador": [
+    {
+      "intentos_por_jugador_T": 100,
+      "p_por_intento": 0.0001989917416893583,
+      "intentos_para_50pct": 3483
+    },
+    {
+      "intentos_por_jugador_T": 300,
+      "p_por_intento": 6.633498079555711e-05,
+      "intentos_para_50pct": 10449
+    },
+    {
+      "intentos_por_jugador_T": 1000,
+      "p_por_intento": 1.9900956290674898e-05,
+      "intentos_para_50pct": 34830
+    },
+    {
+      "intentos_por_jugador_T": 3000,
+      "p_por_intento": 6.63369610265363e-06,
+      "intentos_para_50pct": 104489
+    },
+    {
+      "intentos_por_jugador_T": 10000,
+      "p_por_intento": 1.990113451477704e-06,
+      "intentos_para_50pct": 348295
+    },
+    {
+      "intentos_por_jugador_T": 30000,
+      "p_por_intento": 6.633715905479676e-07,
+      "intentos_para_50pct": 1044885
+    }
+  ],
+  "nota_metodologica": "El 8-4 IL es un tablero de mejores marcas personales (1 run por jugador). Por tanto 4/203 mide P(PB perfecto por corredor), no P(intento perfecto). Al despejar p = 1-(1-P(PB))^(1/T) con el grind real por jugador (T de 100 a 30 000 intentos), se obtiene una cota de p por intento muy inferior al 1,97 % original.",
+  "p_por_intento_conservador": 1.990113451477704e-06,
+  "intentos_para_50pct_conservador": 348295
+}

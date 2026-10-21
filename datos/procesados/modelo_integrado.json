@@ -1,0 +1,167 @@
+{
+  "insumos": {
+    "n_corredores_il": 203,
+    "perfectos_il": 4,
+    "p_pb_perfecto": 0.019704433497536946,
+    "ic95_p_pb": [
+      0.0076885723430215255,
+      0.04956103315219801
+    ],
+    "p_escalon": 0.005,
+    "p_sin_cruzar_regla": 0.9655206468094842,
+    "corredores_con_perfecto": [
+      "LeKukie",
+      "Niftski",
+      "averge11",
+      "yelia64"
+    ]
+  },
+  "tabla_por_T": [
+    {
+      "T_intentos_por_corredor": 100,
+      "p84": 0.0001989917416893583,
+      "p_run_perfecto": 0.00019213063514565503,
+      "intentos_50pct": 3608,
+      "intentos_99pct": 23967
+    },
+    {
+      "T_intentos_por_corredor": 300,
+      "p84": 6.633498079555711e-05,
+      "p_run_perfecto": 6.404779356382101e-05,
+      "intentos_50pct": 10822,
+      "intentos_99pct": 71900
+    },
+    {
+      "T_intentos_por_corredor": 1000,
+      "p84": 1.9900956290674898e-05,
+      "p_run_perfecto": 1.9214784189899702e-05,
+      "intentos_50pct": 36074,
+      "intentos_99pct": 239666
+    },
+    {
+      "T_intentos_por_corredor": 3000,
+      "p84": 6.63369610265363e-06,
+      "p_run_perfecto": 6.404970551771688e-06,
+      "intentos_50pct": 108220,
+      "intentos_99pct": 718998
+    },
+    {
+      "T_intentos_por_corredor": 10000,
+      "p84": 1.990113451477704e-06,
+      "p_run_perfecto": 1.9214956268950082e-06,
+      "intentos_50pct": 360733,
+      "intentos_99pct": 2396657
+    },
+    {
+      "T_intentos_por_corredor": 30000,
+      "p84": 6.633715905479676e-07,
+      "p_run_perfecto": 6.404989671809099e-07,
+      "intentos_50pct": 1082199,
+      "intentos_99pct": 7189971
+    }
+  ],
+  "escenario_referencia": {
+    "T": 3000,
+    "p84": 6.63369610265363e-06,
+    "p_run_perfecto": 6.404970551771688e-06,
+    "intentos_50pct": 108220,
+    "intentos_99pct": 718998,
+    "traduccion_tiempo": [
+      {
+        "intentos_por_hora": 3,
+        "horas": 36073.333333333336
+      },
+      {
+        "intentos_por_hora": 5,
+        "horas": 21644.0
+      },
+      {
+        "intentos_por_hora": 8,
+        "horas": 13527.5
+      },
+      {
+        "intentos_por_hora": 12,
+        "horas": 9018.333333333334
+      }
+    ]
+  },
+  "evento_algun_humano": [
+    {
+      "corredores": 1,
+      "anios": 1,
+      "intentos_totales": 104000,
+      "p_alguno_lo_logre": 0.48630165879588605
+    },
+    {
+      "corredores": 1,
+      "anios": 5,
+      "intentos_totales": 520000,
+      "p_alguno_lo_logre": 0.9642281981277772
+    },
+    {
+      "corredores": 1,
+      "anios": 10,
+      "intentos_totales": 1040000,
+      "p_alguno_lo_logre": 0.9987203781908144
+    },
+    {
+      "corredores": 1,
+      "anios": 25,
+      "intentos_totales": 2600000,
+      "p_alguno_lo_logre": 0.9999999414261078
+    },
+    {
+      "corredores": 3,
+      "anios": 1,
+      "intentos_totales": 312000,
+      "p_alguno_lo_logre": 0.8644422068502031
+    },
+    {
+      "corredores": 3,
+      "anios": 5,
+      "intentos_totales": 1560000,
+      "p_alguno_lo_logre": 0.9999542256221704
+    },
+    {
+      "corredores": 3,
+      "anios": 10,
+      "intentos_totales": 3120000,
+      "p_alguno_lo_logre": 0.9999999979047063
+    },
+    {
+      "corredores": 3,
+      "anios": 25,
+      "intentos_totales": 7800000,
+      "p_alguno_lo_logre": 1.0
+    },
+    {
+      "corredores": 10,
+      "anios": 1,
+      "intentos_totales": 1040000,
+      "p_alguno_lo_logre": 0.9987203781908144
+    },
+    {
+      "corredores": 10,
+      "anios": 5,
+      "intentos_totales": 5200000,
+      "p_alguno_lo_logre": 0.9999999999999966
+    },
+    {
+      "corredores": 10,
+      "anios": 10,
+      "intentos_totales": 10400000,
+      "p_alguno_lo_logre": 1.0
+    },
+    {
+      "corredores": 10,
+      "anios": 25,
+      "intentos_totales": 26000000,
+      "p_alguno_lo_logre": 1.0
+    }
+  ],
+  "supuestos": {
+    "intentos_8_4_por_sesion": 400,
+    "sesiones_por_semana": 5,
+    "nota": "T (grind por corredor) no está medido con precisión; se presenta como rango. Los intentos por sesión son un supuesto declarado, no una medición."
+  }
+}

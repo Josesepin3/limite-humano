@@ -1,0 +1,122 @@
+{
+  "duraciones_declaradas": [
+    {
+      "jugador": "hitzcritz",
+      "minutos": 2,
+      "intentos": 2.0,
+      "cita": "got this in 2 minutes lol",
+      "fuente": "declarada"
+    },
+    {
+      "jugador": "Crazy_Gaming61",
+      "minutos": 5,
+      "intentos": 5.0,
+      "cita": "It only took me 5 mins of attempts",
+      "fuente": "declarada"
+    },
+    {
+      "jugador": "raymondamantius",
+      "minutos": 15,
+      "intentos": 15.0,
+      "cita": "do 15 minutes of attempts",
+      "fuente": "declarada"
+    },
+    {
+      "jugador": "Spiker",
+      "minutos": 90,
+      "intentos": 90.0,
+      "cita": "I spent 1.5 hours trying to get it again",
+      "fuente": "declarada"
+    },
+    {
+      "jugador": "UwUme",
+      "minutos": 5400.0,
+      "intentos": 5400.0,
+      "cita": "like a month of attempts",
+      "fuente": "declarada"
+    },
+    {
+      "jugador": "ILikeRockets62",
+      "minutos": 6300.0,
+      "intentos": 6300.0,
+      "cita": "This took over a month",
+      "fuente": "declarada"
+    },
+    {
+      "jugador": "MatyMak",
+      "minutos": 16200.0,
+      "intentos": 16200.0,
+      "cita": "grinds each took like a few months",
+      "fuente": "declarada"
+    },
+    {
+      "jugador": "Gaster319",
+      "minutos": 5850,
+      "intentos": 5850.0,
+      "cita": "32.5 months",
+      "fuente": "declarada"
+    }
+  ],
+  "extraidas_automaticamente": [
+    {
+      "jugador": "raymondamantius",
+      "minutos": 15.0,
+      "intentos": 15.0,
+      "delta_frames": 7,
+      "perfecto": false,
+      "fuente": "comentario"
+    },
+    {
+      "jugador": "Spiker",
+      "minutos": 90.0,
+      "intentos": 90.0,
+      "delta_frames": 8,
+      "perfecto": false,
+      "fuente": "comentario"
+    },
+    {
+      "jugador": "Crazy_Gaming61",
+      "minutos": 5.0,
+      "intentos": 5.0,
+      "delta_frames": 11,
+      "perfecto": false,
+      "fuente": "comentario"
+    },
+    {
+      "jugador": "Allenbot",
+      "minutos": 12.0,
+      "intentos": 12.0,
+      "delta_frames": 14,
+      "perfecto": false,
+      "fuente": "comentario"
+    }
+  ],
+  "n_declaradas": 8,
+  "n_comentarios_totales": 203,
+  "min_por_intento": 1.0,
+  "horas_juego_por_dia": 3.0,
+  "T_min": 2.0,
+  "T_max": 16200.0,
+  "T_mediana_aritmetica": 2745.0,
+  "T_mediana_regimen_largo": 6075.0,
+  "T_regimen_corto": [
+    2.0,
+    5.0,
+    15.0,
+    90.0
+  ],
+  "T_regimen_largo": [
+    5400.0,
+    5850.0,
+    6300.0,
+    16200.0
+  ],
+  "percentiles": {
+    "p10": 4.1,
+    "p25": 12.5,
+    "p50": 2745.0,
+    "p75": 5962.5,
+    "p90": 9269.999999999998
+  },
+  "limitacion": "Solo 13 de 203 comentarios mencionan duración y no todos son parseables. La muestra es pequeña y sesgada hacia comentarios largos. Además mezcla dos regímenes (saber la sección vs aprenderla), que se reportan por separado. La distribución se usa como rango de sensibilidad, no como valor puntual."
+}

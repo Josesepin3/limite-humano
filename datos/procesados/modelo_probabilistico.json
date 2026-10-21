@@ -1,0 +1,440 @@
+{
+  "constantes": {
+    "fps_ntsc": 60.0988138974405,
+    "optimo_teorico_s": 294.265,
+    "record_s": 294.332,
+    "frames_restantes_hasta_optimo": 4.03,
+    "seg_restantes": 0.06700000000000728
+  },
+  "modelo": "P(run perfecto) = q^K  (K tramos críticos independientes, precisión q)",
+  "supuestos": [
+    "Los tramos críticos se tratan como independientes.",
+    "q es constante entre tramos y entre intentos.",
+    "Perfecto = igualar el óptimo teórico, no el récord vigente.",
+    "No se modela fatiga, aprendizaje intra-sesión ni varianza entre jugadores."
+  ],
+  "tabla_tramos": [
+    {
+      "tramos_K": 10,
+      "q=0.99": {
+        "P_run": 0.9043820750088044,
+        "intentos_50pct": 1
+      },
+      "q=0.995": {
+        "P_run": 0.9511101304657719,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9900448802097482,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9950112350131177,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9990004498800211,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.9995001124850014,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.9999000044998805,
+        "intentos_50pct": 1
+      }
+    },
+    {
+      "tramos_K": 20,
+      "q=0.99": {
+        "P_run": 0.8179069375972308,
+        "intentos_50pct": 1
+      },
+      "q=0.995": {
+        "P_run": 0.9046104802746175,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9801888648295347,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9900473578023297,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9980018988604845,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.9990004748575304,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.999800018998861,
+        "intentos_50pct": 1
+      }
+    },
+    {
+      "tramos_K": 30,
+      "q=0.99": {
+        "P_run": 0.7397003733882802,
+        "intentos_50pct": 1
+      },
+      "q=0.995": {
+        "P_run": 0.8603841919146961,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9704309672630858,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9851082442083701,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9970043459427395,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.9985010869926714,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.9997000434959417,
+        "intentos_50pct": 1
+      }
+    },
+    {
+      "tramos_K": 40,
+      "q=0.99": {
+        "P_run": 0.6689717585696803,
+        "intentos_50pct": 1
+      },
+      "q=0.995": {
+        "P_run": 0.8183201210226743,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9607702107358118,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9801937706913743,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9960077901291329,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.9980019487655712,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.9996000779901227,
+        "intentos_50pct": 1
+      }
+    },
+    {
+      "tramos_K": 50,
+      "q=0.99": {
+        "P_run": 0.6050060671375364,
+        "intentos_50pct": 1
+      },
+      "q=0.995": {
+        "P_run": 0.7783125570686419,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9512056281970314,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9753038143277889,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9950122304230093,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.997503060051439,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.9995001224804045,
+        "intentos_50pct": 1
+      }
+    },
+    {
+      "tramos_K": 60,
+      "q=0.99": {
+        "P_run": 0.5471566423907612,
+        "intentos_50pct": 1
+      },
+      "q=0.995": {
+        "P_run": 0.7402609576967045,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9417362622231682,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9704382528072977,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9940176658287095,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.9970044207255463,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.9994001769657876,
+        "intentos_50pct": 1
+      }
+    },
+    {
+      "tramos_K": 80,
+      "q=0.99": {
+        "P_run": 0.4475232137638106,
+        "intentos_50pct": 2
+      },
+      "q=0.995": {
+        "P_run": 0.6696478204705641,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9230793978373362,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9607798281021743,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9920315179979188,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.9960078897398779,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.9992003159178594,
+        "intentos_50pct": 1
+      }
+    },
+    {
+      "tramos_K": 100,
+      "q=0.99": {
+        "P_run": 0.3660323412732292,
+        "intentos_50pct": 2
+      },
+      "q=0.995": {
+        "P_run": 0.6057704364907279,
+        "intentos_50pct": 1
+      },
+      "q=0.999": {
+        "P_run": 0.9047921471137089,
+        "intentos_50pct": 1
+      },
+      "q=0.9995": {
+        "P_run": 0.9512175302423342,
+        "intentos_50pct": 1
+      },
+      "q=0.9999": {
+        "P_run": 0.9900493386913719,
+        "intentos_50pct": 1
+      },
+      "q=0.99995": {
+        "P_run": 0.9950123548119847,
+        "intentos_50pct": 1
+      },
+      "q=0.99999": {
+        "P_run": 0.9990004948383437,
+        "intentos_50pct": 1
+      }
+    }
+  ],
+  "analisis_8_4": {
+    "descripcion": "8-4 es el único tramo sin frame rule: el error no se redondea, cada frame cuenta.",
+    "margen_frames": 4.03,
+    "escenarios": [
+      {
+        "precision_por_decision_r": 0.5,
+        "decisiones_exigidas": 1,
+        "P_seccion_por_intento": 0.5,
+        "intentos_50pct": 1,
+        "intentos_99pct": 7
+      },
+      {
+        "precision_por_decision_r": 0.5,
+        "decisiones_exigidas": 2,
+        "P_seccion_por_intento": 0.25,
+        "intentos_50pct": 3,
+        "intentos_99pct": 17
+      },
+      {
+        "precision_por_decision_r": 0.5,
+        "decisiones_exigidas": 4,
+        "P_seccion_por_intento": 0.0625,
+        "intentos_50pct": 11,
+        "intentos_99pct": 72
+      },
+      {
+        "precision_por_decision_r": 0.5,
+        "decisiones_exigidas": 8,
+        "P_seccion_por_intento": 0.00390625,
+        "intentos_50pct": 178,
+        "intentos_99pct": 1177
+      },
+      {
+        "precision_por_decision_r": 0.8,
+        "decisiones_exigidas": 1,
+        "P_seccion_por_intento": 0.8,
+        "intentos_50pct": 1,
+        "intentos_99pct": 3
+      },
+      {
+        "precision_por_decision_r": 0.8,
+        "decisiones_exigidas": 2,
+        "P_seccion_por_intento": 0.6400000000000001,
+        "intentos_50pct": 1,
+        "intentos_99pct": 5
+      },
+      {
+        "precision_por_decision_r": 0.8,
+        "decisiones_exigidas": 4,
+        "P_seccion_por_intento": 0.4096000000000001,
+        "intentos_50pct": 2,
+        "intentos_99pct": 9
+      },
+      {
+        "precision_por_decision_r": 0.8,
+        "decisiones_exigidas": 8,
+        "P_seccion_por_intento": 0.1677721600000001,
+        "intentos_50pct": 4,
+        "intentos_99pct": 26
+      },
+      {
+        "precision_por_decision_r": 0.9,
+        "decisiones_exigidas": 1,
+        "P_seccion_por_intento": 0.9,
+        "intentos_50pct": 1,
+        "intentos_99pct": 2
+      },
+      {
+        "precision_por_decision_r": 0.9,
+        "decisiones_exigidas": 2,
+        "P_seccion_por_intento": 0.81,
+        "intentos_50pct": 1,
+        "intentos_99pct": 3
+      },
+      {
+        "precision_por_decision_r": 0.9,
+        "decisiones_exigidas": 4,
+        "P_seccion_por_intento": 0.6561,
+        "intentos_50pct": 1,
+        "intentos_99pct": 5
+      },
+      {
+        "precision_por_decision_r": 0.9,
+        "decisiones_exigidas": 8,
+        "P_seccion_por_intento": 0.4304672100000001,
+        "intentos_50pct": 2,
+        "intentos_99pct": 9
+      },
+      {
+        "precision_por_decision_r": 0.95,
+        "decisiones_exigidas": 1,
+        "P_seccion_por_intento": 0.95,
+        "intentos_50pct": 1,
+        "intentos_99pct": 2
+      },
+      {
+        "precision_por_decision_r": 0.95,
+        "decisiones_exigidas": 2,
+        "P_seccion_por_intento": 0.9025,
+        "intentos_50pct": 1,
+        "intentos_99pct": 2
+      },
+      {
+        "precision_por_decision_r": 0.95,
+        "decisiones_exigidas": 4,
+        "P_seccion_por_intento": 0.8145062499999999,
+        "intentos_50pct": 1,
+        "intentos_99pct": 3
+      },
+      {
+        "precision_por_decision_r": 0.95,
+        "decisiones_exigidas": 8,
+        "P_seccion_por_intento": 0.6634204312890623,
+        "intentos_50pct": 1,
+        "intentos_99pct": 5
+      },
+      {
+        "precision_por_decision_r": 0.99,
+        "decisiones_exigidas": 1,
+        "P_seccion_por_intento": 0.99,
+        "intentos_50pct": 1,
+        "intentos_99pct": 1
+      },
+      {
+        "precision_por_decision_r": 0.99,
+        "decisiones_exigidas": 2,
+        "P_seccion_por_intento": 0.9801,
+        "intentos_50pct": 1,
+        "intentos_99pct": 2
+      },
+      {
+        "precision_por_decision_r": 0.99,
+        "decisiones_exigidas": 4,
+        "P_seccion_por_intento": 0.96059601,
+        "intentos_50pct": 1,
+        "intentos_99pct": 2
+      },
+      {
+        "precision_por_decision_r": 0.99,
+        "decisiones_exigidas": 8,
+        "P_seccion_por_intento": 0.9227446944279201,
+        "intentos_50pct": 1,
+        "intentos_99pct": 2
+      },
+      {
+        "precision_por_decision_r": 0.999,
+        "decisiones_exigidas": 1,
+        "P_seccion_por_intento": 0.999,
+        "intentos_50pct": 1,
+        "intentos_99pct": 1
+      },
+      {
+        "precision_por_decision_r": 0.999,
+        "decisiones_exigidas": 2,
+        "P_seccion_por_intento": 0.998001,
+        "intentos_50pct": 1,
+        "intentos_99pct": 1
+      },
+      {
+        "precision_por_decision_r": 0.999,
+        "decisiones_exigidas": 4,
+        "P_seccion_por_intento": 0.996005996001,
+        "intentos_50pct": 1,
+        "intentos_99pct": 1
+      },
+      {
+        "precision_por_decision_r": 0.999,
+        "decisiones_exigidas": 8,
+        "P_seccion_por_intento": 0.992027944069944,
+        "intentos_50pct": 1,
+        "intentos_99pct": 1
+      }
+    ]
+  }
+}

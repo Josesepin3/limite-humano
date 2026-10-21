@@ -1,0 +1,180 @@
+{
+  "correccion_denominador": {
+    "p_pb": 0.019704433497536946,
+    "ic95": [
+      0.0076885723430215255,
+      0.04956103315219801
+    ],
+    "nota": "203 runs, 203 jugadores distintos: tablero de PB, no de intentos. 4/203 es P(PB perfecto por corredor)."
+  },
+  "viabilidad_montecarlo": {
+    "p84_real": 3.2759048098629506e-06,
+    "p_run_real": 3.1629537309051764e-06,
+    "simulaciones_para_100_aciertos": 31616018,
+    "conclusion": "Monte Carlo directo inviable a p~1e-6; el resultado se obtiene por forma cerrada."
+  },
+  "validacion_mecanica": [
+    {
+      "p84_test": 0.01,
+      "n_simulaciones": 200000,
+      "mc_perfectos": 1879,
+      "mc_p": 0.009395,
+      "analitico_p": 0.009655206468094842,
+      "error_relativo_pct": 2.6949860570530615
+    },
+    {
+      "p84_test": 0.001,
+      "n_simulaciones": 2000000,
+      "mc_perfectos": 1894,
+      "mc_p": 0.000947,
+      "analitico_p": 0.0009655206468094842,
+      "error_relativo_pct": 1.918203082521824
+    },
+    {
+      "p84_test": 0.0001,
+      "n_simulaciones": 2000000,
+      "mc_perfectos": 181,
+      "mc_p": 9.05e-05,
+      "analitico_p": 9.655206468094843e-05,
+      "error_relativo_pct": 6.268187739896787
+    }
+  ],
+  "tabla_por_T": [
+    {
+      "T": 2.0,
+      "p84": 0.009901233965791123,
+      "p_run": 0.00955984582286268,
+      "it_50": 73
+    },
+    {
+      "T": 5.0,
+      "p84": 0.00397232024344063,
+      "p_run": 0.003835357210781205,
+      "it_50": 181
+    },
+    {
+      "T": 15.0,
+      "p84": 0.001325863885938916,
+      "p_run": 0.0012801489567330784,
+      "it_50": 542
+    },
+    {
+      "T": 90.0,
+      "p84": 0.00022109949076298818,
+      "p_run": 0.00021347612333072794,
+      "it_50": 3247
+    },
+    {
+      "T": 5400.0,
+      "p84": 3.6853921565604963e-06,
+      "p_run": 3.5583222187488904e-06,
+      "it_50": 194796
+    },
+    {
+      "T": 5850.0,
+      "p84": 3.401900934396629e-06,
+      "p_run": 3.284605590560422e-06,
+      "it_50": 211029
+    },
+    {
+      "T": 6300.0,
+      "p84": 3.158908394307325e-06,
+      "p_run": 3.0499912760835176e-06,
+      "it_50": 227262
+    },
+    {
+      "T": 16200.0,
+      "p84": 1.228465561275982e-06,
+      "p_run": 1.1861088633063623e-06,
+      "it_50": 584388
+    }
+  ],
+  "escenario_central": {
+    "T": 6075.0,
+    "p84": 3.2759048098629506e-06,
+    "p_run": 3.1629537309051764e-06,
+    "it_50": 219146,
+    "it_99": 1455970
+  },
+  "evento_algun_humano": [
+    {
+      "corredores": 1,
+      "anios": 1,
+      "intentos": 31200,
+      "p_alguno": 0.09397131516267943
+    },
+    {
+      "corredores": 1,
+      "anios": 5,
+      "intentos": 156000,
+      "p_alguno": 0.38946616327729744
+    },
+    {
+      "corredores": 1,
+      "anios": 10,
+      "intentos": 312000,
+      "p_alguno": 0.6272484342166564
+    },
+    {
+      "corredores": 1,
+      "anios": 25,
+      "intentos": 780000,
+      "p_alguno": 0.9151701515603468
+    },
+    {
+      "corredores": 5,
+      "anios": 1,
+      "intentos": 156000,
+      "p_alguno": 0.38946616327729744
+    },
+    {
+      "corredores": 5,
+      "anios": 5,
+      "intentos": 780000,
+      "p_alguno": 0.9151701515603468
+    },
+    {
+      "corredores": 5,
+      "anios": 10,
+      "intentos": 1560000,
+      "p_alguno": 0.9928038968137055
+    },
+    {
+      "corredores": 5,
+      "anios": 25,
+      "intentos": 3900000,
+      "p_alguno": 0.9999956071795209
+    },
+    {
+      "corredores": 20,
+      "anios": 1,
+      "intentos": 624000,
+      "p_alguno": 0.8610562702060657
+    },
+    {
+      "corredores": 20,
+      "anios": 5,
+      "intentos": 3120000,
+      "p_alguno": 0.9999482160989323
+    },
+    {
+      "corredores": 20,
+      "anios": 10,
+      "intentos": 6240000,
+      "p_alguno": 0.9999999973184276
+    },
+    {
+      "corredores": 20,
+      "anios": 25,
+      "intentos": 15600000,
+      "p_alguno": 1.0
+    }
+  ],
+  "supuestos": {
+    "p_escalon_por_seccion": 0.005,
+    "n_secciones_con_frame_rule": 7,
+    "intentos_por_dia_activo": 200,
+    "dias_activos_por_semana": 3,
+    "horas_juego_por_dia_para_T": 3
+  }
+}
