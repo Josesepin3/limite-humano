@@ -15,6 +15,11 @@ TRAMPAS = [
     (r"<sup>|</sup>|<sub>|</sub>",
      "etiquetas HTML de super/subindice: Typst usa las funciones super[] y sub[]",
      "reemplazar <sup>[x]</sup> por super[x] y <sub>[x]</sub> por sub[x]"),
+    (r"^\s*(?!//).*\bAPA\b",
+     "mencion a la norma APA en el TEXTO del documento: el manuscrito no habla "
+     "de la norma con la que esta maquetado (las menciones en comentarios // si "
+     "son legitimas)",
+     "reescribir la frase sin nombrar la norma, o mover la nota a un comentario"),
     (r"\*\*", "negrita de Markdown; en Typst es *un asterisco*",
      "reemplazar **texto** por *texto*"),
     (r"(?<![\w*])\$", "math de Typst ($...$): usa otra familia tipografica",
