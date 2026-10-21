@@ -10,7 +10,8 @@ los datos y el código que lo respaldan.
 
 **El manuscrito en sí no está en este repositorio**, ni sus figuras. Todo lo que
 aquí se publica es regenerable: las figuras las produce `scripts/figuras.py` a
-partir de los datos procesados.
+partir de los datos procesados. El manuscrito se desarrolla en un repositorio
+local, aparte de este.
 
 - **Autor:** Jose Sebastian Pinto Rondon
 - **Institución:** Institución Universitaria Pascual Bravo
@@ -64,6 +65,34 @@ python3 scripts/simulacion_montecarlo.py  # validación Monte Carlo de la mecán
 python3 scripts/figuras.py                # figuras vectoriales (SVG)
 python3 scripts/figuras_png.py            # versión PNG para el documento
 ```
+
+### Dónde está el manuscrito
+
+En un **repositorio local aparte**, que no se publica. El reparto es
+deliberado:
+
+| | Repositorio público (este) | Repositorio local |
+|---|---|---|
+| Datos crudos y procesados | sí | — |
+| Scripts de extracción y análisis | sí | — |
+| Manuscrito (Typst y PDF) | no | sí |
+| Figuras | no (se regeneran aquí) | sí (su resultado) |
+| Herramientas de verificación | sí | — |
+
+Los `scripts/` de verificación de este repositorio se aplican sobre el
+manuscrito local:
+
+```bash
+python3 scripts/lint_typst.py        <manuscrito>.typ   # sintaxis y compilación
+python3 scripts/verificar_apa.py      <manuscrito>.pdf   # maqueta APA 7
+python3 scripts/verificar_citas.py    <manuscrito>.typ   # citas y notas al pie
+python3 scripts/estilometria.py       <manuscrito>.typ   # perfil de estilo
+```
+
+`comparar_md_typ.py` contrasta el contenido del manuscrito contra el borrador en
+Markdown, usando `scripts/linea_base_diferencias.txt` como línea base: solo
+informa de las diferencias **nuevas**, para que una edición externa no pueda
+alterar cifras, citas ni estructura sin que se note.
 
 Las figuras se generan como SVG y se rasterizan a PNG con `figuras_png.py`
 (requiere `rsvg-convert` de `librsvg`, o ImageMagick). Se escriben en
